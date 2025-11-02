@@ -93,7 +93,7 @@
     </p>
 
     <p>
-        <strong>🔥 Say goodbye to desktop chaos – Aicono uses cutting-edge AI to automatically group and arrange your icons! 💪</strong>
+        <strong>🔥 Aicono uses AI to automatically group and arrange your desktop icons for a more organized workspace. 💪</strong>
     </p>
 
     <p>
@@ -106,7 +106,7 @@
         <br><em>Organized desktop after Aicono arrangement – AI groups and arranges icons perfectly!</em>
     </p>
     <p>
-        Aicono solves this with AI-powered categorization (Work, Games, Utilities) and smart spatial layout – no overlaps, in your chosen desktop area. Preview and apply with ease!
+        Aicono applies AI-based categorization (e.g., Work, Games, Utilities) and a spatial layout that avoids overlaps, placing icons within your selected desktop area. You can preview and apply the arrangement.
     </p>
     
 
@@ -163,7 +163,7 @@
     </div>
 
 <h2>🤖 What is Aicono?</h2>
-    <p>Aicono is a Windows-only freeware app that uses the latest AI technology to automatically group desktop icons by category (e.g., "Work," "Games," "Utilities") and to arrange them neatly without overlaps in a customizable desktop area. Fine-tune with a visual preview tool! 🧠 No more manual dragging or cluttered screens.</p>
+    <p>Aicono is a Windows application that uses AI to group desktop icons by category (such as "Work," "Games," or "Utilities") and arranges them without overlaps in a customizable area. The layout can be fine-tuned using a visual preview tool. 🧠</p>
 
     <h2>⭐ Key Features</h2>
     <ul>
@@ -173,7 +173,7 @@
                 <li>Connect to local services like <strong>Ollama</strong> or any <strong>OpenAI-compatible server</strong>.</li>
                 <li>Configure it to <strong>auto-download larger, more powerful models</strong> (e.g., 8B models) from Hugging Face.</li>
                 <li>Supports private models using your <strong>Hugging Face token</strong>.</li>
-                <li>Includes a <strong>manual fallback</strong> if no AI model is available.</li>
+                <li>Includes a <strong>manual fallback & finetune</strong> if no AI model is available.</li>
             </ul>
         </li>
         <li><strong>💾 Instant Fine-Tuning with Caching:</strong> Don't wait for the AI analysis twice! Aicono saves your layout. If you're unhappy with the arrangement, just re-open the app to <strong>instantly</strong> make adjustments (like changing spacing or grid size) and re-apply in seconds. The <strong><code>"Clear Cache & Reload"</code></strong> button is only for when you <em>want</em> to start over.</li>
@@ -188,7 +188,7 @@
     </ul>
 
     <h2>🎯 Who is Aicono For?</h2>
-    <p>Aicono targets frustrated Windows users with cluttered desktops – gamers, students, professionals, and AI enthusiasts who want productivity, clean design, and a free solution to everyday chaos. 💯</p>
+    <p>Aicono is intended for Windows users who want to organize their desktop icons efficiently, including gamers, students, professionals, and AI enthusiasts. 💯</p>
     <ul>
         <li><strong>🎮 Gamers:</strong> Group game icons neatly for quick access without desktop mess.</li>
         <li><strong>📚 Students:</strong> Organize study files and apps in logical categories.</li>
@@ -207,18 +207,53 @@
         <li><strong>💾 Caches results</strong> for instant re-application.</li>
     </ol>
 
-    <h3>🧠 A Note on the AI: "Why are my results 'hit-or-miss'?"</h3>
-    <p>This is an intentional feature! Aicono is built for both casual users and AI enthusiasts.</p>
+    <h2>🧠 AI: How It Works, Fine-Tuning & Manual Fallback</h2>
+    <h3>Why are my results "hit-or-miss"?</h3>
+    <p>
+        Aicono uses AI models to group and arrange icons. The default model is lightweight and works offline, but may not always classify every icon perfectly, especially for less common applications. Advanced users can connect larger or custom models for improved accuracy, but this may require more system resources.
+    </p>
     <ul>
-        <li><strong>Offline & Free (Default):</strong> On its first run, Aicono downloads a lightweight, built-in model (~806MB). This allows it to work completely offline for free. As a smaller model, it's fast but may occasionally mislabel complex icons as "Miscellaneous."</li>
-        <li><strong>Power-User Ready (Custom):</strong> If you're an AI enthusiast and want perfect results, you can easily boost the app's "brain." Aicono is designed to connect to:
-            <ul>
-                <li>Local services like <strong>Ollama</strong> or <strong>Llama</strong>.</li>
-                <li>Any <strong>OpenAI-compatible server</strong>.</li>
-                <li>Larger, more powerful models (like 8B parameter models) that you can configure Aicono to <strong>auto-download from Hugging Face</strong>.</li>
-            </ul>
-        </li>
+        <li><strong>Offline & Free (Default):</strong> The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes mislabel complex icons as "Miscellaneous."</li>
+        <li><strong>Custom Models:</strong> For improved results, Aicono can connect to local services (like <strong>Ollama</strong> or <strong>Llama</strong>), OpenAI-compatible servers, or download larger models from Hugging Face.</li>
     </ul>
+    <p>
+        <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power.
+    </p>
+    <h3>Manual Fine-Tuning & Fallback</h3>
+    <p>
+        If the AI does not classify an icon as desired, or if no model is available, you can adjust the results manually:
+    </p>
+    <ol>
+        <li><strong>Fine-tune AI results:</strong> After each run, Aicono saves the grouping in <code>icon_groups_cache.json</code>. You can edit this file to move icons between groups. Your changes will be used until you clear the cache.</li>
+        <li><strong>Manual fallback:</strong> If no AI is available, you can create <code>icon_groups_cache.json</code> from scratch and define all groups manually. The app will use your structure.</li>
+    </ol>
+    <h4>File Structure (<code>icon_groups_cache.json</code>)</h4>
+    <p>
+        The file must be saved as JSON with the following structure:
+    </p>
+    <pre class="code-block-json"><code>{
+  "names_hash": "your_unique_hash_here",
+  "model_name": "manual_configuration",
+  "groups": [
+    {
+      "name": "Group Name 1",
+      "items": [
+        "Application1.exe",
+        "Script1.bat",
+        "Tool1"
+      ]
+    },
+    {
+      "name": "Group Name 2",
+      "items": [
+        "Application2.exe",
+        "Tool2",
+        "Utility2"
+      ]
+    }
+  ],
+  "timestamp": 1726404000.0
+}</code></pre>
 
     <h2>🌟 Why Aicono Stands Out</h2>
     <p>Aicono goes beyond basic tools with 🧠 AI intelligence for effortless desktop management!</p>
@@ -357,7 +392,7 @@
     <!-- Final Download Section -->
     <div class="cta-box">
         <h3>🚀 Ready for an Organized Desktop? 🚀</h3>
-        <p>Download Aicono now and let AI autopilot your icons! 💫</p>
+        <p>Download Aicono to try AI-based icon organization on your desktop. 💫</p>
         
         <div class="download-section">
             <a href="Aicono.exe" class="btn btn-primary btn-large">⬇️ Direct Download (Portable)</a>
