@@ -320,6 +320,39 @@
     <strong>We encourage you to experiment! 🎨</strong> That's what the instant <strong>WYSIWYG</strong> (What You See Is What You Get) preview is for. Adjust any slider and watch your layout change in real-time.
 </p>
 
+<h2>🛠️ Manual Configuration &amp; Fine-Tuning (Fallback)</h2>
+    <p>This section explains how to use the <code>icon_groups_cache.json</code> file. This file has two primary purposes:</p>
+    <ol>
+        <li><strong>Fine-Tuning AI Results (Most Common Use):</strong> After the AI runs, it saves its results to this file. If the AI miscategorizes an icon (e.g., puts <em>Steam</em> in <em>Work</em>), you can simply open <code>icon_groups_cache.json</code> and move the item from the <em>Work</em> group to the <em>Games</em> group. Aicono will use your corrected file from then on (until you click <code>Clear Cache &amp; Reload</code>).</li>
+        <li><strong>Complete Manual Fallback:</strong> If you have no AI model configured or are offline, you can create this file from scratch to define all your groups manually. The rest of this guide explains the file structure for this purpose.</li>
+    </ol>
+
+    <h3>File Structure</h3>
+    <p>The configuration file must be saved as a JSON file named <code>icon_groups_cache.json</code> with the following structure:</p>
+
+    <pre class="code-block-json"><code>{
+  "names_hash": "your_unique_hash_here",
+  "model_name": "manual_configuration",
+  "groups": [
+    {
+      "name": "Group Name 1",
+      "items": [
+        "Application1.exe",
+        "Script1.bat",
+        "Tool1"
+      ]
+    },
+    {
+      "name": "Group Name 2",
+      "items": [
+        "Application2.exe",
+        "Tool2",
+        "Utility2"
+      ]
+    }
+  ],
+  "timestamp": 1726404000.0
+}</code></pre>
     <!-- Final Download Section -->
     <div class="cta-box">
         <h3>🚀 Ready for an Organized Desktop? 🚀</h3>

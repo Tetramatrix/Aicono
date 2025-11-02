@@ -51,16 +51,16 @@ Thank you for your support!
 
 
 
+### Manual Configuration & Fine-Tuning (Fallback)
 
+This section explains how to use the icon_groups_cache.json file.  This file has two primary purposes:
 
+Fine-Tuning AI Results (Most Common Use): After the AI runs, it saves its results to this file. If the AI miscategorizes an icon (e.g., puts 'Steam' in 'Work'), you can simply open icon_groups_cache.json and move the item from the 'Work' group to the 'Games' group. Aicono will use your corrected file from then on (until you 'Clear Cache & Reload').
 
-# Desktop Icon Configuration Example
+Complete Manual Fallback: If you have no AI model configured or are offline, you can create this file from scratch to define all your groups manually. The rest of this guide explains the file structure for this purpose.
 
-This file shows how to manually create a configuration file for the desktop icon positioning tool when you don't have access to LLM services or want to use the manual version.
-
-## File Structure
-
-The configuration file muse be saved as a JSON file `icon_groups_cache.json` with the following structure:
+File Structure
+The configuration file must be saved as a JSON file icon_groups_cache.json with the following structure:
 
 ```json
 {
@@ -87,6 +87,7 @@ The configuration file muse be saved as a JSON file `icon_groups_cache.json` wit
   "timestamp": 1726404000.0
 }
 ```
+
 
 ## How to Create Your Own Configuration
 
