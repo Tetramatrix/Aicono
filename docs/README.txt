@@ -178,7 +178,7 @@ Organize your icons into logical categories. Common groups might include:
 3. **Consider frequency**: Put frequently used applications in easily accessible groups
 4. **Logical grouping**: Group related applications together (e.g., all development tools)
 
-Save this configuration as a `.json` file and use it with your desktop icon positioning tool.
+Save this Konfiguration as a `.json` file and use it with your desktop icon positioning tool.
 
 
 ### Discover our RyzenZPilot! 
@@ -191,20 +191,5 @@ for optimal performance and efficiency.
 
 Website: http://tetramatrix.github.io/RyzenZPilot
 
-Community: Join discussions on Reddit at /r/RyzenZPilot
 
-### Downloads:
-- Latest version: RyzenZPilot-v3.1.1.zip
-- MD5 Checksum: 5a7c65888c4ebfbfb7ba8c22a491c55f
-- Download: http://tetramatrix.github.io/RyzenZPilot
 
-### Support the Development
-If you find RyzenZPilot useful, please consider donating to support ongoing development!
-
-Bitcoin Cash (BCH):
-bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
-
-PayPal:
-paypal.me/Gigamegs
-
-Thank you for your support!
