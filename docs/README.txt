@@ -31,24 +31,9 @@ Website: http://tetramatrix.github.io/Aicono
 
 
 # Downloads:
-- Latest version: Aicono-v1.0.0.zip
-- MD5 Checksum (.exe): bf1f3c02f298d81f8bbd6e0232755acf
+- Latest version: Aicono-v1.0.1.exe
+- MD5 Checksum (.exe): 4c2cff462f3fdc85aec0e5199cc037a0
 - Download: http://tetramatrix.github.io/Aicono
-
-
-
-### Support the Development
-
-If you find Aicono useful, please consider donating to support ongoing development!
-
-Bitcoin Cash (BCH):
-bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
-
-PayPal:
-paypal.me/Gigamegs
-
-Thank you for your support!
-
 
 
 ### Manual Configuration & Fine-Tuning (Fallback)
@@ -179,6 +164,24 @@ Organize your icons into logical categories. Common groups might include:
 4. **Logical grouping**: Group related applications together (e.g., all development tools)
 
 Save this Konfiguration as a `.json` file and use it with your desktop icon positioning tool.
+
+
+
+### Support the Development
+
+If you find Aicono useful, please consider donating to support ongoing development!
+
+Bitcoin Cash (BCH):
+bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
+
+PayPal:
+paypal.me/Gigamegs
+
+Thank you for your support!
+
+
+
+
 
 
 ### Discover our RyzenZPilot! 
