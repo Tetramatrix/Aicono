@@ -395,7 +395,7 @@
         <p>Download Aicono to try AI-based icon organization on your desktop. 💫</p>
         
         <div class="download-section">
-            <a href="Aicono-v1.0.1.exe" class="btn btn-primary btn-large">⬇️ Direct Download (Portable)</a>
+            <a href="Aicono.exe" class="btn btn-primary btn-large">⬇️ Direct Download (Portable)</a>
         </div>
         <div class="download-section">        
             <a href="README.txt" class="btn btn-primary">📄 Readme</a>
