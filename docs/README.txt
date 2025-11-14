@@ -31,7 +31,7 @@ Website: http://tetramatrix.github.io/Aicono
 
 
 # Downloads:
-- Latest version: Aicono-v1.0.1.exe
+- Latest version: Aicono.exe
 - MD5 Checksum (.exe): 4c2cff462f3fdc85aec0e5199cc037a0
 - Download: http://tetramatrix.github.io/Aicono
 
