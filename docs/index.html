@@ -499,19 +499,29 @@ function smartScrollToSection(targetId) {
             <span class="nav-arrow-up" onclick="smartScrollToSection('#review-project')">⬆️</span>
             <h3>☕ Buy me a coffee or support via PayPal or Bitcoin Cash!</h3>
             <div class="payment-options">
-                <div class="paypal-option">
-                    <h4>PayPal</h4>
-                    <p style="float:right">
-                        PayPal: <a href="paypal.me/Gigamegs">paypal.me/Gigamegs</a>
-                        <img src="qrcode.png" alt="QR Code" style="width: 130px; height: 130px; vertical-align: middle; margin-left: 10px;">
-                    </p>
-                </div>
+                <div style="display: flex; justify-content: space-between; gap: 20px;">
+                    <div class="paypal-option" style="flex: 1;">
+                        <h4>PayPal</h4>
+                        <p>
+                            PayPal: <a href="paypal.me/Gigamegs">paypal.me/Gigamegs</a>
+                            <div>
+                                <img src="qrcode.png" alt="QR Code" style="width: 130px; height: 130px; margin-top: 10px;">
+                            </div>
+                        </p>
+                    </div>
 
-                <div class="bch-option">
-                    <h4>Bitcoin Cash (BCH)</h4>
-                    <p>📌 Bitcoin Cash (BCH)
-                     <img src="bch_qrcode.png" alt="QR Code" style="width: 130px; height: 130px; vertical-align: middle; margin-left: 10px;"><br />
-                    BCH Address: <br /> bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv</p>
+                    <div class="bch-option" style="flex: 1;">
+                        <h4>Bitcoin Cash (BCH)</h4>
+                        <p>📌 Bitcoin Cash (BCH)</p>
+                        <div style="display: flex; align-items: center;">
+                            <div style="margin-right: 15px;">
+                                <img src="bch_qrcode.png" alt="QR Code" style="width: 130px; height: 130px;">
+                            </div>
+                            <div style="word-break: break-all; font-family: monospace;">
+                                <strong>BCH Address:</strong><br />bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
