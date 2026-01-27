@@ -89,3 +89,38 @@ for optimal performance and efficiency.
 
 🌐 Website: https://tetramatrix.github.io/Sorana/
 
+
+
+Changelog: 
+
+
+Version: 1.0.2
+Headline: Major Update: Mindmap Mode, WYSIWYG Editor, Persistent Sessions & Website Redesign
+
+Changelog:
+
+New Features:
+
+Mindmap Visualization: A new view mode that generates a mindmap-style diagram of your desktop hierarchy, helping users visualize icon relationships and group structures before applying changes.
+
+Full WYSIWYG Canvas Editor: Completely transformed user experience. Users can now drag and drop icons between groups, create new groups, delete unwanted groups, and resize boundaries visually on an interactive canvas.
+
+Multi-Service AI Integration: Added a comprehensive Model Manager that connects to both on-prem services (Ollama, LlamaCpp) and cloud providers (OpenAI, Mistral), allowing users to choose the best model for their privacy and performance needs.
+
+Persistent Sessions: The application now remains open after the initial arrangement, allowing for immediate fine-tuning and adjustments without needing to restart the analysis process.
+
+Improvements:
+
+Website & Documentation Redesign: A completely overhauled website provides clearer onboarding, better documentation for model configuration, and a more modern user experience.
+
+Enhanced Layout Engine: Improved grid algorithm prevents icon overlaps and strictly respects user-defined working areas.
+
+Offline Capability: Includes pre-configured lightweight models for immediate offline use, with options to download larger, more capable models.
+
+Portable Design: Maintained zero-installation footprint; no registry writes or system file modifications.
+
+Fixes:
+
+Resolved the issue where the application would close automatically after a single arrangement pass.
+
+Addressed "hit-or-miss" categorization by adding manual override capabilities via the visual editor.
