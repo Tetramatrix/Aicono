@@ -19,6 +19,28 @@
 
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <style>
+        .new-badge {
+            background-color: #ff0000;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 50%;
+            font-size: 14px;
+            display: inline-block;
+            margin-left: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Star-shaped badge */
+        .new-badge {
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            padding: 8px 12px;
+            min-width: 40px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <script>
@@ -84,7 +106,7 @@ function smartScrollToSection(targetId) {
 
     <main class="wikidoc">
         <header class="page-header">
-            <h1>🚀 Aicono</h1>
+            <h1>🚀 Aicono <span class="new-badge">🆕 NEW</span></h1>
             <h3>🧠 The AI intelligent desktop icon autopilot for Windows! 🎯</h3>
             <figure class="logo-container">
                 <img src="logo-3.png" alt="Aicono Logo" class="logo">
@@ -127,21 +149,19 @@ function smartScrollToSection(targetId) {
             <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-aicono')">⬆️</span>
             <ul>
                 <li><strong>🧠 AI-Powered Grouping:</strong> Automatically categorizes icons logically into groups like Work, Games, and Utilities.</li>
-                <li><strong>🎛️ Your AI, Your Choice:</strong> Works 100% offline with a lightweight default model (~806MB) that downloads on first run. Want more power? Aicono is built for enthusiasts:
-                    <ul>
-                        <li>Connect to local services like <strong>Ollama</strong> or any <strong>OpenAI-compatible server</strong>.</li>
-                        <li>Configure it to <strong>auto-download larger, more powerful models</strong> (e.g., 8B models) from Hugging Face.</li>
-                        <li>Supports private models using your <strong>Hugging Face token</strong>.</li>
-                        <li>Includes a <strong>manual fallback & finetune</strong> if no AI model is available.</li>
-                    </ul>
-                </li>
-                <li><strong>💾 Instant Fine-Tuning with Caching:</strong> Don't wait for the AI analysis twice! Aicono saves your layout. If you're unhappy with the arrangement, just re-open the app to <strong>instantly</strong> make adjustments (like changing spacing or grid size) and re-apply in seconds. The <strong><code>"Clear Cache & Reload"</code></strong> button is only for when you <em>want</em> to start over.</li>
-                <li>
-                    <strong>📐 Advanced Spatial Layout:</strong> This isn't just "arranging." Aicono solves a complex 2D packing problem. It takes your AI-generated groups (as distinct blocks) and intelligently positions them, ensuring each group is cohesive, clearly separated, and perfectly fits within your custom "Working Area" without any overlaps.
-                </li>
+                <li><strong>📐 Advanced Spatial Layout:</strong> Aicono intelligently positions icon groups, ensuring each group is cohesive, clearly separated, and perfectly fits within your custom "Working Area" without any overlaps.</li>
                 <li><strong>📍 Customizable Area:</strong> Select specific desktop regions for icon placement.</li>
                 <li><strong>👁️ Visual Preview (WYSIWYG):</strong> See and approve the new layout <em>before</em> any changes are applied.</li>
-                <li><strong>⚙️ Fully Configurable:</strong> All settings, from AI models to layout, are controlled via a simple JSON file for power users.</li>
+                <li><strong>🎨 Full WYSIWYG Canvas Editor:</strong> Direct manipulation of workspace elements. Drag and drop icons between groups, rearrange groups, rename items, and adjust group boundaries with an intuitive visual interface. <span class="new-badge">🆕 NEW</span></li>
+                <li><strong>🎛️ Advanced Model Management:</strong> Connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.</li>
+                <li><strong>🔗 Multi-Service AI Integration:</strong> Aicono supports seamless connection to both on-prem and cloud-based AI services:
+                    <ul>
+                        <li><strong>On-Prem Services:</strong> Ollama, Llamacpp, Lemonade, and other self-hosted LLM solutions</li>
+                        <li><strong>Cloud Services:</strong> OpenAI, Mistral, and other cloud-based AI platforms</li>
+                        <li><strong>Flexible Configuration:</strong> Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations</li>
+                    </ul>
+                </li>
+                <li><strong>⚙️ Fully Configurable:</strong> All settings, from AI models to layout, are adjustable through the intuitive interface.</li>
                 <li><strong>📦 Portable App:</strong> No installation required – just run and go!</li>
                 <li><strong>💰 Freeware:</strong> Free community edition.</li>
             </ul>
@@ -193,14 +213,14 @@ function smartScrollToSection(targetId) {
                 <p>Download Aicono now and let AI autopilot your icons! 💫</p>
 
                 <div class="download-buttons">
-                    <a href="Aicono-v1.0.1.exe" class="btn btn-primary">⬇️ Direct Download (Portable)</a>
+                    <a href="Aicono.exe" class="btn btn-primary">⬇️ Direct Download (Portable)</a>
                 </div>
                 <div class="download-buttons">
                     <a href="README.txt" class="btn btn-primary">📄 Readme</a>
                 </div>
 
                 <pre class="code-block-md5"><code>
-        $ md5sum.exe Aicono-v1.0.1 4c2cff462f3fdc85aec0e5199cc037a0
+        $ md5sum.exe Aicono.exe 4c2cff462f3fdc85aec0e5199cc037a0
         </code></pre>
 
                 <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%"/></a>
@@ -240,56 +260,30 @@ function smartScrollToSection(targetId) {
     </section>
 
     <section class="technical-section" id="ai-fine-tuning">
-        <h2>🧠 AI: How It Works, Fine-Tuning & Manual Fallback</h2>
+        <h2>🧠 AI: How It Works & Visual Fine-Tuning</h2>
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#feature-comparison')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#how-it-works')">⬆️</span>
         <h3>Why are my results "hit-or-miss"?</h3>
         <p>
-            Aicono uses AI models to group and arrange icons. The default model is lightweight and works offline, but may not always classify every icon perfectly, especially for less common applications. Advanced users can connect larger or custom models for improved accuracy, but this may require more system resources.
+            Aicono uses AI models to group and arrange icons. The default model is lightweight and works offline, but may not always classify every icon perfectly, especially for less common applications. Advanced users can leverage the full-featured model manager to connect larger or custom models for improved accuracy, but this may require more system resources.
         </p>
         <ul>
             <li><strong>Offline & Free (Default):</strong> The built-in model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes mislabel complex icons as "Miscellaneous."</li>
-            <li><strong>Custom Models:</strong> For improved results, Aicono can connect to local services (like <strong>Ollama</strong> or <strong>Llama</strong>), OpenAI-compatible servers, or download larger models from Hugging Face.</li>
+            <li><strong>Full Model Manager:</strong> For improved results, Aicono features a comprehensive model manager that allows you to easily configure and connect to various on-prem and cloud-based AI services. You can comfortably create, add, delete, and manage multiple AI models from the intuitive interface.</li>
         </ul>
         <p>
             <strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power.
         </p>
-        <h3>Manual Fine-Tuning & Fallback</h3>
+        <h3>Visual Fine-Tuning with WYSIWYG Editor <span class="new-badge">🆕 NEW</span></h3>
         <p>
-            If the AI does not classify an icon as desired, or if no model is available, you can adjust the results manually:
+            If the AI does not classify an icon as desired, you can now adjust the results visually with our intuitive drag-and-drop editor:
         </p>
         <ol>
-            <li><strong>Fine-tune AI results:</strong> After each run, Aicono saves the grouping in <code>icon_groups_cache.json</code>. You can edit this file to move icons between groups. Your changes will be used until you clear the cache.</li>
-            <li><strong>Manual fallback:</strong> If no AI is available, you can create <code>icon_groups_cache.json</code> from scratch and define all groups manually. The app will use your structure.</li>
+            <li><strong>Drag & Drop:</strong> Simply drag icons between groups to reclassify them visually.</li>
+            <li><strong>Group Management:</strong> Resize, reposition, and rename groups directly on the canvas.</li>
+            <li><strong>Real-Time Preview:</strong> See changes immediately as you make adjustments.</li>
         </ol>
-        <h4>File Structure (<code>icon_groups_cache.json</code>)</h4>
-        <p>
-            The file must be saved as JSON with the following structure:
-        </p>
-        <pre class="code-block-json"><code>{
-  "names_hash": "your_unique_hash_here",
-  "model_name": "manual_configuration",
-  "groups": [
-    {
-      "name": "Group Name 1",
-      "items": [
-        "Application1.exe",
-        "Script1.bat",
-        "Tool1"
-      ]
-    },
-    {
-      "name": "Group Name 2",
-      "items": [
-        "Application2.exe",
-        "Tool2",
-        "Utility2"
-      ]
-    }
-  ],
-  "timestamp": 1726404000.0
-}</code></pre>
         </div>
     </section>
 
@@ -325,14 +319,24 @@ function smartScrollToSection(targetId) {
                         <td>❌ None</td>
                     </tr>
                     <tr>
+                        <td><strong>Visual Editor</strong></td>
+                        <td>✅ Full Canvas Editor with Drag & Drop</td>
+                        <td>❌ None</td>
+                    </tr>
+                    <tr class="row-alt">
                         <td><strong>Portability</strong></td>
                         <td>✅ No Install</td>
                         <td>⚠️ Installer Required</td>
                     </tr>
-                    <tr class="row-alt">
+                    <tr>
                         <td><strong>AI Customization</strong></td>
                         <td>✅ (Ollama, HF, etc.)</td>
                         <td>❌ None</td>
+                    </tr>
+                    <tr class="row-alt">
+                        <td><strong>Configuration</strong></td>
+                        <td>✅ Intuitive Visual Interface</td>
+                        <td>❌ Complex Configuration</td>
                     </tr>
                     <tr>
                         <td><strong>Price</strong></td>
@@ -397,7 +401,7 @@ function smartScrollToSection(targetId) {
             <p>Download Aicono to try AI-based icon organization on your desktop. 💫</p>
 
             <div class="download-buttons">
-                <a href="Aicono-v1.0.1.exe" class="btn btn-primary btn-large">⬇️ Direct Download (Portable)</a>
+                <a href="Aicono.exe" class="btn btn-primary btn-large">⬇️ Direct Download (Portable)</a>
             </div>
             <div class="download-buttons">
                 <a href="README.txt" class="btn btn-primary">📄 Readme</a>
@@ -405,7 +409,7 @@ function smartScrollToSection(targetId) {
 
             <pre class="code-block-md5-highlight">
             <code>
-        $ md5sum.exe Aicono-v1.0.1.exe 4c2cff462f3fdc85aec0e5199cc037a0
+        $ md5sum.exe Aicono.exe 4c2cff462f3fdc85aec0e5199cc037a0
         </code></pre>
 
             <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
@@ -441,49 +445,34 @@ function smartScrollToSection(targetId) {
                 There is no single "right" setting! The best layout is a balance between the size of your sandbox and the layout controls you choose. If things look cramped 😖, try giving them more room (a larger area ↔️) or tightening up the spacing (a smaller gap ↕️).
             </p>
             <p>
-                <strong>We encourage you to experiment! 🎨</strong> That's what the instant <strong>WYSIWYG</strong> (What You See Is What You Get) preview is for. Adjust any slider and watch your layout change in real-time.
+                <strong>We encourage you to experiment! 🎨</strong> That's what the instant <strong>WYSIWYG</strong> (What You See Is What You Get) preview is for. Adjust any slider and watch your layout change in real-time. Plus, you can now fine-tune your layout with our <strong>visual editor</strong> — simply drag and drop icons between groups to reorganize as needed!
             </p>
         </div>
     </section>
 
     <!-- Manual Configuration Section -->
     <section class="manual-configuration-section" id="manual-configuration">
-        <h2>🛠️ Manual Configuration &amp; Fine-Tuning (Fallback)</h2>
+        <h2>🎨 Visual Fine-Tuning with WYSIWYG Canvas Editor <span class="new-badge">🆕 NEW</span></h2>
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#support-donations')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#pro-tips')">⬆️</span>
-            <p>This section explains how to use the <code>icon_groups_cache.json</code> file. This file has two primary purposes:</p>
+            <p>Aicono now features a full visual editor that allows you to fine-tune your desktop organization with an intuitive drag-and-drop interface. No more manual JSON editing required!</p>
             <ol>
-                <li><strong>Fine-Tuning AI Results (Most Common Use):</strong> After the AI runs, it saves its results to this file. If the AI miscategorizes an icon (e.g., puts <em>Steam</em> in <em>Work</em>), you can simply open <code>icon_groups_cache.json</code> and move the item from the <em>Work</em> group to the <em>Games</em> group. Aicono will use your corrected file from then on (until you click <code>Clear Cache &amp; Reload</code>).</li>
-                <li><strong>Complete Manual Fallback:</strong> If you have no AI model configured or are offline, you can create this file from scratch to define all your groups manually. The rest of this guide explains the file structure for this purpose.</li>
+                <li><strong>Drag & Drop Icons:</strong> Simply drag icons between groups to reclassify them. For example, if the AI placed <em>Steam</em> in <em>Work</em>, just drag it to the <em>Games</em> group.</li>
+                <li><strong>Resize & Reposition Groups:</strong> Adjust the size and position of icon groups directly on the canvas.</li>
+                <li><strong>Rename Groups:</strong> Click on group names to rename them according to your preferences.</li>
+                <li><strong>Visual Feedback:</strong> See changes in real-time as you make adjustments to your desktop layout.</li>
             </ol>
 
-            <h3>File Structure</h3>
-            <p>The configuration file must be saved as a JSON file named <code>icon_groups_cache.json</code> with the following structure:</p>
-
-            <pre class="code-block-json"><code>{
-  "names_hash": "your_unique_hash_here",
-  "model_name": "manual_configuration",
-  "groups": [
-    {
-      "name": "Group Name 1",
-      "items": [
-        "Application1.exe",
-        "Script1.bat",
-        "Tool1"
-      ]
-    },
-    {
-      "name": "Group Name 2",
-      "items": [
-        "Application2.exe",
-        "Tool2",
-        "Utility2"
-      ]
-    }
-  ],
-  "timestamp": 1726404000.0
-}</code></pre>
+            <h3>Visual Editor Features</h3>
+            <p>The WYSIWYG canvas editor provides:</p>
+            <ul>
+                <li>Real-time drag-and-drop reorganization</li>
+                <li>Visual boundary adjustment for groups</li>
+                <li>Instant renaming of groups and items</li>
+                <li>Preview of changes before applying</li>
+                <li>Automatic saving of your customizations</li>
+            </ul>
         </div>
     </section>
 
@@ -528,12 +517,12 @@ function smartScrollToSection(targetId) {
             <span class="nav-arrow-up" onclick="smartScrollToSection('#paypal-bch')">⬆️</span>
             <h3>🔥 Featured on Microsoft Store:</h3>
             <p>
-                <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" width="400%" height="400%" alt="Get it from Microsoft" /></a>
+                <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
             </p>
 
             <h3>🔥 Featured on Softpedia:</h3>
             <p>
-                <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank"><img src="softpedia.png" width="40%" height="40%" alt="Get it from Softpedia" /></a>
+                <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank"><img src="softpedia.png" width="200px" height="60px" alt="Get it from Softpedia" /></a>
             </p>
 
             <h3>🔥 Featured on AlternativeTo:</h3>
@@ -564,7 +553,9 @@ function smartScrollToSection(targetId) {
            <h4>🔥 Featured on itch.io:</h4>
            <div class="embed-container">
             <div class="embed-item">
-                <iframe frameborder="0" src="https://itch.io/embed/2985398?linkback=true&bg_color=35fc00&fg_color=3f2832&link_color=fa5c5c&border_color=ff5a1d" width="552" height="167" class="embed-iframe"><a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">Spaceship by tetramatrix</a></iframe>
+                <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">
+                    <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship - Retro Mini Game" width="552" height="167" />
+                </a>
             </div>
         </div>
 
@@ -591,12 +582,25 @@ function smartScrollToSection(targetId) {
         </div>
     </div>
 
-        <h3>🚀 Aicono - AI Intelligent Desktop Icon Autopilot (this website):</h3>
+        <h3>🚀 Sorana - The Visual AI Workspace:</h3>
         <div class="cta-box" id="aicono-intro">
             <span class="nav-arrow-down" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
-            <p class="footer-text">
-                🏢 Developed by <b>Tetramatrix</b> | 🔧 Optimized for Windows desktops | 💝 Free for everyone
+            <p>Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, LLamacpp, Lemonade, Ollama), and keep your data under your control.</p>
+
+            <h4>🏠 Homepage:</h4>
+            <p>
+                <a href="https://tetramatrix.github.io/Sorana/" target="_blank">🏠 https://tetramatrix.github.io/Sorana/</a>
+            </p>
+
+            <h4>🔥 Featured on Softpedia:</h4>
+            <p>
+                <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" target="_blank"><img src="softpedia.png" width="40%" height="40%" alt="Get it from Softpedia" /></a>
+            </p>
+
+            <h4>🔥 Featured on Microsoft Store:</h4>
+            <p>
+                <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank"><img src="ms-store.svg" width="50%" height="50%" alt="Get it from Microsoft" /></a>
             </p>
         </div>
     </section>
