@@ -35,7 +35,7 @@
 
 # 📥 Downloads:
 - 🆕 Latest version: Aicono.exe
-- 🔢 MD5 Checksum (.exe): 97c3a7a79bc33275e6ae699c5795bdce
+- 🔢 MD5 Checksum (.exe): a87233d09733b7762850ea7bf023e65d
 - 📥 Download: http://tetramatrix.github.io/Aicono
 
 
