@@ -34,8 +34,8 @@
 
 
 # 📥 Downloads:
-- 🆕 Latest version: Aicono.exe
-- 🔢 MD5 Checksum (.exe): a87233d09733b7762850ea7bf023e65d
+- 🆕 Latest version: Aicono.exe v1.0.3
+- 🔢 MD5 Checksum (.exe): 62dc20ed8a9d64f8025946004701734e
 - 📥 Download: http://tetramatrix.github.io/Aicono
 
 
@@ -93,6 +93,9 @@ for optimal performance and efficiency.
 
 Changelog: 
 
+Version 1.0.3
+-Bugfix built-in models
+-Massive Performance Boost: New iterative algorithms significantly speed up the organization of large folder structures.
 
 Version: 1.0.2
 Headline: Major Update: Mindmap Mode, WYSIWYG Editor, Persistent Sessions & Website Redesign
