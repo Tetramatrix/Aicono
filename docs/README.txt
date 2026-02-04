@@ -95,7 +95,7 @@ Changelog:
 
 Version 1.0.3
 -Bugfix built-in models
--Massive Performance Boost: New iterative algorithms significantly speed up the organization of large folder structures.
+-Significant performance enhancement for organizing large Desktop Icons structures using new iterative algorithms
 
 Version: 1.0.2
 Headline: Major Update: Mindmap Mode, WYSIWYG Editor, Persistent Sessions & Website Redesign
