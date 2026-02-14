@@ -1,31 +1,59 @@
-# 🚀 Aicono - AI intelligent desktop icon autopilot
+# Aicono - AI intelligent desktop icon autopilot
 
-🧠 Aicono organizes a cluttered Windows desktop automatically by grouping icons with AI and arranging them into a neat, overlap-free layout with a live visual preview. It runs portable with sane defaults out of the box, and features a full WYSIWYG canvas editor for visual fine-tuning.
+Aicono organizes a cluttered Windows desktop automatically by grouping icons with AI and arranging them into a neat, overlap-free layout with a live visual preview. It runs portable with sane defaults out of the box, and features a full WYSIWYG canvas editor for visual fine-tuning.
 
-### ⭐ Key features
-- 🤖 Zero AI knowledge required: download, extract, run; default settings deliver instant grouping and layout on Windows 10/11 64‑bit.
+### Key features
+- Zero AI knowledge required: download, extract, run; default settings deliver grouping and layout on Windows 10/11 64‑bit.
 
-- 🎛️ Full Model Manager: connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
+- Full Model Manager: connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
 
-- 🔗 Multi-Service AI Integration: supports seamless connection to both on-prem and cloud-based AI services:
-  - 🏢 On-Prem Services: Ollama, Llamacpp, Lemonade, and other self-hosted LLM solutions
-  - ☁️ Cloud Services: OpenAI, Mistral, and other cloud-based AI platforms
-  - ⚙️ Flexible Configuration: easily switch between different AI backends based on your needs, privacy requirements, and performance considerations
+- Multi-Service AI Integration: supports connection to both on-prem and cloud-based AI services:
+  - On-Prem Services: Ollama, Llamacpp, Lemonade, and other self-hosted LLM solutions
+  - Cloud Services: OpenAI, Mistral, and other cloud-based AI platforms
+  - Flexible Configuration: switch between different AI backends based on your needs, privacy requirements, and performance considerations
 
-- 🎨 Full WYSIWYG Canvas Editor: direct manipulation of workspace elements. Drag and drop icons between groups, rearrange groups, rename items, and adjust group boundaries with an intuitive visual interface.
+- Full WYSIWYG Canvas Editor: direct manipulation of workspace elements. Drag and drop icons between groups, rearrange groups, rename items, and adjust group boundaries with an intuitive visual interface.
 
-- 👁️ WYSIWYG layout editor: select the desktop region, preview placement, and adjust grid size with a self‑explaining visual editor.
+- WYSIWYG layout editor: select the desktop region, preview placement, and adjust grid size with a visual editor.
 
-- 📐 Smart layout engine: place icons neatly without overlaps and respects a user‑defined working area.
+- Smart layout engine: place icons neatly without overlaps and respects a user‑defined working area.
 
-- 📦 Portable by design: no installation, no registry writes, and no system files touched, keeping the footprint minimal.
+- Portable by design: no installation, no registry writes, and no system files touched, keeping the footprint minimal.
 
-- ✨ Visual fine-tuning: drag & drop icons between groups to reclassify them visually, resize and reposition groups directly on the canvas, and rename groups with real-time preview.
+- Visual fine-tuning: drag & drop icons between groups to reclassify them visually, resize and reposition groups directly on the canvas, and rename groups with real-time preview.
 
-### 🚀 Quick start
-- 📥 Download the portable archive, extract anywhere, and run Aicono.exe.
+### Quick start
+- Download the portable archive, extract anywhere, and run Aicono.exe.
 
-- ⚙️ Optional: open the Model Manager to configure LLM backends and use the visual editor to fine-tune your desktop layout.
+- Optional: open the Model Manager to configure LLM backends and use the visual editor to fine-tune your desktop layout.
+
+
+### Technical Implementation
+
+#### AI Model Performance
+Aicono uses AI models to intelligently group desktop icons based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify icons perfectly, especially for less common applications. For optimal performance, we recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the number of desktop icons - fewer icons mean faster processing times. Naturally, the best performance is achieved with paid cloud services.
+
+#### Hardware Requirements
+- Built-in Models: Range from 1B parameter (806MB) to 20B parameter (12-16GB)
+- Recommended 8B Models (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation
+- Hardware Requirements Increase with Model Size: Larger models with more parameters require higher specifications
+- Cloud Models: No local hardware requirements (requires internet connection)
+
+#### Alternatives for Limited Hardware
+If your system has limited hardware resources, you have two main options:
+- Built-in Portable Model: Works fully offline but may classify complex icons as "Miscellaneous"
+- Cloud-based LLMs: Connect to services like OpenAI, Mistral, etc. for high accuracy without local hardware costs
+
+#### Model Management
+Built-in Models: Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex icons as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.
+
+AI Integration: Supports connection to both on-prem and cloud-based AI services:
+- Built-in Models: Pre-configured models accessible through the model manager.
+- On-Prem Services: Lemonade, Llamacpp, Ollama, and other self-hosted LLM solutions
+- Cloud Services: OpenAI, Mistral, and other cloud-based AI platforms (paid services provide the best performance)
+- Configuration: Switch between different AI backends based on requirements
+
+Note: Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of icons - fewer icons result in faster processing. For the best performance, especially with large desktops, we recommend using paid cloud services.
 
 
 ### 🌐 Installation & Setup
