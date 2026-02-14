@@ -93,6 +93,10 @@ for optimal performance and efficiency.
 
 Changelog: 
 
+📅 February 14, 2026 - Version 1.0.4 - 1.0.6
+
+• Bugfix Model Manager on-prem and cloud model activation
+
 Version 1.0.3
 -Bugfix built-in models
 -Significant performance enhancement for organizing large Desktop Icons structures using new iterative algorithms
