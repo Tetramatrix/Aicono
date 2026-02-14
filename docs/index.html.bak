@@ -228,7 +228,7 @@ function smartScrollToSection(targetId) {
                 </div>
 
                 <pre class="code-block-md5"><code>
-        $ md5sum.exe Aicono.exe a87233d09733b7762850ea7bf023e65d
+        $ md5sum.exe Aicono.exe v1.0.6 175f645fce9603f7f1f258f06a95482b
         </code></pre>
 
                 <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%"/></a>
@@ -409,7 +409,7 @@ function smartScrollToSection(targetId) {
             <p>Download Aicono to try AI-based icon organization on your desktop. 💫</p>
 
             <div class="download-buttons">
-                <a href="https://github.com/Tetramatrix/Aicono/blob/main/docs/Aicono.exe" class="btn btn-primary btn-large">⬇️ Direct Download (Portable)</a>
+                <a href="https://github.com/Tetramatrix/Aicono/raw/refs/heads/main/docs/Aicono.exe" class="btn btn-primary btn-large">⬇️ Direct Download (Portable)</a>
             </div>
             <div class="download-buttons">
                 <a href="README.txt" class="btn btn-primary">📄 Readme</a>
@@ -417,10 +417,10 @@ function smartScrollToSection(targetId) {
 
             <pre class="code-block-md5-highlight">
             <code>
-        $ md5sum.exe Aicono.exe a87233d09733b7762850ea7bf023e65d
+        $ md5sum.exe Aicono.exe 62dc20ed8a9d64f8025946004701734e
         </code></pre>
 
-            <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
+            <a href="https://apps.microsoft.com/detail/9ngfc27j1vbx" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%" /></a>
         </div>
     </section>
 
@@ -535,7 +535,7 @@ function smartScrollToSection(targetId) {
             <span class="nav-arrow-up" onclick="smartScrollToSection('#paypal-bch')">⬆️</span>
             <h3>🔥 Featured on Microsoft Store:</h3>
             <p>
-                <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
+                <a href="https://apps.microsoft.com/detail/9ngfc27j1vbx" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
             </p>
 
             <h3>🔥 Featured on Softpedia:</h3>
