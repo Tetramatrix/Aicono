@@ -439,8 +439,10 @@ function smartScrollToSection(targetId) {
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#manual-configuration')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#final-download')">⬆️</span>
-            Aicono offers extensive configuration options. Here are key tips to help you achieve optimal results.
-            
+            <p>
+                Aicono offers extensive configuration options. Here are key tips to help you achieve optimal results.
+            </p>
+
             <h3>1. REQUIRED: Disable Windows "Auto-Arrange"</h3>
             <p>
                 Aicono needs full control to move your icons. If Windows is also trying to manage them, your layout will break or won't apply correctly.
