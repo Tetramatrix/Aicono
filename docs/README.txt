@@ -62,8 +62,8 @@ Note: Larger models can provide better grouping, but require more memory and pro
 
 
 # 📥 Downloads:
-- 🆕 Latest version: Aicono.exe v1.0.6
-- 🔢 MD5 Checksum (.exe): 175f645fce9603f7f1f258f06a95482b
+- 🆕 Latest version: Aicono.exe v1.0.7
+- 🔢 MD5 Checksum (.exe): dd3adecf6ffca43f9f5468c0eefafdb5
 - 📥 Download: http://tetramatrix.github.io/Aicono
 
 
@@ -120,6 +120,14 @@ for optimal performance and efficiency.
 
 
 Changelog: 
+
+📅 March 12, 2026 - Version 1.0.7
+
+• Update Llama.cpp b872
+• Bugfix : Llama.cpp support for AMD GPU
+• Bugfix : Built-in model organize function
+• minor core engine update ( bugfixes, stability, architecture)
+• smaller binary 
 
 📅 February 14, 2026 - Version 1.0.4 - 1.0.6
 
