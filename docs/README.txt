@@ -62,8 +62,8 @@ Note: Larger models can provide better grouping, but require more memory and pro
 
 
 # 📥 Downloads:
-- 🆕 Latest version: Aicono.exe v1.0.8
-- 🔢 MD5 Checksum (.exe): 108de31745fbd2adf433c06daac99ab1
+- 🆕 Latest version: Aicono.exe v1.0.9
+- 🔢 MD5 Checksum (.exe): a8257272c449df194f35a2d8626d3a7e
 - 📥 Download: http://tetramatrix.github.io/Aicono
 
 
@@ -121,12 +121,16 @@ for optimal performance and efficiency.
 
 Changelog: 
 
+📅 March 15, 2026 — Version 1.0.9
+
+• Bugfix: ssl certificate
+
 📅 March 14, 2026 — Version 1.0.8
 
-• Major: AI core completely rewritten — now powered by Pith SDK                                                                                         
-  • Scalable batch processing: handles thousands of items (no single-prompt limits)                                                                           
+• Major: AI core completely rewritten — now powered by Pith SDK                                                                       
+  • Scalable batch processing: handles thousands of items (no single-prompt limits)                                                   
   • Smart prompt tiers optimized for 1B, 8B, and 30B models                                             
-  • Breakthrough: Small models (1B, 8B) achieve now accurate grouping & categorization                                                                      
+  • Breakthrough: Small models (1B, 8B) achieve now accurate grouping & categorization                                              
 • Major: Externalized Llama.cpp with automatic download & caching
 • Major: Much smaller binary
 • Internal: Core engine refactored for improved stability
