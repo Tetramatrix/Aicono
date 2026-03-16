@@ -121,6 +121,10 @@ for optimal performance and efficiency.
 
 Changelog: 
 
+📅 March 16, 2026 — Version 1.0.10
+
+• Bugfix: pith-sdk batch size
+
 📅 March 15, 2026 — Version 1.0.9
 
 • Bugfix: ssl certificate

@@ -62,7 +62,7 @@ Note: Larger models can provide better grouping, but require more memory and pro
 
 
 # 📥 Downloads:
-- 🆕 Latest version: Aicono.exe v1.0.9
+- 🆕 Latest version: Aicono.exe v1.0.10
 - 🔢 MD5 Checksum (.exe): 6796bfb40de5439e2f3a72b942bde4b0
 - 📥 Download: http://tetramatrix.github.io/Aicono
 
@@ -120,6 +120,10 @@ for optimal performance and efficiency.
 
 
 Changelog: 
+
+📅 March 16, 2026 — Version 1.0.9
+
+• Bugfix: pith-sdk batch size
 
 📅 March 15, 2026 — Version 1.0.9
 
