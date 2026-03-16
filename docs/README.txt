@@ -62,8 +62,8 @@ Note: Larger models can provide better grouping, but require more memory and pro
 
 
 # 📥 Downloads:
-- 🆕 Latest version: Aicono.exe v1.0.9
-- 🔢 MD5 Checksum (.exe): a8257272c449df194f35a2d8626d3a7e
+- 🆕 Latest version: Aicono.exe v1.0.10
+- 🔢 MD5 Checksum (.exe): 6796bfb40de5439e2f3a72b942bde4b0
 - 📥 Download: http://tetramatrix.github.io/Aicono
 
 
