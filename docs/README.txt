@@ -144,7 +144,6 @@ Changelog:
 • Bugfix: Model Manager select and activate model
 • Bugfix: Splash screen freeze
 
-
 📅 March 12, 2026 - Version 1.0.7
 
 • Update Llama.cpp b8272
