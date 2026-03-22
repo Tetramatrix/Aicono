@@ -78,47 +78,6 @@ Note: Larger models can provide better grouping, but require more memory and pro
 
 💡 The visual editor eliminates the need for manual configuration, making fine-tuning accessible to all users.
 
-
-### 💰 Support the Development
-
-💝 If you find Aicono useful, please consider donating to support ongoing development!
-
-🪙 Bitcoin Cash (BCH):
-bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
-
-💳 PayPal:
-paypal.me/Gigamegs
-
-🙏 Thank you for your support!
-
-☕ Buy us a coffee or support via PayPal or Bitcoin Cash !
-
-🚀 Discover our Spaceship! 🚀
-
-🎮 Retro Arcade 2d side-scroller bullet-hell shmup game: Spaceship
-
-🌐 https://tetramatrix.github.io/spaceship/
-🎮 https://www.indiedb.com/games/new-spaceship
-🎮 https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship
-### 🔍 Discover our other tools!
-
-# 🚀 RyzenZPilot - AMD Ryzen Power Management Tool
-
-⚙️ RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
-It allows users to adjust CPU performance, power limits, and thermal configurations
-for optimal performance and efficiency.
-
-🌐 Website: http://tetramatrix.github.io/RyzenZPilot
-
-
-# 🚀 Sorana - Visual AI Workspace
-
-🧠 Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, LLamacpp, Lemonade, Ollama), and keep your data under your control.
-
-🌐 Website: https://tetramatrix.github.io/Sorana/
-
-
-
 Changelog: 
 
 📅 March 16, 2026 — Version 1.0.10
@@ -190,3 +149,52 @@ Fixes:
 Resolved the issue where the application would close automatically after a single arrangement pass.
 
 Addressed "hit-or-miss" categorization by adding manual override capabilities via the visual editor.
+
+
+
+### 💰 Support the Development
+
+💝 If you find Aicono useful, please consider donating to support ongoing development!
+☕ Buy us a coffee or support via PayPal or Bitcoin Cash !
+
+🪙 Bitcoin Cash (BCH): bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
+💳 PayPal:paypal.me/Gigamegs
+
+🙏 Thank you for your support!
+
+
+🚀 Discover our Spaceship! 🚀
+
+🎮 Retro Arcade 2d side-scroller bullet-hell shmup game: Spaceship
+
+🌐 https://tetramatrix.github.io/spaceship/
+🎮 https://www.indiedb.com/games/new-spaceship
+🎮 https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship
+
+### 🔍 Discover our other tools!
+
+# 🚀 RyzenZPilot - AMD Ryzen Power Management Tool
+
+💻 RyzenZPilot - AMD Ryzen Power Management Tool
+
+RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
+It allows users to adjust CPU performance, power limits, and thermal configurations
+for optimal performance and efficiency.
+
+🌐 Website: http://tetramatrix.github.io/RyzenZPilot
+💬 Discord: https://discord.gg/4QkQSfSATF
+
+# 🚀 Sorana - Visual AI Workspace
+
+🧠 Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, LLamacpp, Lemonade, Ollama), and keep your data under your control.
+
+🌐 Website: https://tetramatrix.github.io/Sorana/
+📰 Softpedia: https://www.softpedia.com/get/System/File-Management/Sorana.shtml
+💬 Discord: https://discord.gg/4QkQSfSATF
+
+🧩 Discover our TabNeuron - AI spatial tab manager & research workspace 🧩
+
+TabNeuron breaks your browser tabs out of the tab bar and maps them onto an infinite 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups — all from a portable desktop app that runs fully offline with a built-in model.
+
+🌐 Website: http://tetramatrix.github.io/TabNeuron
+💬 Discord: https://discord.gg/4QkQSfSATF
