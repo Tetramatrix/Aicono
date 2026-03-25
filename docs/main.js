@@ -77,6 +77,16 @@ function toggleSection(h2Element) {
     // Toggle the section if found
     if (nextElement && nextElement.tagName === 'SECTION') {
         nextElement.classList.toggle('collapsed');
+        
+        // Update arrows in this section
+        const arrows = nextElement.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
+        arrows.forEach(function(arrow) {
+            if (nextElement.classList.contains('collapsed')) {
+                arrow.textContent = '+';
+            } else {
+                arrow.textContent = '−';
+            }
+        });
     }
 }
 
@@ -104,8 +114,8 @@ function toggleSectionFromArrow(arrowElement) {
         if (downArrow) downArrow.textContent = '+';
         if (upArrow) upArrow.textContent = '+';
     } else {
-        if (downArrow) downArrow.textContent = '-';
-        if (upArrow) upArrow.textContent = '-';
+        if (downArrow) downArrow.textContent = '−';
+        if (upArrow) upArrow.textContent = '−';
     }
 }
 
@@ -113,6 +123,19 @@ function toggleSectionFromArrow(arrowElement) {
  * Initialize collapsible sections
  */
 (function() {
+    // Collapse all sections by default
+    const allSections = document.querySelectorAll('main section');
+    allSections.forEach(function(section) {
+        section.classList.add('collapsed');
+    });
+    
+    // Set all arrows to + (collapsed state)
+    const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
+    allArrows.forEach(function(arrow) {
+        arrow.textContent = '+';
+    });
+    
+    // Initialize H2 collapsible functionality
     const h2Elements = document.querySelectorAll('main h2');
     h2Elements.forEach(function(h2) {
         h2.classList.add('collapsible');
