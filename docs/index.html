@@ -74,6 +74,31 @@
         section.collapsed {
             display: none;
         }
+
+        /* Nav toggle arrows */
+        .nav-arrow-down,
+        .nav-arrow-up {
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 1.2em;
+            user-select: none;
+            font-weight: bold;
+            background-color: rgba(0, 123, 255, 0.1);
+            color: #007bff;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-arrow-down:hover,
+        .nav-arrow-up:hover {
+            background-color: #007bff;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -118,8 +143,8 @@
     <h2>What is Aicono?</h2>
     <section class="what-is-aicono-section" id="what-is-aicono">
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#key-features')">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>Aicono is a Windows application that uses AI to group desktop icons by category (such as "Work," "Games," or "Utilities") and arranges them without overlaps in a customizable area. The layout can be fine-tuned using a visual preview tool.</p>
         </div>
     </section>

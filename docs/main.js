@@ -81,6 +81,35 @@ function toggleSection(h2Element) {
 }
 
 /**
+ * Toggle section from arrow button click
+ * @param {HTMLElement} arrowElement - The arrow span that was clicked
+ */
+function toggleSectionFromArrow(arrowElement) {
+    // Find the parent cta-box
+    const ctaBox = arrowElement.closest('.cta-box');
+    if (!ctaBox) return;
+    
+    // Find the parent section of the cta-box
+    const parentSection = ctaBox.closest('section');
+    if (!parentSection) return;
+    
+    // Toggle the section
+    parentSection.classList.toggle('collapsed');
+    
+    // Update arrow symbols in this cta-box only
+    const downArrow = ctaBox.querySelector('.nav-arrow-down');
+    const upArrow = ctaBox.querySelector('.nav-arrow-up');
+    
+    if (parentSection.classList.contains('collapsed')) {
+        if (downArrow) downArrow.textContent = '+';
+        if (upArrow) upArrow.textContent = '+';
+    } else {
+        if (downArrow) downArrow.textContent = '-';
+        if (upArrow) upArrow.textContent = '-';
+    }
+}
+
+/**
  * Initialize collapsible sections
  */
 (function() {
