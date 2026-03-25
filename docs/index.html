@@ -118,25 +118,23 @@ function smartScrollToSection(targetId) {
         <ul>
             <li><a href="#what-is-aicono">What is Aicono?</a></li>
             <li><a href="#key-features">Key Features</a></li>
-            <li><a href="#who-is-aicono-for">Who is Aicono For?</a></li>
-            <li><a href="#ai-fine-tuning">AI: Fine-Tuning & Manual Fallback</a></li>
+            <li><a href="#wysiwyg">Visual workspace</a></li>
+            <li><a href="#ai-fine-tuning">AI: How it works</a></li>
             <li><a href="#feature-comparison">Feature Comparison</a></li>
-            <li><a href="#practical-examples">Practical Usage Examples</a></li>
             <li><a href="#installation-setup">Installation & Setup</a></li>
             <li><a href="#system-requirements">System Requirements</a></li>
             <li><a href="#pro-tips">Pro-Tips</a></li>
-            <li><a href="#manual-configuration">Manual Configuration</a></li>
             <li><a href="#support-donations">Support & Donations</a></li>
             <li><a href="#other-products">Other Products</a></li>
         </ul>
     </nav>
 
     <!-- What is Aicono Section -->
+    <h2>What is Aicono?</h2>
     <section class="what-is-aicono-section" id="what-is-aicono">
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#key-features')">⬇️</span>
-            <span class="nav-arrow-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️</span>
-            <h2>What is Aicono?</h2>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-aicono')">⬆️</span>
             <p>Aicono is a Windows application that uses AI to group desktop icons by category (such as "Work," "Games," or "Utilities") and arranges them without overlaps in a customizable area. The layout can be fine-tuned using a visual preview tool.</p>
         </div>
     </section>
@@ -144,7 +142,7 @@ function smartScrollToSection(targetId) {
     <section class="intro-section" id="key-features">
         <h2>Key Features</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#who-is-aicono-for')">⬇️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#wysiwyg')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-aicono')">⬆️</span>
             <ul>
                 <li><strong>AI-Powered Grouping:</strong> Automatically categorizes icons logically into groups like Work, Games, and Utilities.</li>
@@ -169,7 +167,7 @@ function smartScrollToSection(targetId) {
         <!-- Screenshots Section -->
         <section class="screenshots-section">
             <div class="cta-box">
-                <span class="nav-arrow-down" onclick="smartScrollToSection('#download-section')">⬇️</span>
+                <span class="nav-arrow-down" onclick="smartScrollToSection('#wysiwyg')">⬇️</span>
                 <span class="nav-arrow-up" onclick="smartScrollToSection('#key-features')">⬆️</span>
                 <p>
                     <img src="desktop_clutter.png" alt="Cluttered Desktop Example" class="screenshot">
@@ -212,6 +210,7 @@ function smartScrollToSection(targetId) {
         -->
 
         <!-- Download Section -->
+        <!--
         <section class="download-section" id="download-section">
             <div class="cta-box">
                 <span class="nav-arrow-down" onclick="smartScrollToSection('#who-is-aicono-for')">⬇️</span>
@@ -233,28 +232,44 @@ function smartScrollToSection(targetId) {
                 <a href="https://apps.microsoft.com/detail/9ngfc27j1vbx" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="50%"/></a>
             </div>
         </section>
+				//-->
 
-        <section class="users-section" id="who-is-aicono-for">
-            <h2>Target Audience</h2>
-            <div class="cta-box">
-                <span class="nav-arrow-down" onclick="smartScrollToSection('#how-it-works')">⬇️</span>
-                <span class="nav-arrow-up" onclick="smartScrollToSection('#download-section')">⬆️</span>
-                <p>Aicono is designed for Windows users who want to organize their desktop icons efficiently, including gamers, students, professionals, and AI enthusiasts.</p>
-                <ul>
-                    <li><strong>Gamers:</strong> Group game icons neatly for quick access without desktop mess.</li>
-                    <li><strong>Students:</strong> Organize study files and apps in logical categories.</li>
-                    <li><strong>Professionals:</strong> Keep work tools grouped and arranged for efficiency.</li>
-                    <li><strong>AI Enthusiasts:</strong> Use configurable AI in a practical, free tool.</li>
-                </ul>
-            </div>
-        </section>
+		 <section class="wysiwyg-section" id="wysiwyg">
+        <h2>Visual Fine-Tuning with WYSIWYG Editor <span class="new-badge">🆕 NEW</span></h2>
 
+        <div class="cta-box">
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#ai-fine-tuning')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#key-features')">⬆️</span>
 
+        <p>Aicono features a full visual editor that allows you to fine-tune your desktop organization with a drag-and-drop interface.
+        	 If the AI does not classify an icon as desired, you can now adjust the results visually with our intuitive drag-and-drop editor:
+        </p>
+            <ol>
+                <li><strong>Drag & Drop Icons:</strong> Simply drag icons between groups to reclassify them. For example, if the AI placed <em>Steam</em> in <em>Work</em>, just drag it to the <em>Games</em> group.</li>
+                <li><strong>Resize & Reposition Groups:</strong> Adjust the size and position of icon groups directly on the canvas.</li>
+                <li><strong>Rename Groups:</strong> Click on group names to rename them according to your preferences.</li>
+                <li><strong>Visual Feedback:</strong> See changes in real-time as you make adjustments to your desktop layout.</li>
+            </ol>
+            
+            <h3>Visual Editor Features</h3>
+            <p>The WYSIWYG canvas editor provides:</p>
+            <ul>
+                <li>Real-time drag-and-drop reorganization</li>
+                <li>Visual boundary adjustment for groups</li>
+                <li>Renaming of groups and items</li>
+                <li>Preview of changes before applying</li>
+                <li>Automatic saving of your customizations</li>
+            </ul>
+ 			</div>
+ 		</section>
+
+    
+ 			  <h2>🧠 AI: How It Works</h2>
+             
     <section class="technical-section" id="ai-fine-tuning">
-        <h2>🧠 AI: How It Works & Visual Fine-Tuning</h2>
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#feature-comparison')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#how-it-works')">⬆️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#wysiwyg')">⬆️</span>
         <h3>AI Model Performance & Results</h3>
         <p>Aicono uses AI models to intelligently group desktop icons based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify icons perfectly, especially for less common applications, which can lead to "hit-or-miss" results. For optimal performance, we recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the number of desktop icons - fewer icons mean faster processing times. Advanced users can leverage the full-featured model manager to connect larger or custom models for improved accuracy, but this may require more system resources. Naturally, the best performance is achieved with paid cloud services.</p>
 
@@ -285,23 +300,13 @@ function smartScrollToSection(targetId) {
         </ul>
 
         <p><strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of icons - fewer icons result in faster processing. For the best performance, especially with large desktops, we recommend using paid cloud services.</p>
-        
-        <h3>Visual Fine-Tuning with WYSIWYG Editor <span class="new-badge">🆕 NEW</span></h3>
-        <p>
-            If the AI does not classify an icon as desired, you can now adjust the results visually with our intuitive drag-and-drop editor:
-        </p>
-        <ol>
-            <li><strong>Drag & Drop:</strong> Simply drag icons between groups to reclassify them visually.</li>
-            <li><strong>Group Management:</strong> Resize, reposition, and rename groups directly on the canvas.</li>
-            <li><strong>Real-Time Preview:</strong> See changes immediately as you make adjustments.</li>
-        </ol>
         </div>
     </section>
 
     <section class="comparison-section" id="feature-comparison">
         <h2>Key Differentiators</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#practical-examples')">⬇️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#ai-fine-tuning')">⬆️</span>
             <p>Aicono provides advanced desktop organization capabilities through AI-driven classification and spatial layout algorithms.</p>
 
@@ -359,31 +364,21 @@ function smartScrollToSection(targetId) {
         </div>
     </section>
 
-    <section class="examples-section" id="practical-examples">
-        <h2>Practical Usage Examples</h2>
-        <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#feature-comparison')">⬆️</span>
-            <p>Common use cases for Aicono:</p>
-            <ul>
-                <li><strong>Gaming Setup:</strong> Groups games in one area, clears rest for quick access.</li>
-                <li><strong>File Organization:</strong> Sorts documents by project categories.</li>
-                <li><strong>Work Environment:</strong> Arranges tools in a compact desktop zone.</li>
-                <li><strong>Academic Use:</strong> Groups school apps and files neatly.</li>
-            </ul>
-        </div>
-    </section>
-
     <section class="setup-section" id="installation-setup">
         <h2>Installation & Setup</h2>
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#system-requirements')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#practical-examples')">⬆️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#feature-comparison')">⬆️</span>
             <p>Simple setup process:</p>
             <ol>
                 <li><strong>Download:</strong> Get <code>Aicono.exe</code>.</li>
                 <li><strong>Launch:</strong> Double-click the file and wait for the main window.</li>
-                <li><strong>Configure:</strong> Open <em>Settings</em>, select your AI model and work area.</li>
+                <li><strong>Configure:</strong> 
+                	<ol><li>In <em>Model Manager</em>, select your AI model.</li>
+                			<li>In main window select working areay.</li>
+                		</ol>
+                </li>
+                <li><strong>Run:</strong>In main window click <em>Organize Desktop</em>.</li>
             </ol>
         </div>
     </section>
@@ -404,12 +399,14 @@ function smartScrollToSection(targetId) {
     </section>
 
     <!-- Final Download Section -->
+     <h2>🚀 Ready for an Organized Desktop? 🚀</h2>
     <section class="final-download-section" id="final-download">
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#pro-tips')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#system-requirements')">⬆️</span>
-            <h3>Download Aicono</h3>
-            <p>Try AI-based icon organization on your desktop.</p>
+           
+            <p>Download Aicono to organize your desktop with AI assistance.</p>
+
 
             <div class="download-buttons">
                 <a href="https://github.com/Tetramatrix/Aicono/raw/refs/heads/main/docs/Aicono.exe" class="btn btn-primary btn-large">Direct Download (Portable)</a>
@@ -431,7 +428,7 @@ function smartScrollToSection(targetId) {
     <section class="pro-tips-section" id="pro-tips">
         <h2>Configuration Tips</h2>
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#manual-configuration')">⬇️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#support-donations')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#final-download')">⬆️</span>
             <p>
                 Aicono offers extensive configuration options. Here are key tips to help you achieve optimal results.
@@ -461,43 +458,14 @@ function smartScrollToSection(targetId) {
         </div>
     </section>
 
-    <!-- Manual Configuration Section -->
-    <section class="manual-configuration-section" id="manual-configuration">
-        <h2>Visual Fine-Tuning with WYSIWYG Canvas Editor</h2>
-        <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#support-donations')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#pro-tips')">⬆️</span>
-            <p>Aicono features a full visual editor that allows you to fine-tune your desktop organization with a drag-and-drop interface.</p>
-            <ol>
-                <li><strong>Drag & Drop Icons:</strong> Simply drag icons between groups to reclassify them. For example, if the AI placed <em>Steam</em> in <em>Work</em>, just drag it to the <em>Games</em> group.</li>
-                <li><strong>Resize & Reposition Groups:</strong> Adjust the size and position of icon groups directly on the canvas.</li>
-                <li><strong>Rename Groups:</strong> Click on group names to rename them according to your preferences.</li>
-                <li><strong>Visual Feedback:</strong> See changes in real-time as you make adjustments to your desktop layout.</li>
-            </ol>
 
-            <h3>Visual Editor Features</h3>
-            <p>The WYSIWYG canvas editor provides:</p>
-            <ul>
-                <li>Real-time drag-and-drop reorganization</li>
-                <li>Visual boundary adjustment for groups</li>
-                <li>Renaming of groups and items</li>
-                <li>Preview of changes before applying</li>
-                <li>Automatic saving of your customizations</li>
-            </ul>
-        </div>
-    </section>
 
     <section class="support-section" id="support-donations">
         <h2>Support & Donations</h2>
-        <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#manual-configuration')">⬆️</span>
-            <p>Support Aicono development.</p>
-        </div>
 
         <div class="cta-box" id="discord-community">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#review-project')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#support-donations')">⬆️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#pro-tips')">⬆️</span>
             <h3>Join our Discord community</h3>
             <div class="external-links">
                 <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">Aicono Discord</a>
@@ -577,6 +545,16 @@ function smartScrollToSection(targetId) {
     <section class="other-products-section" id="other-products">
         <h2>Related Projects</h2>
 
+        <div class="cta-box" id="other-products-list">
+            <p>Check out our other products and tools:</p>
+            <ul>
+                <li><strong>🚀 Spaceship</strong> - Retro Arcade Mini Game</li>
+                <li><strong>⚡ RyzenZPilot</strong> - AMD Ryzen Power Management</li>
+                <li><strong>🤖 Sorana</strong> - Visual AI Workspacer</li>
+                <li><strong>🧩 TabNeuron</strong> - AI Spatial Tab Manager & Research Workspace</li>
+            </ul>
+        </div>
+        
         <h3>New Spaceship - Retro Mini Game:</h3>
         <div class="cta-box" id="spaceship-intro">
             <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬇️</span>
@@ -616,7 +594,7 @@ function smartScrollToSection(targetId) {
 
         <h3>Sorana - The Visual AI Workspace:</h3>
         <div class="cta-box" id="aicono-intro">
-            <span class="nav-arrow-down" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬇️</span>
+            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
             <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
             <p>Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, LLamacpp, Lemonade, Ollama), and keep your data under your control.</p>
 
@@ -637,6 +615,31 @@ function smartScrollToSection(targetId) {
                 <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
             </p>
         </div>
+        
+        
+        
+            <h3>🧩 TabNeuron - AI Spatial Tab Manager & Research Workspace</h3>
+              <div class="cta-box" id="aicono-intro">
+              	            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
+            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
+            <p>TabNeuron breaks your browser tabs out of the tab bar and maps them onto a 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups — all from a portable desktop app that runs fully offline with a built-in model.</p>
+            <figure class="screenshot-figure">
+                <a href="http://tetramatrix.github.io/TabNeuron" target="_blank"><img src="tabneuron.png" alt="TabNeuron AI Spatial Tab Manager Interface" class="sorana-screenshot"></a>
+                <figcaption>TabNeuron: Browser tabs organized on an infinite 2D canvas with AI-powered grouping</figcaption>
+            </figure>
+
+             <h4>Website & Community</h4>
+            <div class="download-buttons">
+                <a href="http://tetramatrix.github.io/TabNeuron" target="_blank" class="btn btn-primary">🌐 Website</a>
+                <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">💬 Discord</a>
+            </div>
+   
+               <h4>Featured on Microsoft Store:</h4>
+            <p>
+                <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
+            </p>
+        </div>
+        
     </section>
 
     <footer class="main-footer">
