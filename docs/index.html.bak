@@ -55,7 +55,7 @@
         }
 
         h2.collapsible::after {
-            content: '−';
+            content: '+';
             position: absolute;
             right: 10px;
             top: 50%;
@@ -67,7 +67,7 @@
         }
 
         h2.collapsible.collapsed::after {
-            content: '+';
+            content: '−';
         }
 
         /* Collapsible H3 sections */
@@ -84,7 +84,7 @@
         }
 
         h3.collapsible::after {
-            content: '−';
+            content: '+';
             position: absolute;
             right: 10px;
             top: 50%;
@@ -96,7 +96,7 @@
         }
 
         h3.collapsible.collapsed::after {
-            content: '+';
+            content: '−';
         }
 
         /* Collapsible sections */
@@ -172,7 +172,7 @@
     <main class="wikidoc">
         <header class="page-header">
             <h1>Aicono</h1>
-            <h3>An AI-powered desktop icon organizer for Windows</h3>
+            <h3 data-no-toggle`>An AI-powered desktop icon organizer for Windows</h3>
             <figure class="logo-container">
                 <img src="logo-3.png" alt="Aicono Logo" class="logo">
             </figure>
@@ -315,6 +315,7 @@
             </ol>
             
             <h3>Visual Editor Features</h3>
+            <div>
             <p>The WYSIWYG canvas editor provides:</p>
             <ul>
                 <li>Real-time drag-and-drop reorganization</li>
@@ -323,6 +324,7 @@
                 <li>Preview of changes before applying</li>
                 <li>Automatic saving of your customizations</li>
             </ul>
+            </div>
  			</div>
  		</section>
 
