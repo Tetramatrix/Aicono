@@ -70,9 +70,89 @@
             content: '+';
         }
 
+        /* Collapsible H3 sections */
+        h3.collapsible {
+            cursor: pointer;
+            position: relative;
+            padding-right: 40px;
+            user-select: none;
+            transition: color 0.2s ease;
+        }
+
+        h3.collapsible:hover {
+            color: #007bff;
+        }
+
+        h3.collapsible::after {
+            content: '−';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #666;
+            transition: transform 0.3s ease;
+        }
+
+        h3.collapsible.collapsed::after {
+            content: '+';
+        }
+
         /* Collapsible sections */
         section.collapsed {
             display: none;
+        }
+
+        /* Collapsible divs */
+        div.collapsed {
+            display: none;
+        }
+
+        /* Nav toggle arrows */
+        .nav-arrow-down,
+        .nav-arrow-up {
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 1.2em;
+            user-select: none;
+            font-weight: bold;
+            background-color: rgba(0, 123, 255, 0.1);
+            color: #007bff;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-arrow-down:hover,
+        .nav-arrow-up:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .back-to-top button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .back-to-top button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -104,7 +184,7 @@
             <li><a href="#what-is-aicono">What is Aicono?</a></li>
             <li><a href="#key-features">Key Features</a></li>
             <li><a href="#wysiwyg">Visual workspace</a></li>
-            <li><a href="#ai-fine-tuning">AI: How it works</a></li>
+            <li><a href="#ai-fine-tuning">AI Model Performance & Results</a></li>
             <li><a href="#feature-comparison">Feature Comparison</a></li>
             <li><a href="#installation-setup">Installation & Setup</a></li>
             <li><a href="#system-requirements">System Requirements</a></li>
@@ -118,17 +198,17 @@
     <h2>What is Aicono?</h2>
     <section class="what-is-aicono-section" id="what-is-aicono">
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#key-features')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-aicono')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>Aicono is a Windows application that uses AI to group desktop icons by category (such as "Work," "Games," or "Utilities") and arranges them without overlaps in a customizable area. The layout can be fine-tuned using a visual preview tool.</p>
         </div>
     </section>
 
 		<h2>Key Features</h2>
-      <section class="intro-section" id="key-features">   
+      <section class="intro-section" id="key-features">
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#wysiwyg')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#what-is-aicono')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <ul>
                 <li><strong>AI-Powered Grouping:</strong> Automatically categorizes icons logically into groups like Work, Games, and Utilities.</li>
                 <li><strong>Spatial Layout:</strong> Aicono positions icon groups, ensuring each group is cohesive, clearly separated, and fits within your custom "Working Area" without any overlaps.</li>
@@ -150,8 +230,8 @@
         </div>
 
             <div class="cta-box">
-                <span class="nav-arrow-down" onclick="smartScrollToSection('#wysiwyg')">⬇️</span>
-                <span class="nav-arrow-up" onclick="smartScrollToSection('#key-features')">⬆️</span>
+                <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+                <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
                 <p>
                     <img src="desktop_clutter.png" alt="Cluttered Desktop Example" class="screenshot">
                     <br><em>Cluttered desktop before using Aicono – icons scattered everywhere!</em>
@@ -196,8 +276,8 @@
         <!--
         <section class="download-section" id="download-section">
             <div class="cta-box">
-                <span class="nav-arrow-down" onclick="smartScrollToSection('#who-is-aicono-for')">⬇️</span>
-                <span class="nav-arrow-up" onclick="smartScrollToSection('#screenshots-section')">⬆️</span>
+                <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+                <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
                 <h3>🚀 Ready for an Organized Desktop? 🚀</h3>
                 <p>Download Aicono to organize your desktop with AI assistance.</p>
 
@@ -221,8 +301,8 @@
 		 <section class="wysiwyg-section" id="wysiwyg">
 
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#ai-fine-tuning')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#key-features')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
 
         <p>Aicono features a full visual editor that allows you to fine-tune your desktop organization with a drag-and-drop interface.
         	 If the AI does not classify an icon as desired, you can now adjust the results visually with our intuitive drag-and-drop editor:
@@ -247,31 +327,35 @@
  		</section>
 
     
- 		<h2>🧠 AI: How It Works</h2>             
+ 		<h2>🧠 AI Model Performance & Results</h2>
     <section class="technical-section" id="ai-fine-tuning">
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#feature-comparison')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#wysiwyg')">⬆️</span>
-        <h3>AI Model Performance & Results</h3>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
         <p>Aicono uses AI models to intelligently group desktop icons based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify icons perfectly, especially for less common applications, which can lead to "hit-or-miss" results. For optimal performance, we recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the number of desktop icons - fewer icons mean faster processing times. Advanced users can leverage the full-featured model manager to connect larger or custom models for improved accuracy, but this may require more system resources. Naturally, the best performance is achieved with paid cloud services.</p>
 
         <h3>Hardware Requirements</h3>
+       	<div>
         <ul>
             <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (12-16GB)</li>
             <li><strong>Recommended 8B Models</strong> (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation</li>
             <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
             <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
         </ul>
-
+				</div>
+        
         <h3>Alternatives for Limited Hardware</h3>
+        <div>
         <p>If your system has limited hardware resources, you have two main options:</p>
         <ul>
             <li><strong>Built-in Portable Model:</strong> Works fully offline but may classify complex icons as "Miscellaneous"</li>
             <li><strong>Cloud-based LLMs:</strong> Connect to services like OpenAI, Mistral, etc. for high accuracy without local hardware costs</li>
         </ul>
-
+				</div>
+				
         <h3>Model Management</h3>
-        <p>Built-in Models: Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex icons as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</p>
+        <div>
+        	        <p>Built-in Models: Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex icons as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</p>
 
         <p><strong>AI Integration:</strong> Supports connection to both on-prem and cloud-based AI services:</p>
         <ul>
@@ -283,14 +367,15 @@
 
         <p><strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of icons - fewer icons result in faster processing. For the best performance, especially with large desktops, we recommend using paid cloud services.</p>
         </div>
+        </div>
     </section>
 
  			<h2>Key Differentiators</h2>
   	 <section class="comparison-section" id="feature-comparison">
-       
+
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#installation-setup')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ai-fine-tuning')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>Aicono provides advanced desktop organization capabilities through AI-driven classification and spatial layout algorithms.</p>
 
             <table class="feature-table">
@@ -349,10 +434,10 @@
 
  <h2>Installation & Setup</h2>
     <section class="setup-section" id="installation-setup">
-       
+
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#system-requirements')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#feature-comparison')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>Simple setup process:</p>
             <ol>
                 <li><strong>Download:</strong> Get <code>Aicono.exe</code>.</li>
@@ -369,10 +454,10 @@
 
 <h2>System Requirements</h2>
     <section class="requirements-section" id="system-requirements">
-        
+
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#final-download')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#installation-setup')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <table class="req-table">
             <tr><th>Component</th><th>Minimum</th></tr>
             <tr><td>OS</td><td>Windows 11 (64-bit)</td></tr>
@@ -387,8 +472,8 @@
      <h2>🚀 Ready for an Organized Desktop? 🚀</h2>
     <section class="final-download-section" id="final-download">
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#pro-tips')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#system-requirements')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
            
             <p>Download Aicono to organize your desktop with AI assistance.</p>
 
@@ -412,10 +497,10 @@
     <!-- Pro Tips Section -->
      <h2>Configuration Tips</h2>
     <section class="pro-tips-section" id="pro-tips">
-       
+
         <div class="cta-box">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#support-donations')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#final-download')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <p>
                 Aicono offers extensive configuration options. Here are key tips to help you achieve optimal results.
             </p>
@@ -447,29 +532,29 @@
 
 <h2>Support & Donations</h2>
     <section class="support-section" id="support-donations">
-        
 
+				<h3>Join our Discord community</h3>
         <div class="cta-box" id="discord-community">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#review-project')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#pro-tips')">⬆️</span>
-            <h3>Join our Discord community</h3>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+            
             <div class="external-links">
                 <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">Aicono Discord</a>
             </div>
         </div>
 
         <div class="cta-box" id="review-project">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#paypal-bch')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#support-donations')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
             <h3>If you find Aicono useful, please consider leaving a review or starring the project on</h3>
              
             <a href="https://alternativeto.net/software/aicono" title="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🧠 The AI intelligent desktop icon autopilot for Windows! 🎯" /></a>
       </div>
 
+				<h3>☕ Buy me a coffee or support via PayPal or Bitcoin Cash!</h3>
         <div class="cta-box" id="paypal-bch">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#featured-listings')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#review-project')">⬆️</span>
-            <h3>☕ Buy me a coffee or support via PayPal or Bitcoin Cash!</h3>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>            
             <div class="payment-options">
                 <div style="display: flex; justify-content: space-between; gap: 20px;">
                     <div class="paypal-option" style="flex: 1;">
@@ -498,10 +583,11 @@
             </div>
         </div>
 
+			<h3>🔥 Featured on Microsoft Store:</h3>
         <div class="cta-box" id="featured-listings">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#paypal-bch')">⬆️</span>
-            <h3>🔥 Featured on Microsoft Store:</h3>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+            
             <p>
                 <a href="https://apps.microsoft.com/detail/9ngfc27j1vbx" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
             </p>
@@ -528,8 +614,9 @@
         </div>
     </section>
 
+ <h2>Related Projects</h2>
     <section class="other-products-section" id="other-products">
-        <h2>Related Projects</h2>
+       
 
         <div class="cta-box" id="other-products-list">
             <p>Check out our other products and tools:</p>
@@ -543,8 +630,8 @@
         
         <h3>New Spaceship - Retro Mini Game:</h3>
         <div class="cta-box" id="spaceship-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#featured-listings')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
 
            <h4>Featured on itch.io:</h4>
            <div class="embed-container">
@@ -563,8 +650,8 @@
 
         <h3>RyzenZPilot - Dynamic Power Management Tool:</h3>
         <div class="cta-box" id="ryzenzpilot-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#aicono-intro')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#spaceship-intro')">⬆️</span>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
 
         <h4>Featured on AlternativeTo:</h4>
         <a href="https://alternativeto.net/software/ryzenzpilot" title="Dynamic power management solution for AMD Ryzen processors" target="_blank"><img src="AlternativeTo.png" width="20%" alt="RyzenZPilot - Dynamic Power Management Tool" /></a>
@@ -580,9 +667,9 @@
 
         <h3>Sorana - The Visual AI Workspace:</h3>
         <div class="cta-box" id="aicono-intro">
-            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
-            <p>Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files. Using semantic AI analysis, it automatically groups related files and folders onto a spatial 2D canvas, replacing traditional hierarchies with intuitive visual layouts. Build drag-and-drop workspaces and no-code agent pipelines, connect to on-prem or cloud AI backends (OpenAI, Mistral, LLamacpp, Lemonade, Ollama), and keep your data under your control.</p>
+            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+            <p>Sorana is an AI-powered visual workspace that transforms how you organize and interact with digital files.</p>
 
             <h4>Homepage:</h4>
             <p>
@@ -605,10 +692,10 @@
         
         
             <h3>🧩 TabNeuron - AI Spatial Tab Manager & Research Workspace</h3>
-              <div class="cta-box" id="aicono-intro">
-              	            <span class="nav-arrow-down" onclick="smartScrollToSection('#other-products')">⬇️</span>
-            <span class="nav-arrow-up" onclick="smartScrollToSection('#ryzenzpilot-intro')">⬆️</span>
-            <p>TabNeuron breaks your browser tabs out of the tab bar and maps them onto a 2D canvas. AI automatically groups them by content, you can chat with any page or the live internet, deploy no-code research agents, and sync your layout back to Chrome Tab Groups — all from a portable desktop app that runs fully offline with a built-in model.</p>
+              <div class="cta-box" id="tabneuron-intro">
+                <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
+                <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
+                <p>TabNeuron breaks your browser tabs out of the tab bar and maps them onto a 2D canvas.</p>
             <figure class="screenshot-figure">
                 <a href="http://tetramatrix.github.io/TabNeuron" target="_blank"><img src="tabneuron.png" alt="TabNeuron AI Spatial Tab Manager Interface" class="sorana-screenshot"></a>
                 <figcaption>TabNeuron: Browser tabs organized on an infinite 2D canvas with AI-powered grouping</figcaption>
@@ -627,6 +714,13 @@
         </div>
         
     </section>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <button onclick="smartScrollToSection('#what-is-aicono')" title="Back to Table of Contents">
+            ⬆️ Back to Top
+        </button>
+    </div>
 
     <footer class="main-footer">
         <p class="footer-text">

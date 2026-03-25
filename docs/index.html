@@ -70,8 +70,42 @@
             content: '+';
         }
 
+        /* Collapsible H3 sections */
+        h3.collapsible {
+            cursor: pointer;
+            position: relative;
+            padding-right: 40px;
+            user-select: none;
+            transition: color 0.2s ease;
+        }
+
+        h3.collapsible:hover {
+            color: #007bff;
+        }
+
+        h3.collapsible::after {
+            content: '−';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #666;
+            transition: transform 0.3s ease;
+        }
+
+        h3.collapsible.collapsed::after {
+            content: '+';
+        }
+
         /* Collapsible sections */
         section.collapsed {
+            display: none;
+        }
+
+        /* Collapsible divs */
+        div.collapsed {
             display: none;
         }
 
@@ -150,7 +184,7 @@
             <li><a href="#what-is-aicono">What is Aicono?</a></li>
             <li><a href="#key-features">Key Features</a></li>
             <li><a href="#wysiwyg">Visual workspace</a></li>
-            <li><a href="#ai-fine-tuning">AI: How it works</a></li>
+            <li><a href="#ai-fine-tuning">AI Model Performance & Results</a></li>
             <li><a href="#feature-comparison">Feature Comparison</a></li>
             <li><a href="#installation-setup">Installation & Setup</a></li>
             <li><a href="#system-requirements">System Requirements</a></li>
@@ -281,6 +315,7 @@
             </ol>
             
             <h3>Visual Editor Features</h3>
+            <div>
             <p>The WYSIWYG canvas editor provides:</p>
             <ul>
                 <li>Real-time drag-and-drop reorganization</li>
@@ -289,35 +324,40 @@
                 <li>Preview of changes before applying</li>
                 <li>Automatic saving of your customizations</li>
             </ul>
+            </div>
  			</div>
  		</section>
 
     
- 		<h2>🧠 AI: How It Works</h2>
+ 		<h2>🧠 AI Model Performance & Results</h2>
     <section class="technical-section" id="ai-fine-tuning">
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-        <h3>AI Model Performance & Results</h3>
         <p>Aicono uses AI models to intelligently group desktop icons based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify icons perfectly, especially for less common applications, which can lead to "hit-or-miss" results. For optimal performance, we recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the number of desktop icons - fewer icons mean faster processing times. Advanced users can leverage the full-featured model manager to connect larger or custom models for improved accuracy, but this may require more system resources. Naturally, the best performance is achieved with paid cloud services.</p>
 
         <h3>Hardware Requirements</h3>
+       	<div>
         <ul>
             <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (12-16GB)</li>
             <li><strong>Recommended 8B Models</strong> (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation</li>
             <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
             <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
         </ul>
-
+				</div>
+        
         <h3>Alternatives for Limited Hardware</h3>
+        <div>
         <p>If your system has limited hardware resources, you have two main options:</p>
         <ul>
             <li><strong>Built-in Portable Model:</strong> Works fully offline but may classify complex icons as "Miscellaneous"</li>
             <li><strong>Cloud-based LLMs:</strong> Connect to services like OpenAI, Mistral, etc. for high accuracy without local hardware costs</li>
         </ul>
-
+				</div>
+				
         <h3>Model Management</h3>
-        <p>Built-in Models: Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex icons as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</p>
+        <div>
+        	        <p>Built-in Models: Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex icons as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</p>
 
         <p><strong>AI Integration:</strong> Supports connection to both on-prem and cloud-based AI services:</p>
         <ul>
@@ -328,6 +368,7 @@
         </ul>
 
         <p><strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of icons - fewer icons result in faster processing. For the best performance, especially with large desktops, we recommend using paid cloud services.</p>
+        </div>
         </div>
     </section>
 
@@ -494,11 +535,11 @@
 <h2>Support & Donations</h2>
     <section class="support-section" id="support-donations">
 
-
+				<h3>Join our Discord community</h3>
         <div class="cta-box" id="discord-community">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <h3>Join our Discord community</h3>
+            
             <div class="external-links">
                 <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">Aicono Discord</a>
             </div>
@@ -512,10 +553,10 @@
             <a href="https://alternativeto.net/software/aicono" title="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🧠 The AI intelligent desktop icon autopilot for Windows! 🎯" /></a>
       </div>
 
+				<h3>☕ Buy me a coffee or support via PayPal or Bitcoin Cash!</h3>
         <div class="cta-box" id="paypal-bch">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
-            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <h3>☕ Buy me a coffee or support via PayPal or Bitcoin Cash!</h3>
+            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>            
             <div class="payment-options">
                 <div style="display: flex; justify-content: space-between; gap: 20px;">
                     <div class="paypal-option" style="flex: 1;">
@@ -544,10 +585,11 @@
             </div>
         </div>
 
+			<h3>🔥 Featured on Microsoft Store:</h3>
         <div class="cta-box" id="featured-listings">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <h3>🔥 Featured on Microsoft Store:</h3>
+            
             <p>
                 <a href="https://apps.microsoft.com/detail/9ngfc27j1vbx" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
             </p>

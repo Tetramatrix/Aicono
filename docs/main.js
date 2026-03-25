@@ -91,6 +91,25 @@ function toggleSection(h2Element) {
 }
 
 /**
+ * Toggle the visibility of a div associated with an H3 element
+ * @param {HTMLElement} h3Element - The H3 element that was clicked
+ */
+function toggleH3Section(h3Element) {
+    h3Element.classList.toggle('collapsed');
+    
+    // Find the next div element following this h3
+    let nextElement = h3Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+    
+    // Toggle the div if found
+    if (nextElement && nextElement.tagName === 'DIV') {
+        nextElement.classList.toggle('collapsed');
+    }
+}
+
+/**
  * Toggle section from arrow button click
  * @param {HTMLElement} arrowElement - The arrow span that was clicked
  */
@@ -129,6 +148,20 @@ function toggleSectionFromArrow(arrowElement) {
         section.classList.add('collapsed');
     });
     
+    // Collapse all H3 divs by default
+    const h3Elements = document.querySelectorAll('main h3');
+    h3Elements.forEach(function(h3) {
+        h3.classList.add('collapsible');
+        // Find and collapse the next div
+        let nextElement = h3.nextElementSibling;
+        while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+            nextElement = nextElement.nextElementSibling;
+        }
+        if (nextElement && nextElement.tagName === 'DIV') {
+            nextElement.classList.add('collapsed');
+        }
+    });
+    
     // Set all arrows to + (collapsed state)
     const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
     allArrows.forEach(function(arrow) {
@@ -143,6 +176,16 @@ function toggleSectionFromArrow(arrowElement) {
             // Don't toggle if clicking on a link inside the h2
             if (e.target.tagName !== 'A') {
                 toggleSection(h2);
+            }
+        });
+    });
+    
+    // Initialize H3 collapsible functionality (toggle next div)
+    h3Elements.forEach(function(h3) {
+        h3.addEventListener('click', function(e) {
+            // Don't toggle if clicking on a link inside the h3
+            if (e.target.tagName !== 'A') {
+                toggleH3Section(h3);
             }
         });
     });
