@@ -82,9 +82,9 @@ function toggleSection(h2Element) {
         const arrows = nextElement.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
         arrows.forEach(function(arrow) {
             if (nextElement.classList.contains('collapsed')) {
-                arrow.textContent = '+';
+                arrow.textContent = '+';  // collapsed = plus
             } else {
-                arrow.textContent = '−';
+                arrow.textContent = '−';  // open = minus
             }
         });
     }
@@ -117,24 +117,34 @@ function toggleSectionFromArrow(arrowElement) {
     // Find the parent cta-box
     const ctaBox = arrowElement.closest('.cta-box');
     if (!ctaBox) return;
-    
+
     // Find the parent section of the cta-box
     const parentSection = ctaBox.closest('section');
     if (!parentSection) return;
-    
+
     // Toggle the section
     parentSection.classList.toggle('collapsed');
-    
+
     // Update arrow symbols in this cta-box only
     const downArrow = ctaBox.querySelector('.nav-arrow-down');
     const upArrow = ctaBox.querySelector('.nav-arrow-up');
-    
+
     if (parentSection.classList.contains('collapsed')) {
-        if (downArrow) downArrow.textContent = '+';
+        if (downArrow) downArrow.textContent = '+';  // collapsed = plus
         if (upArrow) upArrow.textContent = '+';
     } else {
-        if (downArrow) downArrow.textContent = '−';
+        if (downArrow) downArrow.textContent = '−';  // open = minus
         if (upArrow) upArrow.textContent = '−';
+    }
+    
+    // Also update the H2 symbol if there is one in this section
+    const h2InSection = parentSection.querySelector('h2');
+    if (h2InSection) {
+        if (parentSection.classList.contains('collapsed')) {
+            h2InSection.classList.add('collapsed');
+        } else {
+            h2InSection.classList.remove('collapsed');
+        }
     }
 }
 
@@ -147,10 +157,13 @@ function toggleSectionFromArrow(arrowElement) {
     allSections.forEach(function(section) {
         section.classList.add('collapsed');
     });
-    
+
     // Collapse all H3 divs by default
     const h3Elements = document.querySelectorAll('main h3');
     h3Elements.forEach(function(h3) {
+        // Skip if data-no-toggle is set
+        if (h3.getAttribute('data-no-toggle') === 'true') return;
+        
         h3.classList.add('collapsible');
         // Find and collapse the next div
         let nextElement = h3.nextElementSibling;
@@ -161,16 +174,19 @@ function toggleSectionFromArrow(arrowElement) {
             nextElement.classList.add('collapsed');
         }
     });
-    
+
     // Set all arrows to + (collapsed state)
     const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
     allArrows.forEach(function(arrow) {
         arrow.textContent = '+';
     });
-    
+
     // Initialize H2 collapsible functionality
     const h2Elements = document.querySelectorAll('main h2');
     h2Elements.forEach(function(h2) {
+        // Skip if data-no-toggle is set
+        if (h2.getAttribute('data-no-toggle') === 'true') return;
+        
         h2.classList.add('collapsible');
         h2.addEventListener('click', function(e) {
             // Don't toggle if clicking on a link inside the h2
@@ -179,9 +195,12 @@ function toggleSectionFromArrow(arrowElement) {
             }
         });
     });
-    
+
     // Initialize H3 collapsible functionality (toggle next div)
     h3Elements.forEach(function(h3) {
+        // Skip if data-no-toggle is set
+        if (h3.getAttribute('data-no-toggle') === 'true') return;
+        
         h3.addEventListener('click', function(e) {
             // Don't toggle if clicking on a link inside the h3
             if (e.target.tagName !== 'A') {
