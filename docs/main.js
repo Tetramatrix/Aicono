@@ -9,6 +9,11 @@
 function scrollToSection(targetId) {
     const targetElement = document.getElementById(targetId.replace('#', ''));
     if (targetElement) {
+        // If target is an H2, toggle its section open first
+        if (targetElement.tagName === 'H2') {
+            toggleSection(targetElement);
+        }
+        
         // Überprüfe, ob das Element bereits sichtbar ist
         const rect = targetElement.getBoundingClientRect();
         const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
@@ -37,6 +42,11 @@ function scrollToSection(targetId) {
 function smartScrollToSection(targetId) {
     const targetElement = document.getElementById(targetId.replace('#', ''));
     if (targetElement) {
+        // If target is an H2, toggle its section open first
+        if (targetElement.tagName === 'H2') {
+            toggleSection(targetElement);
+        }
+        
         const rect = targetElement.getBoundingClientRect();
         const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
 
