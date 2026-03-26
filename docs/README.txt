@@ -61,8 +61,8 @@ Note: Larger models can provide better grouping, but require more memory and pro
 
 
 # 📥 Downloads:
-- 🆕 Latest version: Aicono.exe v1.0.10
-- 🔢 MD5 Checksum (.exe): 6796bfb40de5439e2f3a72b942bde4b0
+- 🆕 Latest version: Aicono.exe v1.0.13
+- 🔢 MD5 Checksum (.exe): 2851c128fa496eb9d5952076aa942a3a
 - 📥 Download: http://tetramatrix.github.io/Aicono
 
 
@@ -78,6 +78,10 @@ Note: Larger models can provide better grouping, but require more memory and pro
 💡 The visual editor eliminates the need for manual configuration, making fine-tuning accessible to all users.
 
 Changelog: 
+
+📅 March 26, 2026 — Version 1.0.11 - 1.0.13
+
+Bugfix: icon placement
 
 📅 March 16, 2026 — Version 1.0.10
 
