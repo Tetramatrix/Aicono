@@ -198,27 +198,8 @@
         <div class="cta-box">
             <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
             <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-        <p>Aicono uses AI models to intelligently group desktop icons based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify icons perfectly, especially for less common applications, which can lead to "hit-or-miss" results. For optimal performance, we recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the number of desktop icons - fewer icons mean faster processing times. Advanced users can leverage the full-featured model manager to connect larger or custom models for improved accuracy, but this may require more system resources. Naturally, the best performance is achieved with paid cloud services.</p>
+        <p>Aicono uses AI models to intelligently group desktop icons based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify icons perfectly, especially for less common applications, which can lead to "hit-or-miss" results. For optimal performance, we recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the number of desktop icons - fewer icons mean faster processing times. Advanced users can leverage the full-featured model manager to connect larger or custom models for improved accuracy, but this may require more system resources. Naturally, the best performance is achieved with cloud services.</p>
 
-        <h3>Hardware Requirements</h3>
-       	<div>
-        <ul>
-            <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (12-16GB)</li>
-            <li><strong>Recommended 8B Models</strong> (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation</li>
-            <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
-            <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
-        </ul>
-				</div>
-        
-        <h3>Alternatives for Limited Hardware</h3>
-        <div>
-        <p>If your system has limited hardware resources, you have two main options:</p>
-        <ul>
-            <li><strong>Built-in Portable Model:</strong> Works fully offline but may classify complex icons as "Miscellaneous"</li>
-            <li><strong>Cloud-based LLMs:</strong> Connect to services like OpenAI, Mistral, etc. for high accuracy without local hardware costs</li>
-        </ul>
-				</div>
-				
         <h3>Model Management</h3>
         <div>
         	        <p>Built-in Models: Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex icons as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</p>
@@ -230,71 +211,19 @@
             <li><strong>Cloud Services:</strong> OpenAI, Mistral, and other cloud-based AI platforms (paid services provide the best performance)</li>
             <li><strong>Configuration:</strong> Switch between different AI backends based on requirements</li>
         </ul>
-
-        <p><strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of icons - fewer icons result in faster processing. For the best performance, especially with large desktops, we recommend using paid cloud services.</p>
+        
+        <h3>Hardware Requirements</h3>
+       	<div>
+        <ul>
+            <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (12-16GB)</li>
+            <li><strong>Recommended 8B Models</strong> (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation</li>
+            <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
+            <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
+        </ul>
+				</div>
+        
+        <p><strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of icons - fewer icons result in faster processing.</p>
         </div>
-        </div>
-    </section>
-
- 			<h2 id="feature-comparison-h2">Key Differentiators</h2>
-  	 <section class="comparison-section" id="feature-comparison">
-
-        <div class="cta-box">
-            <span class="nav-arrow-down" onclick="toggleSectionFromArrow(this)">-</span>
-            <span class="nav-arrow-up" onclick="toggleSectionFromArrow(this)">-</span>
-            <p>Aicono provides advanced desktop organization capabilities through AI-driven classification and spatial layout algorithms.</p>
-
-            <table class="feature-table">
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Aicono</th>
-                        <th>Other Tools</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="row-alt">
-                        <td><strong>AI Grouping</strong></td>
-                        <td>Semantic Classification</td>
-                        <td>Manual Grouping</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Layout Algorithm</strong></td>
-                        <td>Spatial No-Overlap</td>
-                        <td>Basic Arrange</td>
-                    </tr>
-                    <tr class="row-alt">
-                        <td><strong>Preview</strong></td>
-                        <td>Visual Tool (WYSIWYG)</td>
-                        <td>None</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Visual Editor</strong></td>
-                        <td>Full Canvas Editor with Drag & Drop</td>
-                        <td>None</td>
-                    </tr>
-                    <tr class="row-alt">
-                        <td><strong>Portability</strong></td>
-                        <td>No Installation Required</td>
-                        <td>Installer Required</td>
-                    </tr>
-                    <tr>
-                        <td><strong>AI Customization</strong></td>
-                        <td>Multiple Backend Support</td>
-                        <td>Limited Options</td>
-                    </tr>
-                    <tr class="row-alt">
-                        <td><strong>Configuration</strong></td>
-                        <td>Visual Interface</td>
-                        <td>Complex Configuration</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Cost</strong></td>
-                        <td>Free Community Edition</td>
-                        <td>Paid / Basic</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </section>
 
@@ -310,7 +239,7 @@
                 <li><strong>Launch:</strong> Double-click the file and wait for the main window.</li>
                 <li><strong>Configure:</strong> 
                 	<ol><li>In <em>Model Manager</em>, select your AI model.</li>
-                			<li>In main window select working areay.</li>
+                			<li>In main window select working area.</li>
                 		</ol>
                 </li>
                 <li><strong>Run:</strong>In main window click <em>Organize Desktop</em>.</li>
@@ -579,17 +508,14 @@
     </section>
 
     <!-- Back to Top Button -->
-    <div class="back-to-top">
-        <button onclick="smartScrollToSection('#what-is-aicono-h2')" title="Back to Table of Contents">
-            ⬆️ Back to Top
-        </button>
+    <div class="cta-box">
+        <p style="text-align:center; color:#888;"><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color:#888; text-decoration:none;">↑ Back to Top</a></p>
     </div>
 
     <footer class="main-footer">
         <p class="footer-text">
-            Developed by Tetramatrix | Optimized for Windows desktops | Free for everyone
-        </p>
-    </footer>
+            🏢 Developed by <b>Tetramatrix</b> | 🔧 Specially optimized for AMD Ryzen systems | 💝 Free for everyone
+    </p>
 
 </main>
 
