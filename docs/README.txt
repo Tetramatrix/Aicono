@@ -5,12 +5,11 @@ Aicono organizes a cluttered Windows desktop automatically by grouping icons wit
 ### Key features
 - Zero AI knowledge required: download, extract, run; default settings deliver grouping and layout on Windows 10/11 64‑bit.
 
-- Full Model Manager: connect to multiple cloud and on-prem LLM backends including OpenAI, Mistral, Ollama, Lemonade, Llamacpp, and other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
-
-- Multi-Service AI Integration: supports connection to both on-prem and cloud-based AI services:
-  - On-Prem Services: Ollama, Llamacpp, Lemonade, and other self-hosted LLM solutions
-  - Cloud Services: OpenAI, Mistral, and other cloud-based AI platforms
-  - Flexible Configuration: switch between different AI backends based on your needs, privacy requirements, and performance considerations
+🧠 Advanced Model Management: Connect to multiple cloud, on-prem and local LLM backends including OpenAI, Mistral, Lemonade, Llamacpp, LM Studio, Ollama and mnany other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
+es:
+  • Local and On-Prem Services: Lemonade, Llamacpp, LM Studio, Ollama and other self-hosted LLM solutions
+  • Cloud Services: OpenAI, Mistral, Gemini and other cloud-based AI platforms
+  • Flexible Configuration: Easily switch between different AI backends based on your needs, privacy requirements, and performance considerations
 
 - Full WYSIWYG Canvas Editor: direct manipulation of workspace elements. Drag and drop icons between groups, rearrange groups, rename items, and adjust group boundaries with an intuitive visual interface.
 
