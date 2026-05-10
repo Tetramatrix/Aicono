@@ -1294,7 +1294,7 @@ div.collapsed {
 /* ===== Feature Detail Toggle System ===== */
 .feature-detail-toggle {
   cursor: pointer;
-  margin: 0;
+  margin: 20px;
   padding: 12px 16px;
   background: linear-gradient(135deg, rgba(168, 216, 234, 0.1) 0%, rgba(168, 216, 234, 0.05) 100%);
   border: 1px solid rgba(168, 216, 234, 0.2);
