@@ -1437,6 +1437,13 @@ h2[id="other-products-h2"]::before { background: var(--section-products); }
   color: #9f7aea;
 }
 
+/* ===== Per-Section H4 Glass Styling ===== */
+section#other-products h4 {
+  background: linear-gradient(135deg, rgba(159, 122, 234, 0.15) 0%, rgba(159, 122, 234, 0.05) 100%);
+  color: var(--section-products);
+  border-left: 4px solid var(--section-products);
+}
+
 /* ===== Per-Section H3 (feature-detail-toggle) Text Colors ===== */
 section#what-is-aicono .feature-detail-toggle {
   color: var(--section-overview);
