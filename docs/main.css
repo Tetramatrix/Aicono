@@ -26,6 +26,14 @@
   --section-margin: 40px 0;
   --subsection-margin: 30px 0;
 }
+/* Keyframe for icon shine effect */
+@keyframes iconShineSweep {
+  0% { transform: rotate(45deg) translateX(-55%); opacity: 0; }
+  20% { opacity: 1; }
+  50% { transform: rotate(45deg) translateX(0%); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: rotate(45deg) translateX(55%); opacity: 0; }
+}
 
 /* Animation Keyframes */
 @keyframes gradient {
@@ -1112,13 +1120,23 @@ figcaption {
 h2.collapsible {
   cursor: pointer;
   position: relative;
-  padding-right: 40px;
+  padding-right: 0;
   user-select: none;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 h2.collapsible:hover {
   color: #64b5f6;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.08) 0%, rgba(168, 216, 234, 0.03) 100%);
+  border-color: rgba(168, 216, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(168, 216, 234, 0.12);
+  transform: translateX(4px);
 }
 
 h2.collapsible::after {
@@ -1241,30 +1259,7 @@ div.collapsed {
   min-width: 40px;
   text-align: center;
 }
-/* === TabNeuron Design Additions === */
-
-/* Extended Color Variables (pastels & section colors) */
-:root {
-  --pastel-green: #A8E6CF;
-  --pastel-blue: #A8D8EA;
-  --pastel-peach: #FFD3B6;
-  --pastel-lavender: #D5AAFF;
-  --pastel-yellow: #FFF5BA;
-  --pastel-pink: #FFB7B2;
-
-  --section-overview: #63b3ed;
-  --section-features: #68d391;
-  --section-wysiwyg: #f6ad55;
-  --section-performance: #b794f4;
-  --section-setup: #9ae6b4;
-  --section-requirements: #a0aec0;
-  --section-download: #68d391;
-  --section-tips: #f6e05e;
-  --section-support: #f687b3;
-  --section-products: #7f9cf5;
-}
-
- /* ===== Feature Detail Toggle System ===== */
+/* ===== Feature Detail Toggle System ===== */
 .feature-detail-toggle {
   cursor: pointer;
   margin: 0;
@@ -1425,4 +1420,206 @@ h2[id="other-products-h2"]::before { background: var(--section-products); }
     padding: 8px 12px;
     font-size: 12px;
   }
+}
+
+
+
+/* === Section-Specific Content Accents === */
+/* Each section's .cta-box gets a subtle tint and top stripe in its color */
+
+/* Overview (What is Aicono) - Blue */
+section#what-is-aicono .cta-box {
+  background: rgba(99, 179, 237, 0.06);
+  border-color: rgba(99, 179, 237, 0.12);
+}
+section#what-is-aicono .cta-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--section-overview), transparent);
+}
+
+/* Core Features - Emerald */
+section#core-features .cta-box {
+  background: rgba(104, 211, 145, 0.06);
+  border-color: rgba(104, 211, 145, 0.12);
+}
+section#core-features .cta-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--section-features), transparent);
+}
+
+/* Setup - Mint */
+section#setup .cta-box {
+  background: rgba(154, 230, 180, 0.06);
+  border-color: rgba(154, 230, 180, 0.12);
+}
+section#setup .cta-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--section-setup), transparent);
+}
+
+/* Configuration Tips - Yellow */
+section#pro-tips .cta-box {
+  background: rgba(246, 224, 94, 0.06);
+  border-color: rgba(246, 224, 94, 0.12);
+}
+section#pro-tips .cta-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--section-tips), transparent);
+}
+
+/* Support & Donations - Rose */
+section#support-donations .cta-box {
+  background: rgba(246, 135, 179, 0.06);
+  border-color: rgba(246, 135, 179, 0.12);
+}
+section#support-donations .cta-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--section-support), transparent);
+}
+
+/* Related Projects - Indigo */
+section#other-products .cta-box {
+  background: rgba(127, 156, 245, 0.06);
+  border-color: rgba(127, 156, 245, 0.12);
+}
+section#other-products .cta-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--section-products), transparent);
+}
+
+
+
+/* === H2 Collapsible Full Styling (TabNeuron match) === */
+h2.collapsible {
+  cursor: pointer;
+  position: relative;
+  padding-right: 0;
+  user-select: none;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2.collapsible::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+h2.collapsible::after {
+  content: attr(data-arrow-expanded, "▼");
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.1) 0%, rgba(168, 216, 234, 0.05) 100%);
+  border: 1px solid rgba(168, 216, 234, 0.2);
+  border-radius: 50%;
+  color: var(--pastel-blue);
+  font-size: 0.95em;
+  font-weight: 400;
+  flex-shrink: 0;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 8px rgba(168, 216, 234, 0.5);
+  overflow: hidden;
+}
+
+h2.collapsible.collapsed::after {
+  content: attr(data-arrow-collapsed, "◀");
+}
+
+h2.collapsible:hover {
+  color: #64b5f6;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.08) 0%, rgba(168, 216, 234, 0.03) 100%);
+  border-color: rgba(168, 216, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(168, 216, 234, 0.12);
+  transform: translateX(4px);
+}
+
+h2.collapsible:hover::before {
+  left: 100%;
+}
+
+h2.collapsible:hover::after {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  box-shadow: 0 6px 16px rgba(168, 216, 234, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  color: #e3f2fd;
+  text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
+}
+
+h2.collapsible::after::after,
+h2.collapsible.collapsed::after::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 45%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.35) 55%,
+    transparent 100%
+  );
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+h2.collapsible:hover::after::after,
+h2.collapsible.collapsed:hover::after::after {
+  opacity: 1;
+  animation: iconShineSweep 0.9s ease-in-out infinite alternate;
 }
