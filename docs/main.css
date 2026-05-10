@@ -646,17 +646,241 @@ iframe:hover, embed:hover, object:hover {
   margin: 20px 0;
 }
 
-/* Logo & Screenshots */
+/* === Page Header - Modern Gaming Style === */
+.page-header {
+  text-align: center;
+  padding: 40px 20px 60px;
+  margin-bottom: 30px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at top center, rgba(124, 58, 237, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom center, rgba(56, 178, 172, 0.12) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.75) 100%);
+  border-radius: 24px;
+  border: 1px solid rgba(168, 216, 234, 0.12);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(167, 139, 250, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Animated mesh gradient overlay */
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(124, 58, 237, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(56, 178, 172, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(99, 179, 237, 0.08) 0%, transparent 60%);
+  opacity: 0.7;
+  animation: meshMove 15s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes meshMove {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.6;
+  }
+}
+
+/* Main title - Gaming neon style */
+.page-header h1 {
+  font-size: 4em;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  padding: 0;
+  /* Clear generic h1 background/border */
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  /* Fallback solid neon cyan with glow */
+  color: #00d4ff;
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.5))
+          drop-shadow(0 0 40px rgba(0, 255, 136, 0.3));
+  position: relative;
+  z-index: 1;
+  letter-spacing: 3px;
+}
+
+/* Gradient text for browsers that support background-clip:text */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .page-header h1 {
+    background: linear-gradient(135deg, #00d4ff 0%, #00ff88 40%, #00d4ff 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    animation: gradientShift 4s linear infinite;
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Neon glow sweep effect on title hover */
+.page-header h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: translateX(-100%);
+  animation: shimmer 3s infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes shimmer {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+}
+
+/* Subheadline - Modern material text */
+.page-header h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 0;
+  padding: 12px 24px;
+  background: rgba(45, 45, 48, 0.6);
+  border: 1px solid rgba(168, 216, 234, 0.2);
+  border-radius: 50px;
+  display: inline-block;
+  color: #e3f2fd;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 0 0 1px rgba(167, 139, 250, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-header h3:hover {
+  background: rgba(45, 45, 48, 0.8);
+  border-color: rgba(168, 216, 234, 0.4);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 0 1px rgba(167, 139, 250, 0.15),
+    0 0 30px rgba(168, 216, 234, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Logo container with material elevation */
+.logo-container {
+  margin: 30px auto 0;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
 .logo {
-  max-width: 200px;
-  border-radius: 10px;
-  margin: 20px auto;
-  animation: float 3s ease-in-out infinite;
-  transition: transform 0.3s ease;
+  max-width: 280px;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4))
+          drop-shadow(0 0 20px rgba(0, 212, 255, 0.2));
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px) scale(1.03);
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5))
+          drop-shadow(0 0 40px rgba(0, 212, 255, 0.4))
+          drop-shadow(0 0 60px rgba(0, 255, 136, 0.3));
+}
+
+/* Card lift effect with dynamic shadow */
+.page-header:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 24px 48px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(167, 139, 250, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  border-color: rgba(168, 216, 234, 0.2);
+}
+
+/* Subtle grain texture overlay */
+.page-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: -1;
+  mix-blend-mode: overlay;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 30px 15px 50px;
+    border-radius: 18px;
+  }
+
+  .page-header h1 {
+    font-size: 2.6em;
+    letter-spacing: 2px;
+  }
+
+  .page-header h3 {
+    font-size: 1.2em;
+    padding: 10px 18px;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1099px) {
+  .page-header h1 {
+    font-size: 3.2em;
+  }
+
+  .page-header h3 {
+    font-size: 1.4em;
+  }
+
+  .logo {
+    max-width: 240px;
+  }
 }
 .screenshot {
   border: 1px solid var(--border-light); /* Dark theme friendly border */
