@@ -1,0 +1,3819 @@
+
+====================================================================================================
+ FILE: index.html
+ PATH: D:\Benutzer\github\TabNeuron\docs\index.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>TabNeuron - AI Spatial Tab Manager & Research Workspace</title>
+    <meta name="description" content="TabNeuron is an AI spatial tab manager that maps your browser tabs onto an infinite 2D canvas — find tabs by topic instead of endless switching, chat with websites and the live internet, automate research with AI agent pipelines, and sync bidirectionally with Chrome Tab Groups. Tabs are indexed with adaptive retrieval — semantic search, keywords, and full-text fallback — precise and fast. AI memory extracts facts, skills, preferences, and personas from your chats, building long-term profiles that make answers more accurate over time. Old conversations auto-compact to save tokens. Run models locally so nothing leaves your machine, or connect to cloud AI.">
+    <meta name="keywords" content="AI Spatial Tab Manager, Browser Tab Canvas, Chat with Websites, AI Research Agents, MCP Server, AI Memory, Long-Term Memory, Auto Compaction, Browser Extension, Chrome Tab Groups Sync, Document OCR, Adaptive RAG, Local AI, Private AI, Conversation History, Multi-Language AI, Token Efficiency, Web Research Automation, Privacy-Focused">
+    <meta name="author" content="Tetramatrix">
+    <meta property="og:title" content="TabNeuron - AI Spatial Tab Manager & Research Workspace">
+    <meta property="og:description" content="TabNeuron is an AI spatial tab manager that maps your browser tabs onto an infinite 2D canvas — find tabs by topic instead of endless switching, chat with websites and the live internet, automate research with AI agent pipelines, and sync bidirectionally with Chrome Tab Groups. Tabs are indexed with adaptive retrieval — semantic search, keywords, and full-text fallback — precise and fast. AI memory extracts facts, skills, preferences, and personas from your chats, building long-term profiles that make answers more accurate over time. Old conversations auto-compact to save tokens. Run models locally so nothing leaves your machine, or connect to cloud AI.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="main.png">
+
+    <!-- Google Ads (using template IDs) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6449563648591184"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <aside class="left">
+        <nav class="fixed-nav">
+            <!-- Google Ads - Left Sidebar -->
+            <!-- Ad code removed for clarity -->
+        </nav>
+    </aside>
+
+    <aside class="right">
+        <!-- Google Ads - Right Sidebar -->
+        <!-- Ad code removed for clarity -->
+    </aside>
+
+    <main class="wikidoc">
+        <header class="page-header">
+            <h1>TabNeuron</h1>
+            <h3 data-no-toggle="true">AI Spatial Tab Manager & Research Workspace</h3>
+            <figure class="logo-container">
+                <img src="logo_small.png" alt="TabNeuron Logo" class="logo">
+            </figure>
+        </header>
+
+    <!-- Horizontal Navigation Bar -->
+    <nav class="horizontal-toc-nav">
+        <ul>
+            <li><a href="#inspiration-h2">Overview</a></li>
+            <li><a href="#core-capabilities-h2">Core Features</a></li>
+            <li><a href="#integrations-h2">Integrations</a></li>
+            <li><a href="#technical-h2">Technical</a></li>
+            <li><a href="#setup-h2">Setup</a></li>
+            <li><a href="#support-h2">Support</a></li>
+            <li><a href="#other-products-h2">Discover</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inspiration Section -->
+    <h2 id="inspiration-h2">Overview, Your Knowledge, Your AI, Your Rules</h2>
+    <section class="inspiration-section" id="inspiration">
+        <div class="cta-box">
+
+            <p>Most tab managers are confined to tiny browser sidebars or dropdown menus, trapping your research in flat, ephemeral lists. We built TabNeuron because complex web research requires space and permanence. By pulling your browser tabs out onto a native desktop canvas, you gain an infinite 2D workspace to visually group information, analyze it with AI, and take true ownership of your browsing sessions.</p>
+        </div>
+
+        <h3 id="what-is-tabneuron-h2" class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> About TabNeuron
+    </h3>
+
+        <div class="cta-box feature-detail-content" style="display:none;">
+
+            <p>TabNeuron solves the problem that tabs are hidden in browser bars, AI forgets everything between sessions, and web research is manual. Map your active browsing session onto an infinite visual canvas. Organize tabs spatially instead of scrolling through flat lists. Chat with websites to get instant answers without manual reading. Automate research with AI agent pipelines — scrape, analyze, and output in sequence. Sync bidirectionally with Chrome Tab Groups so your browser and workspace stay aligned. AI memory that extracts facts, skills, and preferences from your chats, making answers more accurate over time. Run AI models locally so nothing leaves your machine, or connect to cloud AI.</p>
+
+        <!-- Video Section -->
+            <div class="responsive-iframe-container">
+                <iframe src="https://www.youtube.com/embed/J_zfEXgZwrQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption"><em>Demonstration of TabNeuron workspace with browser tabs</em></p>
+
+    </div>
+</section>
+
+
+	    <h2 id="core-capabilities-h2">Core Features</h2>
+        <section class="capabilities-section" id="core-capabilities">
+
+            <!-- 1. Canvas & Visual Organization -->
+            <div class="cta-box">
+
+    <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 📂 Organize Tabs on Canvas
+    </h3>
+    <div class="feature-detail-content" style="display:none;">
+                	<div class="cta-box capability-group">
+                    <p><strong>Problem:</strong> "Which tab has that info?" — Scrolling through dozens of hidden tabs in browser bars, losing context.</p>
+                    <ul>
+                        <li><strong>Solution:</strong> AI groups tabs on a 2D canvas by topic — visually find tabs by what they're about, not where they're buried.</li>
+                        <li><strong>Canvas Editor:</strong> Drag and drop, rename, resize — full visual control.</li>
+                        <li><strong>Mind Maps:</strong> Generate visual representations of tab groups to reveal hidden relationships.</li>
+                    </ul>
+                   </div>
+                </div>
+
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 📸 Visual Previews & Metadata
+    </h3>
+    <div class="feature-detail-content" style="display:none;">
+                	<div class="cta-box capability-group">
+                    <p><strong>Problem:</strong> Can't tell what a tab contains without switching to it — title alone isn't enough.</p>
+                    <ul>
+                        <li><strong>Solution:</strong> Automatic scaled screenshots, titles, URLs, and OG-tags extracted for every tab — instant visual context.</li>
+                        <li><strong>Data Ownership:</strong> Save workspace states locally to disk. Close browser, research session remains safely backed up.</li>
+                    </ul>
+                   </div>
+                </div>
+
+
+             <!-- 2. Sync & Bridge -->
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 🔄 Canvas ↔ Browser Sync
+    </h3>
+    <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box feature-detail-group">
+                    <p><strong>Problem:</strong> Workspace and browser are disconnected — changes in one don't reflect in the other.</p>
+                    <ul>
+                        <li><strong>Solution:</strong> Bidirectional sync with Chrome Tab Groups — canvas changes push to browser, browser changes pull to canvas.</li>
+                        <li><strong>Workspace → Browser:</strong> AI suggests semantic groupings, you review and click "Apply" — browser tab groups update instantly.</li>
+                        <li><strong>Browser → Workspace:</strong> Create groups or open tabs in browser — TabNeuron's polling API detects changes and pulls them onto the canvas.</li>
+                    </ul>
+                  </div>
+            </div>
+
+             <!-- 3. AI Interaction -->
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 💬 Chat with Websites
+    </h3>
+    <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box capability-group">
+                <p><strong>Problem:</strong> Opening and reading across multiple tabs takes too long. Research means comparing, copying, synthesizing manually.</p>
+                <ul>
+                    <li><strong>Solution:</strong> Select multiple tabs and ask the AI to synthesize, compare, or extract data across all of them simultaneously.</li>
+                    <li><strong>DOM Extraction:</strong> Page content and metadata fed directly into LLM context — no manual reading.</li>
+                    <li><strong>Multi-Tab Chat:</strong> "Compare specs across 4 review tabs" → result saved locally.</li>
+                </ul>
+                <figure class="chatbot-figure">
+                    <img src="chatbot.png" alt="TabNeuron Visual Canvas Workspace" class="chatbot-screenshot">
+                    <figcaption>Agent Chat — Full access to websites, files, and the web. Compare, extract, summarize — all through conversation. Shows token usage, tok/sec and TTFT for 🍋 Lemonade backends.</figcaption>
+                </figure>
+              </div>
+            </div>
+
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 🤖 AI Agent Pipelines
+    </h3>
+    <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box capability-group">
+                <p><strong>Problem:</strong> Repetitive web research is manual — open tabs, extract data, compare, format, save — every time.</p>
+                <ul>
+                    <li><strong>Solution:</strong> Build no-code automated workflows where one agent's output becomes the next agent's input.</li>
+                    <li><strong>Scraper Agent:</strong> Reads selected tabs, uses web_extract_links to find specs.</li>
+                    <li><strong>Analyst Agent:</strong> Takes output, compares, formats a Markdown table.</li>
+                    <li><strong>Output Agent:</strong> Writes executive summary, saves as persistent text node on canvas.</li>
+                </ul>
+              </div>
+            </div>
+
+              <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 🧠 AI Memory That Remembers
+    </h3>
+    <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box feature-detail-group">
+                <p><strong>Problem:</strong> AI forgets who you are after every session. Long chats are expensive and slow.</p>
+                <ul>
+                    <li><strong>Solution:</strong> Auto-extracts facts, skills, preferences, and personas from conversations. Gets better over time.</li>
+                    <li><strong>Auto-Compaction:</strong> Old conversations summarized → 93% token savings, full context preserved.</li>
+                    <li><strong>Global Memory:</strong> Shared across all agents, import/export, fully manageable.</li>
+                </ul>
+              </div>
+            </div>
+
+              <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 🔌 MCP Server & Integrations
+    </h3>
+    <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box feature-detail-group">
+                <p><strong>Problem:</strong> Repetitive file tasks are manual. Web research means opening multiple tabs, comparing, copying. Research takes forever.</p>
+                <ul>
+                    <li><strong>MCP Manager:</strong> Visual interface — enable/disable servers, configure settings, monitor health.</li>
+                    <li><strong>File Operations:</strong> read, write, move, search, edit — all through conversation.</li>
+                    <li><strong>Web Tools:</strong> Fetch, scrape, search, extract — AI has direct web access.</li>
+                    <li><strong>External Servers:</strong> Connect Google Drive, GitHub, PostgreSQL, custom tools.</li>
+                </ul>
+              </div>
+            </div>
+
+              <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> ☁️ AI Backends — Local or Cloud
+    </h3>
+    <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box feature-detail-group">
+                <p><strong>Problem:</strong> Data goes to cloud providers — no privacy. Or local models are hard to configure.</p>
+                <ul>
+                    <li><strong>Local:</strong> 🍋 Lemonade (NPU acceleration), Ollama, Llama.cpp, LM Studio — nothing leaves your machine.</li>
+                    <li><strong>Cloud:</strong> OpenAI, Mistral, Gemini (free tier), and more — when you need power.</li>
+                    <li><strong>Model Manager:</strong> Activate/deactivate models per task — 2-pane view (🍋 Lemonade only) for chat + embedding simultaneously.</li>
+                </ul>
+              </div>
+            </div>
+
+              <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 📦 Technical Details
+    </h3>
+    <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box feature-detail-group">
+                <ul>
+                    <li><strong>Portable:</strong> Runs from USB, extract anywhere, data stays under your control.</li>
+                    <li><strong>Centralized Storage:</strong> All data in a single <code>.tabneuron/</code> folder. Existing installs migrate automatically.</li>
+                    <li><strong>Browser Bridge:</strong> Lightweight extension connects via local polling API — no data leaves your machine.</li>
+                </ul>
+              </div>
+            </div>
+            </div>
+
+            </div>
+
+ 
+
+        <figure class="screenshot-figure">
+        <img src="chatbot.png" alt="TabNeuron Visual Canvas Workspace" class="sorana-screenshot">
+        <figcaption>Visual Canvas: Browser tabs organized spatially with AI-powered grouping</figcaption>
+    </figure>
+
+        <figure class="screenshot-figure">
+        <img src="mindmap.png" alt="TabNeuron Mind Map Screenshot" class="sorana-screenshot">
+        <figcaption>Mind Map Generation: Visualize tab groups and their relationships</figcaption>
+    </figure>
+	</section>
+
+
+    <!-- Chat with Websites Section -->
+    
+<h2 id="setup-h2">Setup</h2>
+    <section class="requirements-section" id="system-requirements">
+
+     <h3 id="system-requirements-h2" class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 📂 System Requirements
+    </h3>
+
+        <div class="cta-box feature-detail-content" style="display:none;">
+
+        <table>
+            <tr><th>Component</th><th>Minimum</th></tr>
+            <tr><td>OS</td><td>Windows 11 (64-bit)</td></tr>
+            <tr><td>🌐 Browser</td><td>Google Chrome (required for extension)</td></tr>
+            <tr><td>🧠 AI Support</td><td>Built-in models or on-prem/cloud AI services</td></tr>
+            <tr><td>💾 RAM</td><td>&ge; 4 GB</td></tr>
+            <tr><td>💽 Storage</td><td>Minimum 2 GB (app + model) + .tabneuron/ data folder</td></tr>
+            <tr><td>⚡ Rights</td><td>Standard user</td></tr>
+        </table>
+    </div>
+
+    <!-- Final Download Section -->
+
+          <h3 id="final-download-h2" class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> 🚀 Claim Your Workspace
+    </h3>
+            
+   	<div class="cta-box feature-detail-content" style="display:none;">
+
+            <p>Download the application, then install the Chrome extension.</p>
+
+            <div class="download-buttons">
+                <a href="https://github.com/Tetramatrix/TabNeuron/raw/refs/heads/main/docs/TabNeuron.exe" class="btn btn-primary btn-large">Download (Portable)</a>
+                <a href="https://chromewebstore.google.com/detail/tetramatrix-connector/okkajfohkcicdabhdkmakdlblkknnmfm?authuser=0&hl=de" class="btn btn-primary btn-large">Chrome Web Store: Tetramatrix Connector</a>
+                <a href="README.txt" class="btn btn-primary">Readme</a>
+            </div>
+
+             <code>$ md5sum.exe TabNeuron.exe v1.0.10 5f85af07df5338ae5a762fb000881e1d</code>
+
+            <a href="https://apps.microsoft.com/store/detail/9nh7qk4nczfl" target="_blank"><img src="ms-store.svg" alt="Get it from Microsoft" width="40%" /></a>
+
+            <div class="cta-box" style="background: #1a1a2e; border-left: 4px solid #4CAF50; margin-top: 1rem;">
+                <p><strong>After installation:</strong> Configure the browser extension and click Start. Then launch TabNeuron and select Organize Tabs to begin the synchronization. The app will display the synchronization progress. Done! The extension connects to <code>localhost:5555</code> (default port).</p>
+            </div>
+
+        </div>
+    </section>
+
+
+		
+<h2 id="support-h2">Support</h2>
+    <section class="support-section" id="support-donations">
+
+        <div class="cta-box" id="discord-community">
+
+              <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> Join our Discord community
+    </h3>
+
+            <div class="external-links feature-detail-content" style="display:none;">
+                <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">TabNeuron Discord</a>
+            </div>
+
+
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> Leave a review or star the project
+    </h3>
+
+            <div class="feature-detail-content" style="display:none;">
+            <a href="https://alternativeto.net/software/tabneuron/" target="_blank"><img src="AlternativeTo.png" width="20%" alt="The  Visual AI Web Workspace" /></a>
+						</div>
+
+
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span> Support via PayPal or Bitcoin Cash
+    </h3>
+
+
+                
+            <div class="payment-options feature-detail-content" style="display:none;">
+                <div class="paypal-option">
+                    <h4>PayPal</h4>
+                    <p><a href="paypal.me/Gigamegs">paypal.me/Gigamegs</a></p>
+                    <figure class="qr-figure">
+                        <img src="qrcode.png" alt="PayPal QR Code" class="qr-code">
+                    </figure>
+                </div>
+
+                <div class="bch-option">
+                    <h4>Bitcoin Cash (BCH)</h4>
+                    <p>bitcoincash:<br/>
+                    qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv</p>
+                    <figure class="qr-figure">
+                        <img src="bch_qrcode.png" alt="Bitcoin Cash QR Code" class="qr-code">
+                    </figure>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+		<h2 id="other-products-h2">Discover our other tools and games</h2>
+    <section class="other-products-section" id="other-products">
+
+			<div class="cta-box capability-group">
+
+                 <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span>New Spaceship - Retro Mini Game</h3>
+
+        <div class="capability-content" style="display:none;" id="spaceship-intro">
+
+            <p>Retro Arcade 2d side-scroller bullet-hell shmup game</p>
+
+					<div class="cta-box capability-group">
+	            <h4 class="style-box">Website</h4>
+	            <figure class="product-fig">
+	                <a href="http://tetramatrix.github.io/spaceship" target="_blank">
+	                    <img src="start.jpg" title="Retro Arcade 2d side-scroller bullet-hell shmup game" alt="Spaceship" />
+	                </a>
+	            </figure>
+
+
+	            <h4 class="style-box">Featured on itch.io</h4>
+	            <figure class="product-fig">
+	                <a href="https://tetramatrix.itch.io/old-school-retro-mini-game-spaceship">
+	                    <img src="250516_ezgif.com-optimize.gif" alt="New Spaceship - Retro Mini Game" />
+	                </a>
+	            </figure>
+
+	            <h4 class="style-box">Featured on IndieDB</h4>
+	            <figure class="product-fig">
+	                <a href="https://www.indiedb.com/games/new-spaceship" title="View New Spaceship on IndieDB" target="_blank">
+	                    <img src="https://button.indiedb.com/popularity/medium/games/86877.png" alt="New Spaceship" />
+	                </a>
+	            </figure>
+	        </div>
+        </div>
+
+
+				<h3 class="feature-detail-toggle"                 onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span>🧩 Sorana - Your Personal AI That Actually Knows You</h3>
+        <div class="capability-content" style="display:none;" id="sorana-intro">
+
+            <p>Sorana is your personal AI knowledge workspace, a second brain that actually acts. Unlike chatbots that forget you the moment you close the window, Sorana builds a lasting memory of your projects, files, and thinking style. Open it tomorrow and it already knows where you left off. Visualise your entire knowledge base on a spatial 2D canvas (like Obsidian Canvas, but AI-powered), chat with any document in plain language, and let your AI handle repetitive tasks, organising files, researching topics, managing emails, all without leaving your workspace. Everything runs on your machine. Your data stays yours.</p>
+            <figure class="screenshot-figure">
+                <a href="http://tetramatrix.github.io/Sorana" target="_blank"><img src="Sorana_main.png" alt="Sorana Visual AI Workspace Interface" class="sorana-screenshot"></a>
+                <figcaption>Sorana: Files organized on an infinite 2D canvas with AI-powered grouping</figcaption>
+            </figure>
+
+				<div class="cta-box capability-group">
+
+             <h4 class="style-box">Website & Community</h4>
+            <div class="download-buttons">
+                <a href="http://tetramatrix.github.io/Sorana" target="_blank" class="btn btn-primary">🌐 Website</a>
+                <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">💬 Discord</a>
+            </div>
+
+            <h4 class="style-box">Featured on Softpedia:</h4>
+            <p>
+                <a href="https://www.softpedia.com/get/System/File-Management/Sorana.shtml" target="_blank"><img src="softpedia.png" width="200px" height="60px" alt="Get it from Softpedia" /></a>
+            </p>
+
+            <h4 class="style-box">Featured on Microsoft Store:</h4>
+            <p>
+                <a href="https://apps.microsoft.com/detail/9n8c43pzc1rn" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
+            </p>
+        </div>
+</div>
+
+				<h3 class="feature-detail-toggle"                 onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span>RyzenZPilot - AMD Ryzen Power Management Tool</h3>
+
+
+        <div class="capability-content" style="display:none;" id="ryzenzpilot-intro">
+
+
+            <p>RyzenZPilot is a powerful tool for managing AMD Ryzen processor power settings on Windows.
+            It allows users to adjust CPU performance, power limits, and thermal configurations
+            for optimal performance and efficiency.</p>
+
+
+			<div class="cta-box capability-group">
+
+            <h4 class="style-box">Website</h4>
+            <figure class="product-fig">
+                <a href="http://tetramatrix.github.io/RyzenZPilot" target="_blank">
+                    <img src="RyzenZPilot_3.1.3.png" title="AMD Ryzen Power Management Tool" alt="RyzenZPilot" />
+                </a>
+            </figure>
+        </div>
+			</div>
+
+				<h3 class="feature-detail-toggle"                 onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span>Aicono - AI Intelligent Desktop Icon Autopilot</h3>
+
+        <div class="capability-content" style="display:none;" id="aicono-intro">
+
+            <p>Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!</p>
+
+
+			<div class="cta-box capability-group">
+
+            <h4 class="style-box">Website</h4>
+            <figure class="product-fig">
+                <a href="http://tetramatrix.github.io/Aicono" target="_blank">
+                    <img src="main.png" title="AI Intelligent Desktop Icon Autopilot" alt="Aicono" />
+                </a>
+            </figure>
+
+             <h3 class="feature-detail-toggle"                 onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span>Featured on Microsoft Store</h3>
+                <div class="feature-detail-content" style="display:none;">
+            <figure class="store-fig">
+                <a href="https://apps.microsoft.com/store/detail/XP8LNKJ7H4B1WS" target="_blank">
+                    <img src="ms-store.svg" width="50%" height="50%" alt="Get it from Microsoft" />
+                </a>
+            </figure>
+						</div>
+
+             <h3 class="feature-detail-toggle"                 onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span>Featured on Softpedia</h3>
+                <div class="feature-detail-content" style="display:none;">
+            <figure class="store-fig">
+                <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank">
+                    <img src="softpedia.png" width="40%" height="40%" alt="Get it from Softpedia" />
+                </a>
+            </figure>
+						</div>
+
+             <h3 class="feature-detail-toggle"                 onclick="toggleFeatureDetail(this)">
+        <span class="toggle-icon">▶</span>Featured on AlternativeTo</h3>
+                <div class="feature-detail-content" style="display:none;">
+            <figure class="store-fig">
+                <a href="https://alternativeto.net/software/aicono" title="Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly!" target="_blank">
+                    <img src="AlternativeTo.png" width="20%" alt="Aicono - AI Intelligent Desktop Icon Autopilot" />
+                </a>
+            </figure>
+						</div>
+        </div>
+</div>
+    </section>
+
+
+        <div class="cta-box">
+            <p style="text-align:center; color:#888;"><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="color:#888; text-decoration:none;">↑ Back to Top</a></p>
+        </div>
+
+    <footer class="main-footer">
+        <p class="footer-text">
+             🏢 Developed by <b>Tetramatrix</b> | 🔧 Specially optimized for AMD Ryzen systems | 💝 Free for everyone
+    </p>
+        </p>
+    </footer>
+
+</main>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+====================================================================================================
+ FILE: main.css
+ PATH: D:\Benutzer\github\TabNeuron\docs\main.css
+====================================================================================================
+
+:root {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #2d2d30;
+  --bg-accent: #1a365d;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --accent-blue: #2c5282;
+  --accent-amd: #c53030;
+  --border: #404040;
+
+  /* Pastell-Farben für Hervorhebungen */
+  --pastel-green: #A8E6CF;
+  --pastel-blue: #A8D8EA;
+  --pastel-peach: #FFD3B6;
+  --pastel-lavender: #D5AAFF;
+  --pastel-yellow: #FFF5BA;
+  --pastel-pink: #FFB7B2;
+
+  /* Section-specific colors for h2 headings */
+  --section-inspiration: #4fd1c5;      /* Teal */
+  --section-what-is: #63b3ed;          /* Blue */
+  --section-solves: #f6ad55;           /* Amber */
+  --section-memory: #b794f4;           /* Purple */
+  --section-mcp: #4fdada;              /* Cyan */
+  --section-obsidian: #9f7aea;         /* Violet */
+  --section-ocr: #fc8181;              /* Coral */
+  --section-backends: #f6e05e;         /* Soft yellow */
+  --section-install: #9ae6b4;          /* Mint */
+  --section-requirements: #a0aec0;     /* Cool gray */
+  --section-download: #68d391;         /* Emerald */
+  --section-support: #f687b3;          /* Rose */
+  --section-products: #7f9cf5;         /* Indigo */
+  --section-vision: #4fd1c5;           /* Teal for Vision section */
+
+  /* Custom Component Colors */
+  --black: #000;
+  --border-light: #444;
+  --border-medium: #555;
+  --shadow-color-light: rgba(0, 0, 0, 0.1);
+  --shadow-color-medium: rgba(0, 0, 0, 0.15);
+  --btn-primary-bg: #2c5282;
+  --code-bg-purple: #2d3748;
+  --code-bg-highlight: rgba(0, 0, 0, 0.3);
+  --code-text-highlight: #68d391;
+  --table-row-alt-bg: #3a3a3d;
+  --cta-gradient-start: #2c5282;
+  --cta-gradient-end: #1a365d;
+
+  /* Section spacing */
+  --section-margin: 32px 0;
+  --subsection-margin: 24px 0;
+}
+
+/* Animation Keyframes */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* =====================================================
+   PAGE HEADER - Creative, Modern, Fancy Hero Section
+   Inspired by Sorana's design language
+   ===================================================== */
+
+.page-header {
+  text-align: center;
+  padding: 56px 24px 40px;
+  margin: 0 -10px 32px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(99, 179, 237, 0.18) 0%, rgba(99, 179, 237, 0.04) 45%, transparent 70%),
+    radial-gradient(ellipse at 50% 100%, rgba(79, 209, 197, 0.12) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(30, 41, 59, 0.25) 0%, rgba(0, 0, 0, 0.08) 100%);
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 16px 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(99, 179, 237, 0.18);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.06) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+.page-header::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at center, rgba(167, 139, 250, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page-header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.page-header h1 {
+  display: inline-block;
+  font-size: 4.2em;
+  font-weight: 900;
+  margin: 0;
+  padding: 20px 44px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.12) 0%, transparent 55%),
+    linear-gradient(135deg, rgba(30, 41, 59, 0.85) 0%, rgba(88, 28, 135, 0.75) 40%, rgba(59, 130, 246, 0.65) 100%);
+  border: 1px solid rgba(196, 181, 253, 0.35);
+  color: #f8f7ff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-text-fill-color: initial;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  animation: fadeIn 0.8s ease 0s forwards;
+  opacity: 0;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 16px 42px rgba(124, 58, 237, 0.28),
+    0 0 60px rgba(168, 216, 234, 0.10),
+    inset 0 2px 0 rgba(255, 255, 255, 0.15);
+  text-shadow:
+    0 0 20px rgba(196, 181, 253, 0.35),
+    0 0 50px rgba(124, 58, 237, 0.30);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.page-header h1:hover {
+  transform: scale(1.02);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 20px 50px rgba(124, 58, 237, 0.35),
+    0 0 80px rgba(168, 216, 234, 0.15),
+    inset 0 2px 0 rgba(255, 255, 255, 0.18);
+}
+
+.page-header h3 {
+  display: inline-block;
+  font-size: 1.08em;
+  font-weight: 700;
+  margin: 18px 0 0 0;
+  padding: 10px 20px;
+  border-radius: 999px;
+  color: #d7eafe;
+  background: rgba(12, 18, 32, 0.45);
+  border: 1px solid rgba(168, 216, 234, 0.22);
+  opacity: 0;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  animation: fadeIn 0.8s ease 0.25s forwards;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 4px 14px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.page-header h3:hover {
+  background: rgba(12, 18, 32, 0.60);
+  border-color: rgba(168, 216, 234, 0.35);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+  margin-top: 24px;
+  animation: fadeIn 0.8s ease 0.45s forwards;
+  opacity: 0;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35)) brightness(1.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05) translateY(-2px);
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4)) brightness(1.15);
+}
+
+/* Responsive header adjustments */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 40px 16px 28px;
+    margin: 0 -10px 24px;
+    border-radius: 28px;
+  }
+
+  .page-header::before {
+    inset: 14px 16px;
+    border-radius: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 2.6em;
+    padding: 14px 28px;
+  }
+
+  .page-header h3 {
+    font-size: 0.95em;
+    letter-spacing: 0.14em;
+    padding: 8px 16px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 32px 12px 24px;
+    border-radius: 24px;
+  }
+
+  .page-header::before {
+    inset: 12px 14px;
+    border-radius: 18px;
+  }
+
+  .page-header h1 {
+    font-size: 2.2em;
+    padding: 12px 22px;
+  }
+
+  .page-header h3 {
+    font-size: 0.85em;
+    letter-spacing: 0.1em;
+    padding: 7px 14px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
+
+.page-header h1,
+.page-header h3,
+.page-header .logo-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Mobile-First Basis-Styles === */
+body {
+  font-family: "Geist", "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 10px;
+  margin: 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 30%, #2c3e50 70%, #1a1a2e 100%);
+  background-size: 300% 300%;
+  animation: gradient 20s ease infinite;
+  color: #e0e0e0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
+}
+
+a, a:visited {
+  color: #64b5f6; /* Lighter blue for better contrast */
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+a:hover {
+  color: #90caf9;
+  transform: translateY(-2px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+  font-weight: 600;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-top: 0.5em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-bottom: none;
+  border-left: 4px solid #68d391;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: -10px;
+  margin-right: -10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-left: 4px solid;
+  margin-top: 36px;
+  margin-bottom: 16px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: -10px;
+  margin-right: -10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* h3 border-left color matches section theme */
+h3 {
+  border-left-color: #f6e05e;
+}
+h1 {
+  font-size: 2.2em;
+  margin-top: 0.5em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-bottom: none;
+  border-left: 4px solid #68d391;
+}
+h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border-left: 5px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+h2:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section-specific h2 colors */
+#inspiration-h2 {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.15) 0%, rgba(79, 209, 197, 0.05) 100%);
+  border-left-color: var(--section-inspiration);
+  color: #4fd1c5;
+}
+
+#setup-h2 {
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.15) 0%, rgba(127, 156, 245, 0.05) 100%);
+  border-left-color: var(--section-products);
+  color: #7f9cf5;
+}
+
+#what-is-tabneuron-h2,
+#what-is-sorana-h2 {
+  background: linear-gradient(135deg, rgba(99, 179, 237, 0.15) 0%, rgba(99, 179, 237, 0.05) 100%);
+  border-left-color: var(--section-what-is);
+  color: #63b3ed;
+}
+
+#core-capabilities-h2,
+#why-sorana-h2,
+#solves-h2 {
+  background: linear-gradient(135deg, rgba(246, 173, 85, 0.15) 0%, rgba(246, 173, 85, 0.05) 100%);
+  border-left-color: var(--section-solves);
+  color: #f6ad55;
+}
+
+#ai-memory-rag-h2 {
+  background: linear-gradient(135deg, rgba(183, 148, 244, 0.15) 0%, rgba(183, 148, 244, 0.05) 100%);
+  border-left-color: var(--section-memory);
+  color: #b794f4;
+}
+
+#mcp-section-h2 {
+  background: linear-gradient(135deg, rgba(79, 218, 218, 0.15) 0%, rgba(79, 218, 218, 0.05) 100%);
+  border-left-color: var(--section-mcp);
+  color: #4fdada;
+}
+
+#canvas-sync-h2 {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.12) 0%, rgba(99, 179, 237, 0.10) 100%);
+  border-left-color: var(--section-inspiration);
+  color: #4fd1c5;
+}
+
+#vision-section-h2 {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.15) 0%, rgba(79, 209, 197, 0.05) 100%);
+  border-left-color: var(--section-vision);
+  color: #4fd1c5;
+}
+
+#ai-backends-h2 {
+  background: linear-gradient(135deg, rgba(246, 224, 94, 0.15) 0%, rgba(246, 224, 94, 0.05) 100%);
+  border-left-color: var(--section-backends);
+  color: #f6e05e;
+}
+
+#chat-websites-h2 {
+  background: linear-gradient(135deg, rgba(99, 179, 237, 0.12) 0%, rgba(99, 179, 237, 0.08) 100%);
+  border-left-color: var(--section-what-is);
+  color: #63b3ed;
+}
+
+#ai-agents-h2 {
+  background: linear-gradient(135deg, rgba(246, 173, 85, 0.12) 0%, rgba(246, 173, 85, 0.08) 100%);
+  border-left-color: var(--section-solves);
+  color: #f6ad55;
+}
+
+#browser-extension-h2 {
+  background: linear-gradient(135deg, rgba(183, 148, 244, 0.12) 0%, rgba(79, 218, 218, 0.08) 52%, rgba(252, 129, 129, 0.06) 100%);
+  border-left-color: var(--section-memory);
+  color: #b794f4;
+}
+
+#obsidian-export-h2 {
+  background: linear-gradient(135deg, rgba(159, 122, 234, 0.12) 0%, rgba(196, 181, 253, 0.08) 100%);
+  border-left-color: var(--section-obsidian);
+  color: #c4b5fd;
+}
+
+#ocr-section-h2 {
+  background: linear-gradient(135deg, rgba(252, 129, 129, 0.15) 0%, rgba(252, 129, 129, 0.05) 100%);
+  border-left-color: var(--section-ocr);
+  color: #fc8181;
+}
+
+#system-requirements-h2 {
+  background: linear-gradient(135deg, rgba(160, 174, 192, 0.15) 0%, rgba(160, 174, 192, 0.05) 100%);
+  border-left-color: var(--section-requirements);
+  color: #a0aec0;
+}
+
+#final-download-h2 {
+  background: linear-gradient(135deg, rgba(104, 211, 145, 0.12) 0%, rgba(154, 230, 180, 0.08) 100%);
+  border-left-color: var(--section-download);
+  color: #68d391;
+}
+
+#support-h2 {
+  background: linear-gradient(135deg, rgba(246, 135, 179, 0.15) 0%, rgba(246, 135, 179, 0.05) 100%);
+  border-left-color: var(--section-support);
+  color: #f687b3;
+}
+
+#other-products-h2 {
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.15) 0%, rgba(127, 156, 245, 0.05) 100%);
+  border-left-color: var(--section-products);
+  color: #7f9cf5;
+}
+h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-left: 4px solid #f6e05e;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+/* Neue h4-Klasse – nur der Look, kein Plus, kein Collapse */
+h4.style-box {
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  background: rgba(45, 45, 48, 0.7);
+  border: 1px solid var(--border);
+  border-left: 4px solid #fc8181;
+  padding: 14px 40px 14px 16px;
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+/* Alte h4-Styles bleiben als Fallback */
+h4 {
+  font-size: 1.3em;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  border-left: 4px solid #fc8181;
+  margin-top: 30px;
+  margin-bottom: 14px;
+}
+
+.wikidoc {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  float: none;
+  box-sizing: border-box;
+  background: rgba(45, 45, 48, 0.6);
+  color: var(--text-primary);
+  clear: both;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+pre, code, .wikidoc pre, .wikidoc code {
+  background: var(--bg-secondary);
+  color: #e0e0e0; /* Lighter text for better contrast */
+  border-radius: 5px;
+  font-size: 13px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  transition: background-color 0.3s ease;
+}
+
+pre:hover, code:hover, .wikidoc pre:hover, .wikidoc code:hover {
+  background: var(--code-bg-highlight);
+}
+
+table, th, td {
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  color: var(--text-primary);
+  word-break: break-word;
+  hyphens: auto;
+}
+th {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
+  color: var(--text-primary);
+  padding: 12px 8px;
+  font-weight: 600;
+  text-align: center;
+}
+td {
+  background: rgba(45, 45, 48, 0.7);
+  color: var(--text-secondary);
+  padding: 10px 8px;
+}
+
+/* Special styling for requirements table */
+.req-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.req-table th, .req-table td {
+  padding: 12px;
+  border: 1px solid var(--border);
+  transition: background-color 0.3s ease;
+}
+
+.req-table th {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.req-table tr:nth-child(even) {
+  background: rgba(74, 85, 104, 0.2);
+}
+
+.req-table tr:hover {
+  background: rgba(76, 175, 80, 0.15);
+}
+
+a[style*="background: #ff4444"] {
+  background: var(--accent-amd) !important;
+  color: var(--text-primary) !important;
+}
+a[style*="background: #44ff44"] {
+  background: var(--accent-blue) !important;
+  color: var(--text-primary) !important;
+}
+a[style*="background: linear-gradient"] {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--bg-accent) 100%) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Touchfreundliche Buttons/Links */
+a[style*="padding: 12px"], a[style*="padding: 15px"], a, button, input[type="button"], input[type="submit"] {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  margin: 8px 0;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 12px 16px;
+}
+
+a + a, button + button {
+  margin-top: 8px;
+}
+
+/* Bilder und Medien responsiv */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 10px auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+iframe, embed, object {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+iframe:hover, embed:hover, object:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive iframe container for maintaining aspect ratio */
+.responsive-iframe-container {
+  position: relative;
+  width: 100%;
+  max-width: 1140px; /* Match original video width */
+  padding-bottom: 91.23%; /* 1040/1140 = 0.9123 (aspect ratio) */
+  height: 0;
+  overflow: hidden;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Video section styling */
+.video-section {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* Make the container break out of wikidoc constraints for more prominent display */
+.wikidoc .responsive-iframe-container {
+  width: calc(100% + 60px);
+  max-width: 1140px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.video-caption {
+  margin-top: 15px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  text-align: center;
+}
+
+.responsive-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Sidebars und Fixed-Elemente auf Mobile ausblenden */
+/* Standardmäßig: Sidebars ausblenden (Mobile-First) */
+/* Sidebars und Fixed-Nav werden nur auf kleinen Bildschirmen ausgeblendet */
+@media (max-width: 768px) {
+  .left, .right, .fixed-nav {
+    display: none !important;
+    position: static !important;
+    width: 100% !important;
+  }
+}
+
+/* FIX: Ensure the main content area (.wikidoc) is always visible,
+   overriding the display:none from .left, .right, etc. if they are on the same element. */
+.wikidoc {
+  display: block !important;
+}
+
+/* === Mobile Table Stacking (up to 480px) === */
+@media (max-width: 480px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid var(--border);
+    margin-bottom: 10px;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    content: attr(data-label) ": ";
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+/* === Tablet-Styles (ab 601px) === */
+@media only screen and (min-width: 601px) {
+  body {
+    font-size: 15px;
+  }
+
+  .wikidoc {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  /* FIX: Reset table cell width for traditional table layout.
+     The mobile-first style sets td width to 100% for stacking,
+     which needs to be undone for wider screens. */
+  th, td {
+    width: auto;
+  }
+}
+
+/* === Desktop-Styles (ab 769px) === */
+/* REFACTOR: Replaced float layout with a modern, robust CSS Grid layout.
+   This is the ideal tool for creating multi-column page layouts. */
+@media only screen and (min-width: 769px) {
+  :root {
+    --left-sidebar-width: 120px;
+    --right-sidebar-width: 160px;
+    --content-gutter: 16px;
+  }
+
+  body {
+    display: grid;
+    /* Define 3 columns: left sidebar, flexible content, right sidebar */
+    grid-template-columns: minmax(var(--left-sidebar-width), 1fr) minmax(480px, 1.5fr) minmax(var(--right-sidebar-width), 1fr);
+    grid-gap: var(--content-gutter);
+  }
+
+  .wikidoc {
+    /* The content will live in the center column defined by the grid */
+    max-width: 900px; /* Enforce the maximum content width */
+    min-width: 480px; /* Ensure minimum readable width */
+    justify-self: center; /* Center the content within its grid column on wide screens */
+    width: 100%; /* Ensure it fills its column up to the max-width */
+    margin: 0; /* Reset margins used for float layout */
+  }
+
+  .left {
+    display: block !important;
+  }
+
+  .right {
+    display: block !important;
+  }
+
+  .fixed-nav {
+    /* position:fixed takes this element out of the grid flow, which is correct. */
+    display: block !important;
+    position: fixed !important;
+    top: 0;
+    z-index: 10;
+    width: var(--left-sidebar-width);
+  }
+}
+
+/* === Verbesserte Responsivität für mittlere Bildschirme (769px bis 1099px) === */
+@media screen and (min-width: 769px) and (max-width: 1099px) {
+  :root {
+    --left-sidebar-width: 100px;
+    --right-sidebar-width: 120px;
+    --content-gutter: 10px;
+  }
+
+  body {
+    grid-template-columns: minmax(var(--left-sidebar-width), 1fr) minmax(400px, 1.5fr) minmax(var(--right-sidebar-width), 1fr);
+  }
+
+  .wikidoc {
+    max-width: 800px;
+    min-width: 400px;
+  }
+
+  /* Optional: Leichte Anpassung der Schriftgröße für bessere Lesbarkeit */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* === Große Desktops (ab 1100px) === */
+@media (min-width: 1100px) {
+  :root {
+    --left-sidebar-width: 180px;
+    --right-sidebar-width: 240px;
+    --content-gutter: 20px;
+  }
+  .right {
+    /* On large screens, make the right sidebar 'sticky' */
+    position: fixed;
+    top: 0px;
+    right: 0;
+  }
+
+  .left {
+    /* On large screens, make the left sidebar 'sticky' */
+    position: fixed;
+    top: 0px;
+    left: 0;
+  }
+
+  /* When both sidebars are fixed, they leave the grid. Redefine the grid to 1 column
+     and add padding to the body to avoid content overlapping the fixed sidebars. */
+  body {
+    grid-template-columns: 1fr;
+    padding-left: calc(var(--left-sidebar-width) + var(--content-gutter));
+    padding-right: calc(var(--right-sidebar-width) + var(--content-gutter));
+  }
+}
+
+/* === Sehr kleine Desktop-Bildschirme (zwischen 769px und 1024px) === */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --left-sidebar-width: 80px;
+    --right-sidebar-width: 100px;
+    --content-gutter: 8px;
+  }
+
+  body {
+    grid-template-columns: minmax(var(--left-sidebar-width), 0.8fr) minmax(350px, 1.4fr) minmax(var(--right-sidebar-width), 0.8fr);
+  }
+
+  .wikidoc {
+    max-width: 700px;
+    min-width: 350px;
+  }
+
+  .wikidoc {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+}
+
+/* === Nur linke Spalte ausblenden bei mittlerer Bildschirmbreite (zwischen 769px und 850px) === */
+@media screen and (min-width: 769px) and (max-width: 850px) {
+  :root {
+    --left-sidebar-width: 0px;
+  }
+
+  body {
+    grid-template-columns: minmax(var(--left-sidebar-width), 0fr) minmax(350px, 1.5fr) minmax(var(--right-sidebar-width), 1fr);
+  }
+
+  .left {
+    display: none;
+  }
+
+  .wikidoc {
+    max-width: 800px;
+    min-width: 350px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+}
+
+/* === Beide Spalten ausblenden bei kleinerer Bildschirmbreite (unter 850px) === */
+@media screen and (max-width: 849px) {
+  :root {
+    --left-sidebar-width: 0px;
+    --right-sidebar-width: 0px;
+    --content-gutter: 0px;
+  }
+
+  body {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .left, .right {
+    display: none;
+  }
+
+  .wikidoc {
+    max-width: 100%;
+    min-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.0em;
+  }
+}
+
+/* === Custom Component & Page-Specific Styles === */
+
+/* Sidebar Spacing */
+.left-sidebar-ad-spacing {
+  margin-top: 20px;
+}
+.right-sidebar-ad-container {
+  margin-top: 20px;
+  height: 600px;
+}
+
+/* Ads */
+.ad-in-article-fluid {
+  display: block;
+  text-align: center;
+}
+.ad-in-article-spaced {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Logo & Screenshots */
+.logo {
+  max-width: 200px;
+  border-radius: 10px;
+  margin: 20px auto;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+.screenshot {
+  border: 1px solid var(--border-light); /* Dark theme friendly border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color-light);
+  margin: 20px 0;
+}
+
+/* Video */
+.video-container {
+  text-align: center;
+  margin: 30px 0;
+}
+.video-player {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--border-medium); /* Dark theme friendly border */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px var(--shadow-color-medium);
+  background: var(--black);
+}
+.caption {
+  margin-top: 15px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Download Sections & Buttons */
+.download-section {
+  text-align: center;
+  margin: 20px 0;
+}
+.btn {
+  display: inline-block;
+  width: auto;
+  min-height: auto;
+  text-decoration: none;
+  color: var(--text-primary) !important; /* Ensure color overrides 'a' tag styles */
+  margin: 5px;
+  border-radius: 5px;
+}
+.btn-primary {
+  background: var(--btn-primary-bg);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  background: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 0.5s ease;
+}
+.btn-primary:hover {
+  background: #3182ce;
+}
+.btn-large {
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-large:hover {
+  background: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 0.5s ease;
+}
+.btn-large:hover {
+  background: #3182ce;
+}
+
+/* External Partner Buttons (Lemonade, FastFlowLM) */
+.btn-partner,
+.btn-partner-fastflow {
+  padding: 4px 8px !important;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 19px !important;
+  text-decoration: none !important;
+  display: inline-block;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  width: 400px;
+  text-align: center;
+}
+
+.btn-partner {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #000 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-partner:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Download buttons container */
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* External links container */
+.external-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+/* Ensure consistent button heights */
+.download-buttons .btn,
+.external-links .btn {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================
+   Obsidian Export Section - Prominent Styling
+   ============================================ */
+
+.obsidian-export-section {
+  margin: var(--section-margin);
+  padding: 0 16px;
+}
+
+/* Highlighted CTA box with Obsidian purple theme */
+#obsidian-export .cta-box,
+.obsidian-highlight {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.04) 100%);
+  border: 2px solid rgba(139, 92, 246, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+#obsidian-export .cta-box::before,
+.obsidian-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--section-obsidian), var(--obsidian-secondary));
+}
+
+#obsidian-export .cta-box:hover,
+.obsidian-highlight:hover {
+  border-color: var(--section-obsidian);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.3);
+}
+
+/* Section heading with emoji */
+#obsidian-export-h2 {
+  color: var(--obsidian-secondary);
+}
+
+#obsidian-export-h2 .h2-icon {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+/* Features grid layout */
+.obsidian-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.obsidian-feature-card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.obsidian-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--obsidian-border);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);
+}
+
+.obsidian-feature-card h3 {
+  color: var(--obsidian-accent);
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.obsidian-feature-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.obsidian-feature-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.obsidian-feature-card ul li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+.obsidian-feature-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--obsidian-secondary);
+  font-weight: bold;
+}
+
+/* CTA section with benefits */
+.obsidian-cta {
+  background: rgba(139, 92, 246, 0.08);
+  border-left: 4px solid var(--section-obsidian);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 30px 0;
+}
+
+.obsidian-benefits {
+  list-style: none;
+  padding-left: 0;
+  margin: 16px 0 0 0;
+}
+
+.obsidian-benefits li {
+  padding: 8px 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.obsidian-benefits li strong {
+  color: var(--text-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .obsidian-features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .obsidian-feature-card {
+    padding: 20px;
+  }
+
+  #obsidian-export-h2 {
+    font-size: 1.8em;
+  }
+
+  .obsidian-cta {
+    padding: 16px;
+  }
+}
+
+/* Code Blocks */
+.code-block-md5 {
+  background: var(--bg-secondary);
+  color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.code-block-md5-highlight {
+  background: var(--bg-secondary);
+  color: #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+
+/* Feature Comparison Table */
+.feature-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.feature-table th, .feature-table td {
+  padding: 12px;
+  border: 1px solid var(--border);
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+.feature-table th {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.feature-table tr:hover td {
+  background: rgba(76, 175, 80, 0.15);
+  color: var(--text-primary);
+}
+.feature-table td {
+  background: rgba(45, 45, 48, 0.7);
+  color: var(--text-secondary);
+}
+.feature-table .row-alt td {
+  background: rgba(41, 98, 134, 0.3); /* More vibrant blue tint */
+  color: var(--text-primary);
+}
+
+/* === Umbrella Section Wrappers === */
+/* These wrap each major H2+section pair */
+#inspiration,
+#what-is-tabneuron,
+#core-capabilities,
+#canvas-sync,
+#ai-memory-rag,
+#mcp-section,
+#vision-section,
+#ai-backends,
+#chat-websites,
+#ai-agents,
+#browser-extension,
+#obsidian-export,
+#ocr-section,
+#system-requirements,
+#final-download,
+#support-donations,
+#other-products {
+  position: relative;
+  margin: 16px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(0, 0, 0, 0.04) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 6px 14px 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+/* Section backgrounds with subtle tints */
+#inspiration {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.025) 0%, rgba(99, 179, 237, 0.02) 100%);
+  border-color: rgba(79, 209, 197, 0.10);
+}
+
+#what-is-tabneuron {
+  background: linear-gradient(135deg, rgba(99, 179, 237, 0.025) 0%, rgba(99, 179, 237, 0.02) 100%);
+  border-color: rgba(99, 179, 237, 0.10);
+}
+
+#core-capabilities {
+  background: linear-gradient(135deg, rgba(246, 173, 85, 0.025) 0%, rgba(251, 211, 141, 0.02) 100%);
+  border-color: rgba(246, 173, 85, 0.10);
+}
+
+#canvas-sync {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.02) 0%, rgba(99, 179, 237, 0.02) 100%);
+  border-color: rgba(79, 209, 197, 0.08);
+}
+
+#ai-memory-rag {
+  background: linear-gradient(135deg, rgba(183, 148, 244, 0.02) 0%, rgba(79, 218, 218, 0.02) 52%, rgba(252, 129, 129, 0.015) 100%);
+  border-color: rgba(159, 122, 234, 0.10);
+}
+
+#mcp-section {
+  background: linear-gradient(135deg, rgba(79, 218, 218, 0.02) 0%, rgba(79, 218, 218, 0.02) 100%);
+  border-color: rgba(79, 218, 218, 0.10);
+}
+
+#vision-section {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.025) 0%, rgba(79, 209, 197, 0.02) 100%);
+  border-color: rgba(79, 209, 197, 0.10);
+}
+
+#ai-backends {
+  background: linear-gradient(135deg, rgba(246, 224, 94, 0.025) 0%, rgba(160, 174, 192, 0.02) 100%);
+  border-color: rgba(246, 224, 94, 0.10);
+}
+
+#chat-websites {
+  background: linear-gradient(135deg, rgba(99, 179, 237, 0.02) 0%, rgba(99, 179, 237, 0.02) 100%);
+  border-color: rgba(99, 179, 237, 0.08);
+}
+
+#ai-agents {
+  background: linear-gradient(135deg, rgba(246, 173, 85, 0.02) 0%, rgba(246, 173, 85, 0.02) 100%);
+  border-color: rgba(246, 173, 85, 0.08);
+}
+
+#browser-extension {
+  background: linear-gradient(135deg, rgba(183, 148, 244, 0.02) 0%, rgba(79, 218, 218, 0.015) 52%, rgba(252, 129, 129, 0.01) 100%);
+  border-color: rgba(159, 122, 234, 0.08);
+}
+
+#obsidian-export {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.025) 0%, rgba(196, 181, 253, 0.02) 100%);
+  border-color: rgba(139, 92, 246, 0.10);
+}
+
+#ocr-section {
+  background: linear-gradient(135deg, rgba(252, 129, 129, 0.02) 0%, rgba(252, 129, 129, 0.02) 100%);
+  border-color: rgba(252, 129, 129, 0.08);
+}
+
+#system-requirements {
+  background: linear-gradient(135deg, rgba(160, 174, 192, 0.025) 0%, rgba(160, 174, 192, 0.02) 100%);
+  border-color: rgba(160, 174, 192, 0.10);
+}
+
+#final-download {
+  background: linear-gradient(135deg, rgba(104, 211, 145, 0.02) 0%, rgba(154, 230, 180, 0.02) 100%);
+  border-color: rgba(104, 211, 145, 0.08);
+}
+
+#support-donations {
+  background: linear-gradient(135deg, rgba(246, 135, 179, 0.025) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border-color: rgba(246, 135, 179, 0.10);
+}
+
+#other-products {
+  background: linear-gradient(135deg, rgba(127, 156, 245, 0.025) 0%, rgba(99, 179, 237, 0.02) 100%);
+  border-color: rgba(127, 156, 245, 0.10);
+}
+
+/* Call to Action Box (CTA) */
+.cta-box {
+  margin: 20px 0;
+  background: rgba(45, 45, 48, 0.6);
+  color: var(--text-primary);
+  padding: 36px 40px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-blue) 0%, var(--bg-accent) 100%);
+}
+
+/* Section-specific CTA box backgrounds matching h2 colors */
+#inspiration .cta-box {
+  background: rgba(79, 209, 197, 0.06);
+  border-color: rgba(79, 209, 197, 0.12);
+}
+#inspiration .cta-box::before {
+  background: linear-gradient(90deg, var(--section-inspiration), transparent);
+}
+
+#what-is-tabneuron .cta-box,
+#chat-websites .cta-box {
+  background: rgba(99, 179, 237, 0.06);
+  border-color: rgba(99, 179, 237, 0.12);
+}
+#what-is-tabneuron .cta-box::before,
+#chat-websites .cta-box::before {
+  background: linear-gradient(90deg, var(--section-what-is), transparent);
+}
+
+#core-capabilities .cta-box,
+#ai-agents .cta-box {
+  background: rgba(246, 173, 85, 0.06);
+  border-color: rgba(246, 173, 85, 0.12);
+}
+#core-capabilities .cta-box::before,
+#ai-agents .cta-box::before {
+  background: linear-gradient(90deg, var(--section-solves), transparent);
+}
+
+#ai-memory-rag .cta-box,
+#browser-extension .cta-box {
+  background: rgba(183, 148, 244, 0.06);
+  border-color: rgba(183, 148, 244, 0.12);
+}
+#ai-memory-rag .cta-box::before,
+#browser-extension .cta-box::before {
+  background: linear-gradient(90deg, var(--section-memory), transparent);
+}
+
+#mcp-section .cta-box {
+  background: rgba(79, 218, 218, 0.06);
+  border-color: rgba(79, 218, 218, 0.12);
+}
+#mcp-section .cta-box::before {
+  background: linear-gradient(90deg, var(--section-mcp), transparent);
+}
+
+#vision-section .cta-box {
+  background: rgba(79, 209, 197, 0.06);
+  border-color: rgba(79, 209, 197, 0.12);
+}
+#vision-section .cta-box::before {
+  background: linear-gradient(90deg, var(--section-vision), transparent);
+}
+
+#ai-backends .cta-box {
+  background: rgba(246, 224, 94, 0.06);
+  border-color: rgba(246, 224, 94, 0.12);
+}
+#ai-backends .cta-box::before {
+  background: linear-gradient(90deg, var(--section-backends), transparent);
+}
+
+#canvas-sync .cta-box {
+  background: rgba(79, 209, 197, 0.05);
+  border-color: rgba(79, 209, 197, 0.10);
+}
+#canvas-sync .cta-box::before {
+  background: linear-gradient(90deg, var(--section-inspiration), transparent);
+}
+
+#obsidian-export .cta-box {
+  background: rgba(139, 92, 246, 0.06);
+  border: 2px solid rgba(139, 92, 246, 0.2);
+}
+#obsidian-export .cta-box::before {
+  background: linear-gradient(90deg, var(--section-obsidian), var(--obsidian-secondary));
+}
+#obsidian-export .cta-box:hover {
+  border-color: var(--section-obsidian);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.3);
+}
+
+#ocr-section .cta-box {
+  background: rgba(252, 129, 129, 0.06);
+  border-color: rgba(252, 129, 129, 0.12);
+}
+#ocr-section .cta-box::before {
+  background: linear-gradient(90deg, var(--section-ocr), transparent);
+}
+
+#system-requirements .cta-box {
+  background: rgba(160, 174, 192, 0.06);
+  border-color: rgba(160, 174, 192, 0.12);
+}
+#system-requirements .cta-box::before {
+  background: linear-gradient(90deg, var(--section-requirements), transparent);
+}
+
+#final-download .cta-box {
+  background: rgba(104, 211, 145, 0.05);
+  border-color: rgba(104, 211, 145, 0.10);
+}
+#final-download .cta-box::before {
+  background: linear-gradient(90deg, var(--section-download), transparent);
+}
+
+#support-donations .cta-box {
+  background: rgba(246, 135, 179, 0.06);
+  border-color: rgba(246, 135, 179, 0.12);
+}
+#support-donations .cta-box::before {
+  background: linear-gradient(90deg, var(--section-support), transparent);
+}
+
+#other-products .cta-box {
+  background: rgba(127, 156, 245, 0.06);
+  border-color: rgba(127, 156, 245, 0.12);
+}
+#other-products .cta-box::before {
+  background: linear-gradient(90deg, var(--section-products), transparent);
+}
+
+.cta-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-color: var(--accent-blue);
+}
+
+.cta-box h3 {
+  color: var(--pastel-blue);
+  margin-top: 0;
+  border-bottom: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: left;
+  margin-top: -10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.cta-box p {
+  font-size: 16px;
+  margin: 18px 0;
+  color: #d0d0d0;
+  text-align: left;
+  line-height: 1.75;
+}
+
+.cta-box ul, .cta-box ol {
+  text-align: left;
+  padding-left: 28px;
+  margin: 18px 0;
+}
+
+.cta-box ul li, .cta-box ol li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+/* Nested lists */
+.cta-box ul ul, .cta-box ol ol {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  padding-left: 20px;
+}
+.cta-box ul ul li, .cta-box ol ol li {
+  margin-bottom: 4px;
+  font-size: 0.95em;
+  opacity: 0.9;
+}
+
+/* Semantic Elements */
+section {
+  margin: var(--section-margin);
+}
+
+article {
+  margin: var(--subsection-margin);
+}
+
+figure {
+  margin: 28px auto;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 14px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+  opacity: 0.85;
+}
+.capabilities-section,
+.users-section,
+.operation-section,
+.technical-section,
+.ocr-section,
+.comparison-section,
+.setup-section,
+.requirements-section,
+.final-download-section,
+.support-section,
+.other-products-section {
+  margin: var(--section-margin);
+  padding: 0 10px; /* Consistent horizontal padding */
+}
+
+/* Product sections */
+.product-section {
+  margin: var(--subsection-margin);
+  padding: 20px 0;
+}
+
+.product-fig {
+  margin: 15px auto;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-fig figcaption {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.store-fig {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Payment options */
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.paypal-option,
+.bch-option {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.qr-figure {
+  display: inline-block;
+  margin: 10px;
+}
+
+.qr-code {
+  width: 130px;
+  height: 130px;
+  vertical-align: middle;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* Donations & Embeds */
+.embed-container {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.embed-item {
+  margin-bottom: 20px;
+}
+.embed-iframe {
+  max-width: 100%;
+  border: none;
+}
+
+/* Horizontal Table of Contents Navigation */
+.horizontal-toc-nav {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(124, 58, 237, 0.18) 0%, transparent 38%),
+    radial-gradient(circle at bottom right, rgba(56, 178, 172, 0.14) 0%, transparent 40%),
+    linear-gradient(135deg, rgba(15, 23, 42, 0.82) 0%, rgba(30, 41, 59, 0.78) 45%, rgba(12, 18, 32, 0.88) 100%);
+  padding: 16px 14px;
+  border-radius: 18px;
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 0 0 1px rgba(167, 139, 250, 0.10);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(168, 216, 234, 0.14);
+  margin: 18px 0 24px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.horizontal-toc-nav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.08) 50%, transparent 100%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.horizontal-toc-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.horizontal-toc-nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+.horizontal-toc-nav a {
+  color: #d8e2f2;
+  text-decoration: none;
+  padding: 11px 16px;
+  display: block;
+  border-radius: 999px;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease, color 0.28s ease, border-color 0.28s ease;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(168, 216, 234, 0.12);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 4px 14px rgba(0, 0, 0, 0.14);
+  position: relative;
+  overflow: hidden;
+}
+
+.horizontal-toc-nav a:hover {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.18) 0%, transparent 36%),
+    linear-gradient(135deg, rgba(124, 58, 237, 0.22) 0%, rgba(56, 178, 172, 0.18) 100%);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow:
+    0 10px 22px rgba(124, 58, 237, 0.18),
+    0 0 0 1px rgba(168, 216, 234, 0.20),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  border-color: rgba(168, 216, 234, 0.28);
+}
+
+.horizontal-toc-nav a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.36) 48%, transparent 52%, transparent 100%);
+  transform: translateX(-130%);
+  transition: transform 0.6s ease;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.horizontal-toc-nav a:hover::after {
+  transform: translateX(130%);
+}
+
+/* Section header container for navigation arrow */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Navigation arrows in headings */
+.nav-arrow {
+  font-size: 0.9em;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.nav-arrow:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  color: #64b5f6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .horizontal-toc-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal-toc-nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Footer */
+.main-footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Beta feature indicator */
+.beta-feature {
+  display: inline-block;
+  background-color: #ff4444; /* Red background */
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: super;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+/* === Collapsible Sections === */
+
+/* Collapsible H2 sections */
+h2.collapsible {
+   cursor: pointer;
+   position: relative;
+   padding-right: 40px;
+   user-select: none;
+   transition: color 0.2s ease;
+}
+
+h2.collapsible:hover {
+   color: #64b5f6;
+}
+
+h2.collapsible::after {
+   content: attr(data-arrow-expanded, "▼");
+   position: absolute;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 32px;
+   height: 32px;
+   background: linear-gradient(135deg, rgba(168, 216, 234, 0.1) 0%, rgba(168, 216, 234, 0.05) 100%);
+   border: 1px solid rgba(168, 216, 234, 0.2);
+   border-radius: 50%;
+   color: var(--pastel-blue);
+   font-size: 0.95em;
+   font-weight: 400;
+   flex-shrink: 0;
+   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+   text-shadow: 0 0 8px rgba(168, 216, 234, 0.5);
+   overflow: hidden;
+}
+
+h2.collapsible.collapsed::after {
+   content: attr(data-arrow-collapsed, "◀");
+}
+
+h2.collapsible:hover::after {
+   background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+   border-color: rgba(168, 216, 234, 0.5);
+   box-shadow: 0 6px 16px rgba(168, 216, 234, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+   color: #e3f2fd;
+   text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
+}
+
+h2.collapsible::after::after,
+h2.collapsible.collapsed::after::after {
+   content: '';
+   position: absolute;
+   top: -50%;
+   left: -50%;
+   width: 200%;
+   height: 200%;
+   background: linear-gradient(
+     to right,
+     transparent 0%,
+     rgba(255, 255, 255, 0.35) 45%,
+     rgba(255, 255, 255, 0.7) 50%,
+     rgba(255, 255, 255, 0.35) 55%,
+     transparent 100%
+   );
+   transform: rotate(45deg);
+   opacity: 0;
+   transition: all 0.5s ease;
+   pointer-events: none;
+   z-index: 1;
+}
+
+h2.collapsible:hover::after::after,
+h2.collapsible.collapsed:hover::after::after {
+   opacity: 1;
+   animation: iconShineSweep 0.9s ease-in-out infinite alternate;
+}
+
+/* Collapsible H3 sections */
+h3.collapsible {
+  cursor: pointer;
+  position: relative;
+  padding-right: 40px;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+h3.collapsible:hover {
+  color: #64b5f6;
+}
+
+h3.collapsible::after {
+  content: '+';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+h3.collapsible.collapsed::after {
+  content: '−';
+}
+
+/* Collapsed sections and divs */
+section.collapsed {
+  display: none;
+}
+
+div.collapsed {
+  display: none;
+}
+
+/* Nav toggle arrows */
+.nav-arrow-down,
+.nav-arrow-up {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1.2em;
+  user-select: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
+  color: var(--pastel-blue);
+  width: 32px;
+  height: 32px;
+  line-height: 28px;
+  text-align: center;
+  border: 2px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-arrow-down::after,
+.nav-arrow-up::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 45%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.35) 55%,
+    transparent 100%
+  );
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.nav-arrow-down:hover,
+.nav-arrow-up:hover {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  color: #e3f2fd;
+  text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
+}
+
+.nav-arrow-down:hover::after,
+.nav-arrow-up:hover::after {
+  opacity: 1;
+  animation: iconShineSweep 0.9s ease-in-out infinite alternate;
+}
+
+.nav-arrow-down.rotated,
+.nav-arrow-up.rotated {
+  transform: none;}
+
+@keyframes iconShineSweep {
+  0% { transform: rotate(45deg) translateX(-55%); opacity: 0; }
+  20% { opacity: 1; }
+  50% { transform: rotate(45deg) translateX(0%); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: rotate(45deg) translateX(55%); opacity: 0; }
+}
+
+.nav-arrow-down:hover,
+.nav-arrow-up:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.back-to-top button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.back-to-top button:hover {
+  background-color: #0056b3;
+}
+
+/* NEW badge */
+.new-badge {
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Star-shaped badge */
+.new-badge {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  padding: 8px 12px;
+  min-width: 40px;
+  text-align: center;
+}
+
+/* === Feature Detail Groups & Toggles (Sorana Style) === */
+.feature-detail-group {
+  padding: 20px 28px;
+  background: rgba(45, 45, 48, 0.5);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.feature-detail-group:hover {
+  border-color: var(--accent-blue);
+}
+
+.feature-detail-toggle {
+  cursor: pointer;
+  margin: 0;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.1) 0%, rgba(168, 216, 234, 0.05) 100%);
+  border: 1px solid rgba(168, 216, 234, 0.2);
+  border-radius: 10px;
+  font-size: 1.15em;
+  font-weight: 600;
+  color: var(--pastel-blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-detail-toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.feature-detail-toggle:hover {
+  color: #e3f2fd;
+  border-color: rgba(168, 216, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(168, 216, 234, 0.2);
+  transform: translateX(4px);
+}
+
+.feature-detail-toggle:hover::before {
+  left: 100%;
+}
+
+.feature-detail-toggle.active .toggle-icon, .capability-toggle.active .toggle-icon {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.35) 0%, rgba(76, 175, 80, 0.18) 100%);
+  border-color: rgba(76, 175, 80, 0.45);
+  color: #68d391;
+  transform: none;box-shadow: 0 4px 12px rgba(76, 175, 80, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.6);
+}
+
+ .feature-detail-toggle.active:hover .toggle-icon, .capability-toggle.active:hover .toggle-icon {
+   background: linear-gradient(135deg, rgba(76, 175, 80, 0.45) 0%, rgba(76, 175, 80, 0.25) 100%);
+   border-color: rgba(76, 175, 80, 0.55);
+   box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+   transform: scale(1.08);
+   color: #9ae6b4;
+   text-shadow: 0 0 14px rgba(76, 175, 80, 0.8);
+ }
+
+/* Content Area */
+.feature-detail-content {
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: 1px solid var(--border);
+}
+
+.feature-detail-content ul {
+  padding-left: 24px;
+  margin: 12px 0;
+}
+
+.feature-detail-content ul li {
+  margin-bottom: 6px;
+  line-height: 1.65;
+}
+
+.feature-detail-content .chatbot-figure {
+  margin: 16px auto 8px;
+}
+
+/* === Pastell-Farben für Hervorhebungen === */
+
+/* Standard bold in CTA boxes – Pastell-Blau */
+.cta-box strong,
+.cta-box b {
+  color: var(--pastel-blue);
+}
+
+/* Feature-detail toggle titles – kein Pastell-Blau für bold */
+.feature-detail-toggle strong {
+  color: inherit;
+}
+
+/* Code-Blöcke – Lavendel */
+code,
+.code-block-md5 code {
+  color: var(--pastel-lavender);
+  background-color: rgba(213, 170, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Highlights – Peach */
+.highlight,
+.pastel-highlight {
+  color: var(--pastel-peach);
+  font-weight: 600;
+}
+
+/* Grüne Metriken (%, Tokens, Savings) */
+.metric-green {
+  color: var(--pastel-green);
+  font-weight: 600;
+}
+
+/* Lemonade-only Hinweis */
+.lemonade-only {
+  color: var(--pastel-yellow);
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/* Image caption styling */
+.image-caption {
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* === Collapsible Sections (Sorana Style) === */
+
+/* Collapsible H2 sections */
+h2.collapsible {
+  cursor: pointer;
+  position: relative;
+  padding-right: 0;
+  user-select: none;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2.collapsible::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+h2.collapsible:hover {
+  color: #64b5f6;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.08) 0%, rgba(168, 216, 234, 0.03) 100%);
+  border-color: rgba(168, 216, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(168, 216, 234, 0.12);
+  transform: translateX(4px);
+}
+
+h2.collapsible:hover::before {
+  left: 100%;
+}
+
+.h2-icon {
+  margin-left: auto;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.h2-icon.is-expanded {
+  transform: rotate(-90deg);
+}
+
+/* Chevron badge styling */
+.chevron-badge,
+.feature-detail-toggle .toggle-icon, .capability-toggle .toggle-icon, .h2-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
+  border: 2px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  color: var(--pastel-blue);
+  font-size: 0.95em;
+  font-weight: 400;
+  flex-shrink: 0;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 8px rgba(168, 216, 234, 0.5);
+  overflow: hidden;
+}
+
+.chevron-badge::after,
+.feature-detail-toggle .toggle-icon::after, .capability-toggle .toggle-icon::after, .h2-icon::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 45%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.35) 55%,
+    transparent 100%
+  );
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+h2.collapsible:hover .h2-icon,
+.chevron-badge:hover,
+.feature-detail-toggle:hover .toggle-icon, .capability-toggle:hover .toggle-icon {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  box-shadow: 0 6px 16px rgba(168, 216, 234, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+  color: #e3f2fd;
+  text-shadow: 0 0 12px rgba(168, 216, 234, 0.8);
+}
+
+.chevron-badge:hover::after,
+.h2-icon:hover::after,
+.feature-detail-toggle:hover .toggle-icon::after {
+  opacity: 1;
+  animation: iconShineSweep 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes iconShineSweep {
+  0% { transform: rotate(45deg) translateX(-55%); opacity: 0; }
+  20% { opacity: 1; }
+  50% { transform: rotate(45deg) translateX(0%); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: rotate(45deg) translateX(55%); opacity: 0; }
+}
+
+/* Collapsible H3 sections */
+h3.collapsible {
+  cursor: pointer;
+  position: relative;
+  padding-right: 44px;
+  user-select: none;
+  transition: color 0.2s ease, background 0.2s ease;
+  border-radius: 8px;
+}
+
+h3.collapsible:hover {
+  color: #64b5f6;
+  background: rgba(168, 216, 234, 0.05);
+}
+
+h3.collapsible::after {
+  content: '+';
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: rgba(168, 216, 234, 0.15);
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #f6e05e;
+  transition: background 0.2s ease, transform 0.3s ease;
+}
+
+h3.collapsible:hover::after {
+  background: rgba(168, 216, 234, 0.25);
+}
+
+h3.collapsible.collapsed::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* Collapsed sections and divs */
+section.collapsed {
+  display: none;
+}
+
+div.collapsed {
+  display: none;
+}
+
+/* Nav toggle arrows */
+.nav-arrow-down,
+.nav-arrow-up {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1.2em;
+  user-select: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.2) 0%, rgba(168, 216, 234, 0.08) 100%);
+  color: var(--pastel-blue);
+  width: 32px;
+  height: 32px;
+  line-height: 28px;
+  text-align: center;
+  border: 2px solid rgba(168, 216, 234, 0.3);
+  border-radius: 50%;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+.nav-arrow-down:hover,
+.nav-arrow-up:hover {
+  background: linear-gradient(135deg, rgba(168, 216, 234, 0.35) 0%, rgba(168, 216, 234, 0.2) 100%);
+  border-color: rgba(168, 216, 234, 0.5);
+  color: #e3f2fd;
+}
+
+.nav-arrow-down.rotated,
+.nav-arrow-up.rotated {
+  transform: none;}
+
+/* ===========================
+   Lightbox — Image Enlargement
+   =========================== */
+
+.lightbox-link {
+  cursor: zoom-in;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.lightbox-link img {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 6px;
+}
+
+.lightbox-link:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: zoom-out;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox-overlay img.lightbox-active-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+  cursor: default;
+  animation: lightbox-zoom 0.25s ease;
+}
+
+@keyframes lightbox-zoom {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Lightbox caption */
+.lightbox-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ccc;
+  font-size: 14px;
+  text-align: center;
+  max-width: 90vw;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+  .cta-box {
+    padding: 24px 20px;
+    border-radius: 10px;
+  }
+
+   .feature-detail-group {
+     margin: 4px 0;
+   }
+
+  .feature-detail-toggle {
+    padding: 12px 36px 12px 14px;
+    font-size: 1.05em;
+  }
+
+  .feature-detail-content {
+    padding: 16px 20px;
+  }
+
+  .cta-box p {
+    font-size: 15px;
+    margin: 14px 0;
+  }
+
+  .cta-box ul, .cta-box ol {
+    padding-left: 24px;
+  }
+
+  .cta-box ul ul, .cta-box ol ol {
+    padding-left: 16px;
+  }
+
+  .cta-box h3 {
+    font-size: 1.3em;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  figure {
+    margin: 20px 0;
+  }
+}
+
+/* Mobile lightbox */
+@media (max-width: 768px) {
+  .lightbox-overlay {
+    padding: 10px;
+  }
+
+  .lightbox-overlay img.lightbox-active-img {
+    max-width: 95vw;
+    max-height: 85vh;
+    border-radius: 4px;
+  }
+
+  .lightbox-caption {
+    font-size: 12px;
+    bottom: 10px;
+    padding: 6px 12px;
+  }
+}
+
+/* Prevent body scroll when lightbox is open */
+body.lightbox-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+.main-footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Beta feature indicator */
+.beta-feature {
+  display: inline-block;
+  background-color: #ff4444;
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: super;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+/* Section header container for navigation arrow */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Navigation arrows in headings */
+.nav-arrow {
+  font-size: 0.9em;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.nav-arrow:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  color: #64b5f6;
+}
+
+/* Responsive adjustments for horizontal TOC */
+@media (max-width: 768px) {
+  .horizontal-toc-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal-toc-nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Partner buttons (Lemonade, FastFlowLM) */
+.btn-partner,
+.btn-partner-fastflow {
+  padding: 4px 8px !important;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 19px !important;
+  text-decoration: none !important;
+  display: inline-block;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  width: 190px;
+  text-align: center;
+}
+
+.btn-partner {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #000 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-partner:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-partner-fastflow {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 50%, #1e3a5f 100%);
+  color: #fff !important;
+  border: 1px solid #1a3a5c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.btn-partner-fastflow:hover {
+  background: linear-gradient(135deg, #2d5a87 0%, #3d7ab5 50%, #2d5a87 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Partner buttons container */
+.partner-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* External links container */
+.external-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+/* Download buttons container */
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Ensure consistent button heights */
+.download-buttons .btn,
+.external-links .btn {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+====================================================================================================
+ FILE: main.js
+ PATH: D:\Benutzer\github\TabNeuron\docs\main.js
+====================================================================================================
+
+/**
+ * Scroll functions for TabNeuron Documentation
+ */
+
+/**
+ * Find the H2 element before a section
+ * @param {HTMLElement} section - The section element
+ * @returns {HTMLElement|null} - The H2 element or null
+ */
+function findH2ForSection(section) {
+    let prevElement = section.previousElementSibling;
+    while (prevElement && prevElement.tagName !== 'H2' && prevElement.tagName !== 'SECTION') {
+        prevElement = prevElement.previousElementSibling;
+    }
+    if (prevElement && prevElement.tagName === 'H2') {
+        return prevElement;
+    }
+    return null;
+}
+
+/**
+ * Scroll to a section with smart positioning
+ * @param {string} targetId - The ID of the target section (with or without #)
+ */
+function scrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        // If target is an H2, toggle its section open first
+        if (targetElement.tagName === 'H2') {
+            toggleSection(targetElement);
+        }
+        // If target is a SECTION, find the H2 and toggle it
+        else if (targetElement.tagName === 'SECTION') {
+            const h2Element = findH2ForSection(targetElement);
+            if (h2Element) {
+                toggleSection(h2Element);
+            }
+        }
+
+        // Überprüfe, ob das Element bereits sichtbar ist
+        const rect = targetElement.getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+        // Wenn das Element sichtbar ist, aber am oberen Rand, scrollen wir so, dass es in der Mitte ist
+        if (isVisible && rect.top < window.innerHeight * 0.1) {
+            // Scrollen, sodass das Element in der Mitte des Viewports ist
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten normales Scrollen
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+
+/**
+ * Alternative Funktion, die immer zentriert, wenn das Element bereits sichtbar ist
+ * @param {string} targetId - The ID of the target section (with or without #)
+ */
+function smartScrollToSection(targetId) {
+    const targetElement = document.getElementById(targetId.replace('#', ''));
+    if (targetElement) {
+        // If target is an H2, toggle its section open first
+        if (targetElement.tagName === 'H2') {
+            toggleSection(targetElement);
+        }
+        // If target is a SECTION, find the H2 and toggle it
+        else if (targetElement.tagName === 'SECTION') {
+            const h2Element = findH2ForSection(targetElement);
+            if (h2Element) {
+                toggleSection(h2Element);
+            }
+        }
+
+        const rect = targetElement.getBoundingClientRect();
+        const isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+        if (isInViewport) {
+            // Wenn das Element bereits sichtbar ist, zentriere es
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            // Ansonsten scroll zum Anfang des Elements
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+}
+
+/**
+ * Collapsible Sections for TabNeuron Documentation
+ * Makes all H2 elements in the main element clickable to toggle their sections
+ */
+
+/**
+ * Toggle the visibility of a section associated with an H2 element
+ * @param {HTMLElement} h2Element - The H2 element that was clicked
+ */
+function toggleSection(h2Element) {
+    h2Element.classList.toggle('collapsed');
+
+    // Find the next section element following this h2 (skip any intermediate elements, stop at next H2)
+    let nextElement = h2Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    // Toggle the section if found
+    if (nextElement && nextElement.tagName === 'SECTION') {
+        nextElement.classList.toggle('collapsed');
+
+        // Update arrows in this section
+        // Update arrow styles in this section (glyphs are set once at init)
+        const arrows = nextElement.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
+        arrows.forEach(function(arrow) {
+            if (nextElement.classList.contains('collapsed')) {
+                arrow.classList.remove('rotated');
+            } else {
+                arrow.classList.add('rotated');
+            }
+        });
+    }
+}
+
+/**
+ * Toggle the visibility of a div associated with an H3 element
+ * @param {HTMLElement} h3Element - The H3 element that was clicked
+ */
+function toggleH3Section(h3Element) {
+    h3Element.classList.toggle('collapsed');
+
+    // Find the next div element following this h3
+    let nextElement = h3Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    // Toggle the div if found
+    if (nextElement && nextElement.tagName === 'DIV') {
+        nextElement.classList.toggle('collapsed');
+    }
+}
+
+/**
+ * Toggle section from arrow button click
+ * @param {HTMLElement} arrowElement - The arrow span that was clicked
+ */
+function toggleSectionFromArrow(arrowElement) {
+    // Find the parent cta-box
+    const ctaBox = arrowElement.closest('.cta-box');
+    if (!ctaBox) return;
+
+    // Find the parent section of the cta-box
+    const parentSection = ctaBox.closest('section');
+    if (!parentSection) return;
+
+    // Toggle the section
+    parentSection.classList.toggle('collapsed');
+
+    // Update arrow symbols in this cta-box only (use rotated + instead of −)
+    const downArrow = ctaBox.querySelector('.nav-arrow-down');
+    const upArrow = ctaBox.querySelector('.nav-arrow-up');
+
+    if (parentSection.classList.contains('collapsed')) {
+        if (downArrow) { downArrow.classList.remove('rotated'); }
+        if (upArrow) { upArrow.classList.remove('rotated'); }
+    } else {
+        if (downArrow) { downArrow.classList.add('rotated'); }
+        if (upArrow) { upArrow.classList.add('rotated'); }
+    }
+
+    // Also update the H2 symbol if there is one in this section
+    const h2InSection = parentSection.querySelector('h2');
+    if (h2InSection) {
+        if (parentSection.classList.contains('collapsed')) {
+            h2InSection.classList.add('collapsed');
+        } else {
+            h2InSection.classList.remove('collapsed');
+        }
+    }
+}
+
+/**
+ * Initialize collapsible sections
+ */
+(function() {
+    // Collapse all sections by default
+    const allSections = document.querySelectorAll('main section');
+    allSections.forEach(function(section) {
+        section.classList.add('collapsed');
+    });
+
+    // Collapse all H3 divs by default
+    const h3Elements = document.querySelectorAll('main h3');
+    h3Elements.forEach(function(h3) {
+        // Skip if data-no-toggle is set
+        if (h3.getAttribute('data-no-toggle') === 'true') return;
+        // Skip feature-detail-toggle headers
+        if (h3.classList.contains('feature-detail-toggle')) return;
+
+        h3.classList.add('collapsible');
+        // Find and collapse the next div
+        let nextElement = h3.nextElementSibling;
+        while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+            nextElement = nextElement.nextElementSibling;
+        }
+        if (nextElement && nextElement.tagName === 'DIV') {
+            nextElement.classList.add('collapsed');
+        }
+    });
+
+    // Set nav arrows to their directional glyphs (▼ and ▲)
+    const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
+    allArrows.forEach(function(arrow) {
+        if (arrow.classList.contains('nav-arrow-down')) {
+            arrow.textContent = '▼';
+        } else if (arrow.classList.contains('nav-arrow-up')) {
+            arrow.textContent = '▲';
+        }
+        arrow.classList.remove('rotated');
+    });
+
+     // Initialize H2 collapsible functionality
+     const h2Elements = document.querySelectorAll('main h2');
+     h2Elements.forEach(function(h2) {
+         // Skip if data-no-toggle is set
+         if (h2.getAttribute('data-no-toggle') === 'true') return;
+
+         h2.classList.add('collapsible');
+         h2.classList.add('collapsed'); // Start collapsed
+         // Set arrow data attributes for Sorana-style toggle
+         h2.setAttribute('data-arrow-collapsed', '◀');
+         h2.setAttribute('data-arrow-expanded', '▼');
+         h2.addEventListener('click', function(e) {
+             // Don't toggle if clicking on a link inside the h2
+             if (e.target.tagName !== 'A') {
+                 toggleSection(h2);
+             }
+         });
+     });
+
+     // Initialize H3 collapsible functionality (toggle next div)
+     h3Elements.forEach(function(h3) {
+         // Skip if data-no-toggle is set
+         if (h3.getAttribute('data-no-toggle') === 'true') return;
+         // Skip feature-detail-toggle headers
+         if (h3.classList.contains('feature-detail-toggle')) return;
+
+         h3.classList.add('collapsible');
+         // Find and collapse the next div
+         let nextElement = h3.nextElementSibling;
+         while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+             nextElement = nextElement.nextElementSibling;
+         }
+         if (nextElement && nextElement.tagName === 'DIV') {
+             nextElement.classList.add('collapsed');
+         }
+
+         h3.addEventListener('click', function(e) {
+             // Don't toggle if clicking on a link inside the h3
+             if (e.target.tagName !== 'A') {
+                 toggleH3Section(h3);
+             }
+         });
+     });
+
+     // Initialize feature-detail-toggle arrows
+     document.querySelectorAll('.feature-detail-toggle').forEach(function(toggle) {
+         const icon = toggle.querySelector('.toggle-icon');
+         if (icon) {
+             // Set initial arrow based on content state
+             const content = toggle.nextElementSibling;
+             if (content && content.style.display !== 'none') {
+                 // Content is visible
+                 icon.textContent = '▼';
+             } else {
+                 // Content is hidden/collapsed
+                 icon.textContent = '▶';
+             }
+         }
+     });
+})();
+
+/**
+ * Toggle feature-detail group visibility
+ * @param {HTMLElement} toggleElement - The h3 element clicked
+ */
+ function toggleFeatureDetail(toggleElement) {
+     const content = toggleElement.nextElementSibling;
+     if (!content) return;
+
+     const isHidden = content.style.display === 'none';
+     // Toggle the display
+     content.style.display = isHidden ? 'block' : 'none';
+
+     const icon = toggleElement.querySelector('.toggle-icon');
+     if (icon) {
+         // Set arrow based on NEW state (after toggle)
+         if (content.style.display === 'none') {
+             // Now collapsed - point right
+             icon.textContent = '▶';
+         } else {
+             // Now expanded - point down
+             icon.textContent = '▼';
+         }
+     }
+
+     // Update active class based on new state
+     if (content.style.display !== 'none') {
+         toggleElement.classList.add('active');
+     } else {
+         toggleElement.classList.remove('active');
+     }
+ }
+
+/**
+ * Lightbox — Click-to-enlarge images
+ * Responsive, mobile-friendly, no dependencies
+ */
+(function() {
+    // Create lightbox overlay element
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.id = 'lightbox-overlay';
+    overlay.innerHTML = '<img src="" alt="" class="lightbox-active-img"><div class="lightbox-caption"></div>';
+    document.body.appendChild(overlay);
+
+    const lightboxImg = overlay.querySelector('.lightbox-active-img');
+    const lightboxCaption = overlay.querySelector('.lightbox-caption');
+    let currentScrollY = 0;
+    let touchStartY = 0;
+
+    /**
+     * Open the lightbox with a given image
+     * @param {HTMLImageElement} img - The source image element
+     */
+    function openLightbox(img) {
+        currentScrollY = window.scrollY;
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        overlay.classList.add('active');
+        document.body.classList.add('lightbox-open');
+
+        // Show caption if the image has a parent figure with figcaption
+        const figure = img.closest('figure');
+        const figcaption = figure ? figure.querySelector('figcaption') : null;
+        if (figcaption) {
+            lightboxCaption.textContent = figcaption.textContent;
+            lightboxCaption.style.display = 'block';
+        } else {
+            lightboxCaption.style.display = 'none';
+        }
+    }
+
+    /**
+     * Close the lightbox
+     */
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.classList.remove('lightbox-open');
+        // Restore scroll position
+        window.scrollTo(0, currentScrollY);
+    }
+
+    // Attach click handlers to all screenshots
+    function initLightboxLinks() {
+        // Wrap eligible images in lightbox links
+        const selectors = '.sorana-screenshot, .chatbot-screenshot';
+        document.querySelectorAll(selectors).forEach(function(img) {
+            // Skip if already wrapped
+            if (img.parentElement && img.parentElement.classList.contains('lightbox-link')) return;
+
+            const link = document.createElement('a');
+            link.className = 'lightbox-link';
+            link.href = img.src;
+            link.title = 'Click to enlarge';
+            link.setAttribute('aria-label', 'Enlarge image');
+            img.parentNode.insertBefore(link, img);
+            link.appendChild(img);
+
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                openLightbox(img);
+            });
+        });
+    }
+
+    // Close on overlay click (not on image click)
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            closeLightbox();
+        }
+    });
+
+    // Close on ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+
+    // Mobile: swipe down to close
+    overlay.addEventListener('touchstart', function(e) {
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    overlay.addEventListener('touchend', function(e) {
+        const touchEndY = e.changedTouches[0].clientY;
+        const swipeDistance = touchEndY - touchStartY;
+        // Swipe down more than 80px → close
+        if (swipeDistance > 80) {
+            closeLightbox();
+        }
+    }, { passive: true });
+
+    // Prevent image drag from opening new tab on mobile
+    lightboxImg.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+
+    // Initialize on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLightboxLinks);
+    } else {
+        initLightboxLinks();
+    }
+})();
+
+

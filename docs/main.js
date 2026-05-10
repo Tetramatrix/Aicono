@@ -162,11 +162,7 @@ function toggleSectionFromArrow(arrowElement) {
  * Initialize collapsible sections
  */
 (function() {
-    // Collapse all sections by default
-    const allSections = document.querySelectorAll('main section');
-    allSections.forEach(function(section) {
-        section.classList.add('collapsed');
-    });
+
 
     // Collapse all H3 divs by default
     const h3Elements = document.querySelectorAll('main h3');
@@ -185,11 +181,7 @@ function toggleSectionFromArrow(arrowElement) {
         }
     });
 
-    // Set all arrows to + (collapsed state)
-    const allArrows = document.querySelectorAll('.nav-arrow-down, .nav-arrow-up');
-    allArrows.forEach(function(arrow) {
-        arrow.textContent = '+';
-    });
+// Arrow initialization removed (old system)
 
     // Initialize H2 collapsible functionality
     const h2Elements = document.querySelectorAll('main h2');
@@ -219,4 +211,38 @@ function toggleSectionFromArrow(arrowElement) {
         });
     });
 })();
+
+
+
+/**
+ * Toggle feature-detail group visibility
+ * @param {HTMLElement} toggleElement - The h3 element clicked
+ */
+function toggleFeatureDetail(toggleElement) {
+    const content = toggleElement.nextElementSibling;
+    if (!content) return;
+
+    const isHidden = content.style.display === 'none';
+    // Toggle the display
+    content.style.display = isHidden ? 'block' : 'none';
+
+    const icon = toggleElement.querySelector('.toggle-icon');
+    if (icon) {
+        // Set arrow based on NEW state (after toggle)
+        if (content.style.display === 'none') {
+            // Now collapsed - point right
+            icon.textContent = '▶';
+        } else {
+            // Now expanded - point down
+            icon.textContent = '▼';
+        }
+    }
+
+    // Update active class based on new state
+    if (content.style.display !== 'none') {
+        toggleElement.classList.add('active');
+    } else {
+        toggleElement.classList.remove('active');
+    }
+}
 
