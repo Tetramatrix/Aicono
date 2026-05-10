@@ -19,12 +19,27 @@
   --code-bg-highlight: rgba(0, 0, 0, 0.3);
   --code-text-highlight: #68d391;
   --table-row-alt-bg: #3a3a3d;
-  --cta-gradient-start: #2c5282;
-  --cta-gradient-end: #1a365d;
+   --cta-gradient-start: #2c5282;
+   --cta-gradient-end: #1a365d;
 
-  /* Section spacing */
-  --section-margin: 40px 0;
-  --subsection-margin: 30px 0;
+   /* Pastel accent colors */
+   --pastel-blue: #A8D8EA;
+
+   /* Section spacing */
+   --section-margin: 40px 0;
+   --subsection-margin: 30px 0;
+
+   /* Section-specific accent colors */
+   --section-overview: #63b3ed;      /* Blue */
+   --section-features: #68d391;      /* Emerald */
+   --section-wysiwyg: #4fdada;       /* Cyan */
+   --section-performance: #7f9cf5;   /* Indigo */
+   --section-setup: #9ae6b4;         /* Mint */
+   --section-requirements: #a0aec0;  /* Cool gray */
+   --section-download: #68d391;      /* Emerald (same as features) */
+   --section-tips: #f6e05e;          /* Soft yellow */
+   --section-support: #f687b3;       /* Rose */
+   --section-products: #9f7aea;      /* Violet */
 }
 /* Keyframe for icon shine effect */
 @keyframes iconShineSweep {
@@ -110,7 +125,6 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
-  margin-top: 1.5em;
   margin-bottom: 0.6em;
   font-weight: 600;
   opacity: 0;
@@ -1140,7 +1154,7 @@ h2.collapsible:hover {
 }
 
 h2.collapsible::after {
-  content: '+';
+  content: attr(data-arrow-expanded);
   position: absolute;
   right: 10px;
   top: 50%;
@@ -1152,7 +1166,7 @@ h2.collapsible::after {
 }
 
 h2.collapsible.collapsed::after {
-  content: '−';
+  content: attr(data-arrow-collapsed);
 }
 
 /* Collapsible H3 sections */
@@ -1373,6 +1387,37 @@ h2[id="final-download-h2"]::before { background: var(--section-download); }
 h2[id="pro-tips-h2"]::before { background: var(--section-tips); }
 h2[id="support-donations-h2"]::before { background: var(--section-support); }
 h2[id="other-products-h2"]::before { background: var(--section-products); }
+
+/* Per-section H2 text and background styling */
+#what-is-aicono-h2 {
+  background: linear-gradient(135deg, rgba(99, 179, 237, 0.15) 0%, rgba(99, 179, 237, 0.05) 100%);
+  color: #63b3ed;
+}
+
+#core-features-h2 {
+  background: linear-gradient(135deg, rgba(104, 211, 145, 0.15) 0%, rgba(104, 211, 145, 0.05) 100%);
+  color: #68d391;
+}
+
+#setup-h2 {
+  background: linear-gradient(135deg, rgba(154, 230, 180, 0.15) 0%, rgba(154, 230, 180, 0.05) 100%);
+  color: #9ae6b4;
+}
+
+#pro-tips-h2 {
+  background: linear-gradient(135deg, rgba(246, 224, 94, 0.15) 0%, rgba(246, 224, 94, 0.05) 100%);
+  color: #f6e05e;
+}
+
+#support-donations-h2 {
+  background: linear-gradient(135deg, rgba(246, 135, 179, 0.15) 0%, rgba(246, 135, 179, 0.05) 100%);
+  color: #f687b3;
+}
+
+#other-products-h2 {
+  background: linear-gradient(135deg, rgba(159, 122, 234, 0.15) 0%, rgba(159, 122, 234, 0.05) 100%);
+  color: #9f7aea;
+}
 
 /* ===== Toggle Container ===== */
 .feature-detail-group {

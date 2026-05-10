@@ -58,6 +58,38 @@
 })();
 
 /**
+ * Toggle the visibility of a feature detail content
+ * @param {HTMLElement} toggleElement - The H3 element that was clicked
+ */
+function toggleFeatureDetail(toggleElement) {
+    const content = toggleElement.nextElementSibling;
+    if (!content) return;
+
+    const isHidden = content.style.display === 'none';
+    // Toggle the display
+    content.style.display = isHidden ? 'block' : 'none';
+
+    const icon = toggleElement.querySelector('.toggle-icon');
+    if (icon) {
+        // Set arrow based on NEW state (after toggle)
+        if (content.style.display === 'none') {
+            // Now collapsed - point right
+            icon.textContent = '▶';
+        } else {
+            // Now expanded - point down
+            icon.textContent = '▼';
+        }
+    }
+
+    // Update active class based on new state
+    if (content.style.display !== 'none') {
+        toggleElement.classList.add('active');
+    } else {
+        toggleElement.classList.remove('active');
+    }
+}
+
+/**
  * Toggle the visibility of a section following an H2 element
  * @param {HTMLElement} h2Element - The H2 element that was clicked
  */
