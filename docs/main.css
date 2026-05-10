@@ -30,16 +30,16 @@
    --subsection-margin: 30px 0;
 
    /* Section-specific accent colors */
-   --section-overview: #63b3ed;      /* Blue */
-   --section-features: #68d391;      /* Emerald */
-   --section-wysiwyg: #4fdada;       /* Cyan */
-   --section-performance: #7f9cf5;   /* Indigo */
-   --section-setup: #9ae6b4;         /* Mint */
-   --section-requirements: #a0aec0;  /* Cool gray */
-   --section-download: #68d391;      /* Emerald (same as features) */
-   --section-tips: #f6e05e;          /* Soft yellow */
-   --section-support: #f687b3;       /* Rose */
-   --section-products: #9f7aea;      /* Violet */
+    --section-overview: #63b3ed;      /* Blue */
+    --section-features: #4fdada;      /* Cyan (distinct from green) */
+    --section-wysiwyg: #00bcd4;       /* Dark cyan */
+    --section-performance: #7f9cf5;   /* Indigo */
+    --section-setup: #ff8a65;         /* Coral (distinct from blue/emerald) */
+    --section-requirements: #a0aec0;  /* Cool gray */
+    --section-download: #ffb74d;      /* Orange (distinct from all others) */
+    --section-tips: #f6e05e;          /* Soft yellow */
+    --section-support: #f687b3;       /* Rose */
+    --section-products: #9f7aea;      /* Violet */
 }
 /* Keyframe for icon shine effect */
 @keyframes iconShineSweep {
@@ -1811,20 +1811,20 @@ section#what-is-aicono td {
   color: rgba(99, 179, 237, 0.85) !important;
 }
 
-/* Core Features section - Emerald text */
+/* Core Features section - Cyan text */
 section#core-features p,
 section#core-features li,
 section#core-features span,
 section#core-features td {
-  color: rgba(104, 211, 145, 0.85) !important;
+  color: rgba(79, 218, 218, 0.85) !important;
 }
 
-/* Setup section - Mint text */
+/* Setup section - Coral text */
 section#setup p,
 section#setup li,
 section#setup span,
 section#setup td {
-  color: rgba(154, 230, 180, 0.85) !important;
+  color: rgba(255, 138, 101, 0.85) !important;
 }
 
 /* Configuration Tips section - Yellow text */
