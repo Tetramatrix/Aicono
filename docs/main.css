@@ -1321,7 +1321,6 @@ div.collapsed {
 .feature-detail-toggle.active {
   background: linear-gradient(135deg, rgba(76, 175, 80, 0.2) 0%, rgba(76, 175, 80, 0.1) 100%);
   border-color: rgba(76, 175, 80, 0.3);
-  color: #9ae6b4;
   box-shadow: 0 4px 12px rgba(76, 175, 80, 0.25);
 }
 
@@ -1434,7 +1433,28 @@ h2[id="other-products-h2"]::before { background: var(--section-products); }
 
 #other-products-h2 {
   background: linear-gradient(135deg, rgba(159, 122, 234, 0.15) 0%, rgba(159, 122, 234, 0.05) 100%);
+  border-left-color: var(--section-products);
   color: #9f7aea;
+}
+
+/* ===== Per-Section H3 (feature-detail-toggle) Text Colors ===== */
+section#what-is-aicono .feature-detail-toggle {
+  color: var(--section-overview);
+}
+section#core-features .feature-detail-toggle {
+  color: var(--section-features);
+}
+section#setup .feature-detail-toggle {
+  color: var(--section-setup);
+}
+section#pro-tips .feature-detail-toggle {
+  color: var(--section-tips);
+}
+section#support-donations .feature-detail-toggle {
+  color: var(--section-support);
+}
+section#other-products .feature-detail-toggle {
+  color: var(--section-products);
 }
 
 /* ===== Toggle Container ===== */
@@ -1479,12 +1499,83 @@ h2[id="other-products-h2"]::before { background: var(--section-products); }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
+  .horizontal-toc-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .horizontal-toc-nav a {
-    padding: 8px 12px;
-    font-size: 12px;
+    width: 100%;
+    text-align: center;
   }
 }
 
+/* ===== TOC Link Colors Per Section ===== */
+.horizontal-toc-nav a[href="#what-is-aicono-h2"] {
+  color: var(--section-overview);
+  border-color: rgba(99, 179, 237, 0.2);
+}
+.horizontal-toc-nav a[href="#what-is-aicono-h2"]:hover {
+  background: linear-gradient(135deg, rgba(99, 179, 237, 0.2) 0%, rgba(99, 179, 237, 0.1) 100%);
+  color: #63b3ed;
+  border-color: rgba(99, 179, 237, 0.4);
+  box-shadow: 0 6px 20px rgba(99, 179, 237, 0.25);
+}
+
+.horizontal-toc-nav a[href="#core-features-h2"] {
+  color: var(--section-features);
+  border-color: rgba(104, 211, 145, 0.2);
+}
+.horizontal-toc-nav a[href="#core-features-h2"]:hover {
+  background: linear-gradient(135deg, rgba(104, 211, 145, 0.2) 0%, rgba(104, 211, 145, 0.1) 100%);
+  color: #68d391;
+  border-color: rgba(104, 211, 145, 0.4);
+  box-shadow: 0 6px 20px rgba(104, 211, 145, 0.25);
+}
+
+.horizontal-toc-nav a[href="#setup-h2"] {
+  color: var(--section-setup);
+  border-color: rgba(154, 230, 180, 0.2);
+}
+.horizontal-toc-nav a[href="#setup-h2"]:hover {
+  background: linear-gradient(135deg, rgba(154, 230, 180, 0.2) 0%, rgba(154, 230, 180, 0.1) 100%);
+  color: #9ae6b4;
+  border-color: rgba(154, 230, 180, 0.4);
+  box-shadow: 0 6px 20px rgba(154, 230, 180, 0.25);
+}
+
+.horizontal-toc-nav a[href="#pro-tips-h2"] {
+  color: var(--section-tips);
+  border-color: rgba(246, 224, 94, 0.2);
+}
+.horizontal-toc-nav a[href="#pro-tips-h2"]:hover {
+  background: linear-gradient(135deg, rgba(246, 224, 94, 0.2) 0%, rgba(246, 224, 94, 0.1) 100%);
+  color: #f6e05e;
+  border-color: rgba(246, 224, 94, 0.4);
+  box-shadow: 0 6px 20px rgba(246, 224, 94, 0.25);
+}
+
+.horizontal-toc-nav a[href="#support-donations-h2"] {
+  color: var(--section-support);
+  border-color: rgba(246, 135, 179, 0.2);
+}
+.horizontal-toc-nav a[href="#support-donations-h2"]:hover {
+  background: linear-gradient(135deg, rgba(246, 135, 179, 0.2) 0%, rgba(246, 135, 179, 0.1) 100%);
+  color: #f687b3;
+  border-color: rgba(246, 135, 179, 0.4);
+  box-shadow: 0 6px 20px rgba(246, 135, 179, 0.25);
+}
+
+.horizontal-toc-nav a[href="#other-products-h2"] {
+  color: var(--section-products);
+  border-color: rgba(159, 122, 234, 0.2);
+}
+.horizontal-toc-nav a[href="#other-products-h2"]:hover {
+  background: linear-gradient(135deg, rgba(159, 122, 234, 0.2) 0%, rgba(159, 122, 234, 0.1) 100%);
+  color: #9f7aea;
+  border-color: rgba(159, 122, 234, 0.4);
+   box-shadow: 0 6px 20px rgba(159, 122, 234, 0.25);
+}
 
 
 /* === Section-Specific Content Accents === */
