@@ -699,7 +699,6 @@ iframe:hover, embed:hover, object:hover {
   border-radius: 5px;
 }
 .btn-primary {
-  background: var(--btn-primary-bg);
   padding: 12px 24px;
   border: none;
   border-radius: 4px;
@@ -707,16 +706,109 @@ iframe:hover, embed:hover, object:hover {
   transition: all 0.3s ease;
   transform: translateY(0);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
 }
 
 .btn-primary:hover {
-  background: #3182ce;
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   animation: pulse 0.5s ease;
 }
-.btn-primary:hover {
-  background: #3182ce;
+
+/* Gaming optic glow for download buttons */
+.download-buttons .btn-primary {
+  background: linear-gradient(135deg, var(--cta-gradient-start), var(--cta-gradient-end));
+  color: var(--text-primary) !important;
+  border: 1px solid rgba(168, 216, 234, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.download-buttons .btn-primary:hover {
+  background: linear-gradient(135deg, #3182ce 0%, #64b5f6 100%);
+  border-color: rgba(168, 216, 234, 0.4);
+  box-shadow: 0 6px 20px rgba(100, 181, 246, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 15px rgba(100, 181, 246, 0.3);
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* Per-section button accent colors */
+.download-buttons .btn-primary[href*="Aicono"] {
+  background: linear-gradient(135deg, var(--section-download), #ff9800);
+  border-color: rgba(255, 183, 77, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 10px rgba(255, 183, 77, 0.2);
+}
+
+.download-buttons .btn-primary[href*="Aicono"]:hover {
+  background: linear-gradient(135deg, #ff9800 0%, #ffb74d 100%);
+  border-color: rgba(255, 183, 77, 0.5);
+  box-shadow: 0 6px 20px rgba(255, 183, 77, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 183, 77, 0.4);
+}
+
+.download-buttons .btn-primary[href*="README"] {
+  background: linear-gradient(135deg, var(--section-overview), #4a90d9);
+  border-color: rgba(99, 179, 237, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 10px rgba(99, 179, 237, 0.2);
+}
+
+.download-buttons .btn-primary[href*="README"]:hover {
+  background: linear-gradient(135deg, #4a90d9 0%, #63b3ed 100%);
+  border-color: rgba(99, 179, 237, 0.5);
+  box-shadow: 0 6px 20px rgba(99, 179, 237, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 20px rgba(99, 179, 237, 0.4);
+}
+
+/* External link buttons (Discord, website, etc.) */
+.external-links .btn-primary {
+  background: linear-gradient(135deg, var(--section-features), #00897b);
+  border-color: rgba(79, 218, 218, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 10px rgba(79, 218, 218, 0.2);
+}
+
+.external-links .btn-primary:hover {
+  background: linear-gradient(135deg, #00897b 0%, #4fdada 100%);
+  border-color: rgba(79, 218, 218, 0.5);
+  box-shadow: 0 6px 20px rgba(79, 218, 218, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 20px rgba(79, 218, 218, 0.4);
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* Support section buttons */
+#support-donations .download-buttons .btn-primary {
+  background: linear-gradient(135deg, var(--section-support), #c2185b);
+  border-color: rgba(246, 135, 179, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 10px rgba(246, 135, 179, 0.2);
+}
+
+#support-donations .download-buttons .btn-primary:hover {
+  background: linear-gradient(135deg, #c2185b 0%, #f687b3 100%);
+  border-color: rgba(246, 135, 179, 0.5);
+  box-shadow: 0 6px 20px rgba(246, 135, 179, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 20px rgba(246, 135, 179, 0.4);
+}
+
+/* Related projects section buttons */
+#other-products .download-buttons .btn-primary {
+  background: linear-gradient(135deg, var(--section-products), #7c4dff);
+  border-color: rgba(159, 122, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 10px rgba(159, 122, 234, 0.2);
+}
+
+#other-products .download-buttons .btn-primary:hover {
+  background: linear-gradient(135deg, #7c4dff 0%, #9f7aea 100%);
+  border-color: rgba(159, 122, 234, 0.5);
+  box-shadow: 0 6px 20px rgba(159, 122, 234, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 20px rgba(159, 122, 234, 0.4);
 }
 .btn-large {
   padding: 15px 30px;
