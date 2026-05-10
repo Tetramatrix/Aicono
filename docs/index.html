@@ -137,8 +137,8 @@
                     <li><strong>Visual Feedback:</strong> See changes in real-time as you make adjustments to your desktop layout.</li>
                 </ol>
 
-                <h3>Visual Editor Features</h3>
-                <div>
+               <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> Visual Editor Features</h3>
+                <div class="feature-detail-content" style="display:none;">
                     <p>The WYSIWYG canvas editor provides:</p>
                     <ul>
                         <li>Real-time drag-and-drop reorganization</li>
@@ -146,7 +146,7 @@
                         <li>Renaming of groups and items</li>
                         <li>Preview of changes before applying</li>
                         <li>Automatic saving of your customizations</li>
-                    </ul>
+                   </ul>
                 </div>
             </div>
         </div>
@@ -159,30 +159,35 @@
             <div class="cta-box capability-group">
                 <p>Aicono uses AI models to intelligently group desktop icons based on semantic meaning and logical relationships. The built-in default model is lightweight and works offline, but may not always classify icons perfectly, especially for less common applications, which can lead to "hit-or-miss" results. For optimal performance, we recommend using Llama 3.1 8b Instruct or higher models. Processing time depends entirely on the number of desktop icons - fewer icons mean faster processing times. Advanced users can leverage the full-featured model manager to connect larger or custom models for improved accuracy, but this may require more system resources. Naturally, the best performance is achieved with cloud services.</p>
 
-                <h3>Model Management</h3>
-                <div>
-                    <p>Built-in Models: Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex icons as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</p>
+              <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> Model Management</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <p>Built-in Models: Range from 1B parameter (806MB) to 20B parameter (17-18GB). The smallest model (~806MB) is downloaded on first run and works fully offline. It is fast, but may sometimes classify complex icons as "Miscellaneous". For significantly better results, we recommend Llama 3.1 8b Instruct or higher models.</p>
 
-                    <p><strong>AI Integration:</strong> Supports connection to both on-prem and cloud-based AI services:</p>
-                    <ul>
-                        <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager.</li>
-                        <li><strong>On-Prem Services:</strong> Lemonade, Llamacpp, Ollama, and other self-hosted LLM solutions</li>
-                        <li><strong>Cloud Services:</strong> OpenAI, Mistral, and other cloud-based AI platforms (paid services provide the best performance)</li>
-                        <li><strong>Configuration:</strong> Switch between different AI backends based on requirements</li>
-                    </ul>
+                        <p><strong>AI Integration:</strong> Supports connection to both on-prem and cloud-based AI services:</p>
+                        <ul>
+                            <li><strong>Built-in Models:</strong> Pre-configured models accessible through the model manager.</li>
+                            <li><strong>On-Prem Services:</strong> Lemonade, Llamacpp, Ollama, and other self-hosted LLM solutions</li>
+                            <li><strong>Cloud Services:</strong> OpenAI, Mistral, and other cloud-based AI platforms (paid services provide the best performance)</li>
+                            <li><strong>Configuration:</strong> Switch between different AI backends based on requirements</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <h3>Hardware Requirements</h3>
-                <div>
-                    <ul>
-                        <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (12-16GB)</li>
-                        <li><strong>Recommended 8B Models</strong> (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation</li>
-                        <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
-                        <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
-                    </ul>
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> Hardware Requirements</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <ul>
+                            <li><strong>Built-in Models:</strong> Range from 1B parameter (806MB) to 20B parameter (12-16GB)</li>
+                            <li><strong>Recommended 8B Models</strong> (e.g., Llama 3.1 8b Instruct): Minimum 12 GB RAM or 8 GB VRAM for smooth operation</li>
+                            <li><strong>Hardware Requirements Increase with Model Size:</strong> Larger models with more parameters require higher specifications</li>
+                            <li><strong>Cloud Models:</strong> No local hardware requirements (requires internet connection)</li>
+                        </ul>
+
+                        <p><strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of icons - fewer icons result in faster processing.</p>
+                    </div>
                 </div>
 
-                <p><strong>Note:</strong> Larger models can provide better grouping, but require more memory and processing power. Processing time is directly proportional to the number of icons - fewer icons result in faster processing.</p>
             </div>
         </div>
     </div>
@@ -258,30 +263,34 @@
             Aicono offers extensive configuration options. Here are key tips to help you achieve optimal results.
         </p>
 
-        <h3>1. REQUIRED: Disable Windows "Auto-Arrange"</h3>
-        <div class="h3-content">
-            <p>
-                Aicono needs full control to move your icons. If Windows is also trying to manage them, your layout will break or won't apply correctly.
-            </p>
-            <p>
-                <strong>To check this:</strong> Right-click your Desktop > go to "View" > and make sure <strong>"Auto-arrange icons"</strong> is <strong>UNCHECKED</strong>.
-            </p>
+           <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> 1. REQUIRED: Disable Windows "Auto-Arrange"</h3>
+        <div class="feature-detail-content" style="display:none;">
+            <div class="cta-box capability-group">
+                <p>
+                    Aicono needs full control to move your icons. If Windows is also trying to manage them, your layout will break or won't apply correctly.
+                </p>
+                <p>
+                    <strong>To check this:</strong> Right-click your Desktop > go to "View" > and make sure <strong>"Auto-arrange icons"</strong> is <strong>UNCHECKED</strong>.
+                </p>
+            </div>
         </div>
 
-        <h3>2. Balancing Your Working Area and Grid Controls</h3>
-        <div class="h3-content">
-            <p>
-                Think of the <strong>"Working Area"</strong> as a boundary to contain your icons. Its only job is to ensure icons don't go outside the boundaries you set.
-            </p>
-            <p>
-                The <strong>"Grid Size"</strong> control determines how your icon groups will fit <em>inside</em> that boundary with snap-to-grid auto-arrange functionality.
-            </p>
-            <p>
-                There is no single "right" setting! The best layout is a balance between the size of your boundary and the grid controls you choose. If things look cramped, try adjusting the grid size to give icons more room.
-            </p>
-            <p>
-                Experiment with the <strong>WYSIWYG</strong> (What You See Is What You Get) preview. Adjust the grid size and watch your layout change in real-time. You can also fine-tune your layout with the <strong>visual editor</strong> — simply drag and drop icons between groups, resize and reposition groups, or rename items to reorganize as needed.
-            </p>
+        <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> 2. Balancing Your Working Area and Grid Controls</h3>
+        <div class="feature-detail-content" style="display:none;">
+            <div class="cta-box capability-group">
+                <p>
+                    Think of the <strong>"Working Area"</strong> as a boundary to contain your icons. Its only job is to ensure icons don't go outside the boundaries you set.
+                </p>
+                <p>
+                    The <strong>"Grid Size"</strong> control determines how your icon groups will fit <em>inside</em> that boundary with snap-to-grid auto-arrange functionality.
+                </p>
+                <p>
+                    There is no single "right" setting! The best layout is a balance between the size of your boundary and the grid controls you choose. If things look cramped, try adjusting the grid size to give icons more room.
+                </p>
+                <p>
+                    Experiment with the <strong>WYSIWYG</strong> (What You See Is What You Get) preview. Adjust the grid size and watch your layout change in real-time. You can also fine-tune your layout with the <strong>visual editor</strong> — simply drag and drop icons between groups, resize and reposition groups, or rename items to reorganize as needed.
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -293,77 +302,97 @@
         <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)" id="support-toggle-h2"><span class="toggle-icon">▶</span> Support Aicono</h3>
         <div class="feature-detail-content" style="display:none;">
             <div class="cta-box capability-group">
-                <h3>Join our Discord community</h3>
-                <div class="external-links">
-                    <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">Aicono Discord</a>
-                </div>
-
-                <h3>If you find Aicono useful, please consider leaving a review or starring the project on</h3>
-                <div class="h3-content">
-                    <a href="https://alternativeto.net/software/aicono" title="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🧠 The AI intelligent desktop icon autopilot for Windows! 🎯" /></a>
-                </div>
-
-                <h3>☕ Buy me a coffee or support via PayPal or Bitcoin Cash!</h3>
-                <div class="payment-options">
-                    <div style="display: flex; justify-content: space-between; gap: 20px;">
-                        <div class="paypal-option" style="flex: 1;">
-                            <h4>PayPal</h4>
-                            <p>
-                                PayPal: <a href="paypal.me/Gigamegs">paypal.me/Gigamegs</a>
-                                <div>
-                                    <img src="qrcode.png" alt="QR Code" style="width: 130px; height: 130px; margin-top: 10px;">
-                                </div>
-                            </p>
+             <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> Join our Discord community</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <div class="external-links">
+                            <a href="https://discord.gg/4QkQSfSATF" target="_blank" class="btn btn-primary">Aicono Discord</a>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="bch-option" style="flex: 1;">
-                            <h4>Bitcoin Cash (BCH)</h4>
-                            <p>📌 Bitcoin Cash (BCH)</p>
-                            <div style="display: flex; align-items: center;">
-                                <div style="margin-right: 15px;">
-                                    <img src="bch_qrcode.png" alt="QR Code" style="width: 130px; height: 130px;">
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> If you find Aicono useful, please consider leaving a review or starring the project on</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <a href="https://alternativeto.net/software/aicono" title="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🧠 The AI intelligent desktop icon autopilot for Windows! 🎯" /></a>
+                    </div>
+                </div>
+
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> ☕ Buy me a coffee or support via PayPal or Bitcoin Cash!</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <div class="payment-options">
+                            <div style="display: flex; justify-content: space-between; gap: 20px;">
+                                <div class="paypal-option" style="flex: 1;">
+                                    <h4>PayPal</h4>
+                                    <p>
+                                        PayPal: <a href="paypal.me/Gigamegs">paypal.me/Gigamegs</a>
+                                        <div>
+                                            <img src="qrcode.png" alt="QR Code" style="width: 130px; height: 130px; margin-top: 10px;">
+                                        </div>
+                                    </p>
                                 </div>
-                                <div style="word-break: break-all; font-family: monospace;">
-                                    <strong>BCH Address:</strong><br />bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
+
+                                <div class="bch-option" style="flex: 1;">
+                                    <h4>Bitcoin Cash (BCH)</h4>
+                                    <p>📌 Bitcoin Cash (BCH)</p>
+                                    <div style="display: flex; align-items: center;">
+                                        <div style="margin-right: 15px;">
+                                            <img src="bch_qrcode.png" alt="QR Code" style="width: 130px; height: 130px;">
+                                        </div>
+                                        <div style="word-break: break-all; font-family: monospace;">
+                                            <strong>BCH Address:</strong><br />bitcoincash:qrvhk77ujevd9n7jse4jewm99eg95at7tvc6m9v2vv
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <h3>🔥 Featured on Microsoft Store:</h3>
-                <div class="h3-content">
-                    <p>
-                        <a href="https://apps.microsoft.com/detail/9ngfc27j1vbx" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
-                    </p>
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> 🚀 Featured on Microsoft Store:</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <p>
+                            <a href="https://apps.microsoft.com/detail/9ngfc27j1vbx" target="_blank"><img src="ms-store.svg" width="200px" height="60px" alt="Get it from Microsoft" /></a>
+                        </p>
+                    </div>
                 </div>
 
-                <h3>🔥 Featured on Softpedia:</h3>
-                <div class="h3-content">
-                    <p>
-                        <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank"><img src="softpedia.png" width="200px" height="60px" alt="Get it from Softpedia" /></a>
-                    </p>
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> 📋 Featured on Softpedia:</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <p>
+                            <a href="https://www.softpedia.com/get/Desktop-Enhancements/Other-Desktop-Enhancements/Aicono.shtml" target="_blank"><img src="softpedia.png" width="200px" height="60px" alt="Get it from Softpedia" /></a>
+                        </p>
+                    </div>
                 </div>
 
-                <h3>🔥 Featured on AlternativeTo:</h3>
-                <div class="h3-content">
-                    <p>
-                        <a href="https://alternativeto.net/software/aicono" title="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🧠 The AI intelligent desktop icon autopilot for Windows! 🎯" /></a>
-                    </p>
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> ⭐ Featured on AlternativeTo:</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <p>
+                            <a href="https://alternativeto.net/software/aicono" title="🧠 Aicono automatically organizes your cluttered Windows desktop using AI. Group icons intelligently, arrange them neatly – free and portable! 🎯" target="_blank"><img src="AlternativeTo.png" width="20%" alt="🧠 The AI intelligent desktop icon autopilot for Windows! 🎯" /></a>
+                        </p>
+                    </div>
                 </div>
 
-                <h3>🔥 Featured on Product Hunt:</h3>
-                <div class="h3-content">
-                    <p>
-                        <a href="https://www.producthunt.com/products/aicono?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-aicono" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1018479&theme=dark&t=1758526753475" alt="Aicono - 🧠 The AI intelligent desktop icon autopilot for Windows! 🎯 | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-                    </p>
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> 📢 Featured on Product Hunt:</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <p>
+                            <a href="https://www.producthunt.com/products/aicono?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-aicono" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1018479&theme=dark&t=1758526753475" alt="Aicono - 🧠 The AI intelligent desktop icon autopilot for Windows! 🎯 | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+                        </p>
+                    </div>
                 </div>
 
-                <h3>🔥 Featured on Fazier:</h3>
-                <div class="h3-content">
-                    <p>
-                        <a href="https://fazier.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" width=250 alt="Fazier badge" /></a>
-                    </p>
+                <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)"><span class="toggle-icon">▶</span> 🏆 Featured on Fazier:</h3>
+                <div class="feature-detail-content" style="display:none;">
+                    <div class="cta-box capability-group">
+                        <p>
+                            <a href="https://fazier.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" width=250 alt="Fazier badge" /></a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
