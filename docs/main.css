@@ -708,6 +708,9 @@ iframe:hover, embed:hover, object:hover {
   border: none;
   border-radius: 0;
   box-shadow: none;
+  /* Override generic opacity/transform from base h1 rule */
+  opacity: 1;
+  transform: none;
   /* Fallback solid neon cyan with glow */
   color: #00d4ff;
   filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.5))
@@ -715,6 +718,8 @@ iframe:hover, embed:hover, object:hover {
   position: relative;
   z-index: 1;
   letter-spacing: 3px;
+  /* Entrance animation (overrides generic fadeIn) */
+  animation: fadeInUp 0.8s ease-out both;
 }
 
 /* Gradient text for browsers that support background-clip:text */
@@ -727,7 +732,8 @@ iframe:hover, embed:hover, object:hover {
     color: transparent;
     -webkit-text-fill-color: transparent;
     text-shadow: none;
-    animation: gradientShift 4s linear infinite;
+    /* Combine entrance animation (from base) with infinite gradient shift */
+    animation: fadeInUp 0.8s ease-out both, gradientShift 4s linear infinite;
   }
 }
 
