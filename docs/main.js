@@ -48,10 +48,49 @@
     h3Elements.forEach(function(h3) {
         if (h3.getAttribute('data-no-toggle') === 'true') return;
         if (h3.classList.contains('feature-detail-toggle')) return;
-        
+
         h3.addEventListener('click', function(e) {
             if (e.target.tagName !== 'A') {
                 toggleH3Section(h3);
             }
         });
-    });})();
+    });
+})();
+
+/**
+ * Toggle the visibility of a section following an H2 element
+ * @param {HTMLElement} h2Element - The H2 element that was clicked
+ */
+function toggleSection(h2Element) {
+    h2Element.classList.toggle('collapsed');
+
+    // Find the next section element following this h2 (skip any intermediate elements, stop at next H2)
+    let nextElement = h2Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'SECTION' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    // Toggle the section if found
+    if (nextElement && nextElement.tagName === 'SECTION') {
+        nextElement.classList.toggle('collapsed');
+    }
+}
+
+/**
+ * Toggle the visibility of a div associated with an H3 element
+ * @param {HTMLElement} h3Element - The H3 element that was clicked
+ */
+function toggleH3Section(h3Element) {
+    h3Element.classList.toggle('collapsed');
+
+    // Find the next div element following this h3
+    let nextElement = h3Element.nextElementSibling;
+    while (nextElement && nextElement.tagName !== 'DIV' && nextElement.tagName !== 'H3' && nextElement.tagName !== 'H2') {
+        nextElement = nextElement.nextElementSibling;
+    }
+
+    // Toggle the div if found
+    if (nextElement && nextElement.tagName === 'DIV') {
+        nextElement.classList.toggle('collapsed');
+    }
+}
