@@ -71,51 +71,97 @@
     <div class="cta-box feature-detail-group">
         <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)" id="key-features-h2"><span class="toggle-icon">▶</span> Key Features</h3>
         <div class="feature-detail-content" style="display:none;">
-            <div class="cta-box capability-group">
-                <ul>
-                    <li><strong>AI-Powered Grouping:</strong> Automatically categorizes icons logically into groups like Work, Games, and Utilities.</li>
-                    <li><strong>Spatial Layout:</strong> Aicono positions icon groups, ensuring each group is cohesive, clearly separated, and fits within your custom "Working Area" without any overlaps.</li>
-                    <li><strong>Customizable Area:</strong> Select specific desktop regions for icon placement.</li>
-                    <li><strong>Visual Preview (WYSIWYG):</strong> See and approve the new layout <em>before</em> any changes are applied.</li>
-                    <li><strong>Full WYSIWYG Canvas Editor:</strong> Direct manipulation of workspace elements. Drag and drop icons between groups, rearrange groups, rename items, and adjust group boundaries with a visual interface.</li>
-                    <li><strong>Advanced Model Management:</strong> Connect to multiple cloud, on-prem and local LLM backends including OpenAI, Mistral, Lemonade, Llamacpp, LM Studio, Ollama and many other compatible services. The model manager lists all available models and allows users to activate or deactivate models as needed for specific tasks.
-                        <ul>
-                            <li><strong>Local and On-Prem Services:</strong> Lemonade, Llamacpp, LM Studio, Ollama and other self-hosted LLM solutions</li>
-                            <li><strong>Cloud Services:</strong> OpenAI, Mistral, Gemini and other cloud-based AI platforms</li>
-                            <li><strong>Flexible Configuration:</strong> Switch between different AI backends based on your needs, privacy requirements, and performance considerations</li>
-                        </ul>
-                    </li>
-                    <li><strong>Fully Configurable:</strong> All settings, from AI models to layout, are adjustable through the interface.</li>
-                    <li><strong>Portable App:</strong> No installation required – just run and go.</li>
-                    <li><strong>Freeware:</strong> Free community edition.</li>
-                </ul>
 
-                <p>
-                    <img src="desktop_clutter.png" alt="Cluttered Desktop Example" class="screenshot">
-                    <br><em>Cluttered desktop before using Aicono – icons scattered everywhere!</em>
-                </p>
-                <p>Desktops get messy fast with icons everywhere. Manual organizing is tedious, and Windows' basic auto-arrange doesn't cut it.</p>
-                <p>
-                    <img src="desktop_clean2.png" alt="Clean Desktop After Aicono" class="screenshot">
-                    <br><em>Organized desktop after Aicono arrangement – AI groups and arranges icons perfectly!</em>
-                </p>
-                <p>
-                    Aicono applies AI-based categorization (e.g., Work, Games, Utilities) and a spatial layout that avoids overlaps, placing icons within your selected desktop area. You can preview and apply the arrangement.
-                </p>
-                <p>
-                    <img src="main.png" alt="Aicono Main Window" class="screenshot">
-                    <br><em>Aicono's main window – control your desktop organization with ease!</em>
-                </p>
-                <p>
-                    <img src="modelmanager.png" alt="Aicono Model Manager" class="screenshot">
-                    <br><em>Aicono's model manager – configure AI models with ease!</em>
-                </p>
-                <p>
-                    <img src="diagram.png" alt="Aicono Mindmap Diagram" class="screenshot">
-                    <br><em>Aicono's mindmap visualization – see your desktop organization in a diagram!</em>
-                </p>
+
+            <!-- AI-Powered Grouping Subsection -->
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)" id="ai-grouping-h2"><span class="toggle-icon">▶</span> AI-Powered Grouping</h3>
+            <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box capability-group">
+                    <p>Aicono uses AI to automatically categorize your desktop icons into logical groups like Work, Games, Utilities, and more.</p>
+                    <p>
+                        <img src="desktop_clutter.png" alt="Cluttered Desktop Before Aicono" class="screenshot">
+                        <br><em>Desktop clutter before using Aicono – icons scattered everywhere!</em>
+                    </p>
+                    <p>
+                        <img src="desktop_clean2.png" alt="Organized Desktop After Aicono" class="screenshot">
+                        <br><em>Organized desktop after Aicono arrangement – AI groups and arranges icons perfectly!</em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Spatial Layout Subsection -->
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)" id="spatial-layout-h2"><span class="toggle-icon">▶</span> Spatial Layout & Working Area</h3>
+            <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box capability-group">
+                    <ul>
+                        <li><strong>Spatial Layout:</strong> Positions icon groups cohesively, clearly separated, fitting within your custom "Working Area" without overlaps.</li>
+                        <li><strong>Customizable Area:</strong> Select specific desktop regions for icon placement – keep important zones icon-free.</li>
+                        <li><strong>Intelligent Arrangement:</strong> Groups spaced optimally for visual clarity and quick access.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Visual Editor Subsection -->
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)" id="visual-editor-h2"><span class="toggle-icon">▶</span> Visual WYSIWYG Editor</h3>
+            <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box capability-group">
+                    <p>Full visual control over your desktop layout with a drag-and-drop canvas editor. Fine-tune AI results visually before applying changes.</p>
+                    <ul>
+                        <li><strong>Drag & Drop Icons:</strong> Move icons between groups instantly.</li>
+                        <li><strong>Resize Groups:</strong> Adjust group boundaries directly on the canvas.</li>
+                        <li><strong>Rename Items:</strong> Click to rename groups and icons.</li>
+                        <li><strong>Real-Time Preview:</strong> See changes live before committing.</li>
+                        <li><strong>Auto-Save:</strong> Customizations saved automatically.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- AI Model Management Subsection -->
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)" id="model-management-h2"><span class="toggle-icon">▶</span> Advanced AI Model Management</h3>
+            <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box capability-group">
+                    <p>Connect to multiple AI backends – local, on-prem, or cloud. The model manager lists available models and lets you activate/deactivate them per task.</p>
+                    <ul>
+                        <li><strong>Local & On-Prem:</strong> Lemonade, Llamacpp, LM Studio, Ollama, and other self-hosted LLMs</li>
+                        <li><strong>Cloud Services:</strong> OpenAI, Mistral, Gemini, and other cloud platforms</li>
+                        <li><strong>Flexible Switching:</strong> Change backends based on privacy, performance, or cost needs</li>
+                    </ul>
+                    <p>
+                        <img src="modelmanager.png" alt="Aicono Model Manager Interface" class="screenshot">
+                        <br><em>Model manager – configure and switch AI backends with ease.</em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- App Overview & Diagram Subsection -->
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)" id="app-overview-h2"><span class="toggle-icon">▶</span> Main Interface & Visualization</h3>
+            <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box capability-group">
+                    <p>Take full control of your desktop organization through Aicono's intuitive interface and visual diagrams.</p>
+                    <p>
+                        <img src="main.png" alt="Aicono Main Window" class="screenshot">
+                        <br><em>Main window – all desktop organization controls in one place.</em>
+                    </p>
+                    <p>
+                        <img src="diagram.png" alt="Aicono Mindmap View" class="screenshot">
+                        <br><em>Mindmap visualization – see your desktop structure as an interactive diagram.</em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Portable & Free Subsection -->
+            <h3 class="feature-detail-toggle" onclick="toggleFeatureDetail(this)" id="portable-free-h2"><span class="toggle-icon">▶</span> Portable & Free</h3>
+            <div class="feature-detail-content" style="display:none;">
+                <div class="cta-box capability-group">
+                    <ul>
+                        <li><strong>Fully Configurable:</strong> All settings – AI models, layout, working area – adjustable through the interface.</li>
+                        <li><strong>Portable App:</strong> No installation – just extract and run anywhere.</li>
+                        <li><strong>Free Community Edition:</strong> Completely free with no time limits.</li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </div>
 
     <!-- Visual Fine-Tuning with WYSIWYG Editor Toggle -->
 
