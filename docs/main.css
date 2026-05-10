@@ -1412,13 +1412,13 @@ h2[id="other-products-h2"]::before { background: var(--section-products); }
 }
 
 #core-features-h2 {
-  background: linear-gradient(135deg, rgba(104, 211, 145, 0.15) 0%, rgba(104, 211, 145, 0.05) 100%);
-  color: #68d391;
+  background: linear-gradient(135deg, rgba(79, 218, 218, 0.15) 0%, rgba(79, 218, 218, 0.05) 100%);
+  color: #4fdada;
 }
 
 #setup-h2 {
-  background: linear-gradient(135deg, rgba(154, 230, 180, 0.15) 0%, rgba(154, 230, 180, 0.05) 100%);
-  color: #9ae6b4;
+  background: linear-gradient(135deg, rgba(255, 138, 101, 0.15) 0%, rgba(255, 138, 101, 0.05) 100%);
+  color: #ff8a65;
 }
 
 #pro-tips-h2 {
@@ -1596,10 +1596,10 @@ section#what-is-aicono .cta-box::before {
   background: linear-gradient(90deg, var(--section-overview), transparent);
 }
 
-/* Core Features - Emerald */
+/* Core Features - Cyan */
 section#core-features .cta-box {
-  background: rgba(104, 211, 145, 0.06);
-  border-color: rgba(104, 211, 145, 0.12);
+  background: rgba(79, 218, 218, 0.06);
+  border-color: rgba(79, 218, 218, 0.12);
 }
 section#core-features .cta-box::before {
   content: "";
@@ -1611,10 +1611,10 @@ section#core-features .cta-box::before {
   background: linear-gradient(90deg, var(--section-features), transparent);
 }
 
-/* Setup - Mint */
+/* Setup - Coral */
 section#setup .cta-box {
-  background: rgba(154, 230, 180, 0.06);
-  border-color: rgba(154, 230, 180, 0.12);
+  background: rgba(255, 138, 101, 0.06);
+  border-color: rgba(255, 138, 101, 0.12);
 }
 section#setup .cta-box::before {
   content: "";
