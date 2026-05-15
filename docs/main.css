@@ -29,17 +29,18 @@
    --section-margin: 40px 0;
    --subsection-margin: 30px 0;
 
-   /* Section-specific accent colors */
-    --section-overview: #63b3ed;      /* Blue */
-    --section-features: #4fdada;      /* Cyan (distinct from green) */
-    --section-wysiwyg: #00bcd4;       /* Dark cyan */
-    --section-performance: #7f9cf5;   /* Indigo */
-    --section-setup: #ff8a65;         /* Coral (distinct from blue/emerald) */
-    --section-requirements: #a0aec0;  /* Cool gray */
-    --section-download: #ffb74d;      /* Orange (distinct from all others) */
-    --section-tips: #f6e05e;          /* Soft yellow */
-    --section-support: #f687b3;       /* Rose */
-    --section-products: #9f7aea;      /* Violet */
+    /* Section-specific accent colors */
+     --section-overview: #63b3ed;      /* Blue */
+     --section-features: #4fdada;      /* Cyan */
+     --section-wysiwyg: #00bcd4;       /* Dark cyan */
+     --section-performance: #7f9cf5;   /* Indigo */
+     --section-setup: #ff8a65;         /* Coral */
+     --section-requirements: #a0aec0;  /* Cool gray */
+     --section-download: #ffb74d;      /* Orange */
+     --section-tips: #f6e05e;          /* Soft yellow */
+     --section-support: #f687b3;       /* Rose */
+     --section-products: #9f7aea;      /* Violet */
+     --section-press: #ffd700;         /* Gold */
 }
 /* Keyframe for icon shine effect */
 @keyframes iconShineSweep {
@@ -1752,6 +1753,7 @@ h2[id$="-h2"]::before {
 }
 
 /* Section-specific heading colors */
+h2[id="press-coverage-h2"]::before { background: var(--section-press); }
 h2[id="what-is-aicono-h2"]::before { background: var(--section-overview); }
 h2[id="core-features-h2"]::before { background: var(--section-features); }
 h2[id="wysiwyg-h2"]::before { background: var(--section-wysiwyg); }
@@ -1764,6 +1766,11 @@ h2[id="support-donations-h2"]::before { background: var(--section-support); }
 h2[id="other-products-h2"]::before { background: var(--section-products); }
 
 /* Per-section H2 text and background styling */
+#press-coverage-h2 {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 215, 0, 0.05) 100%);
+  color: #ffd700;
+}
+
 #what-is-aicono-h2 {
   background: linear-gradient(135deg, rgba(99, 179, 237, 0.15) 0%, rgba(99, 179, 237, 0.05) 100%);
   color: #63b3ed;
@@ -2021,6 +2028,17 @@ section#other-products .feature-detail-toggle.active .toggle-icon {
 }
 
 /* ===== TOC Link Colors Per Section ===== */
+.horizontal-toc-nav a[href="#press-coverage-h2"] {
+  color: var(--section-press);
+  border-color: rgba(255, 215, 0, 0.2);
+}
+.horizontal-toc-nav a[href="#press-coverage-h2"]:hover {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0.1) 100%);
+  color: #ffe066;
+  border-color: rgba(255, 215, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.25);
+}
+
 .horizontal-toc-nav a[href="#what-is-aicono-h2"] {
   color: var(--section-overview);
   border-color: rgba(99, 179, 237, 0.2);
@@ -2179,6 +2197,21 @@ section#other-products .cta-box::before {
   width: 100%;
   height: 4px;
   background: linear-gradient(90deg, var(--section-products), transparent);
+}
+
+/* Press Coverage - Gold */
+section#press-coverage .cta-box {
+  background: rgba(255, 215, 0, 0.06);
+  border-color: rgba(255, 215, 0, 0.12);
+}
+section#press-coverage .cta-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--section-press), transparent);
 }
 
 
@@ -2361,4 +2394,73 @@ section#other-products li,
 section#other-products span,
 section#other-products td {
   color: rgba(159, 122, 234, 0.85) !important;
+}
+
+/* Press Coverage section - Gold text */
+section#press-coverage p,
+section#press-coverage li,
+section#press-coverage span,
+section#press-coverage td {
+  color: rgba(255, 215, 0, 0.85) !important;
+}
+
+/* ===== Press & Recommendations Section ===== */
+.press-section {
+  margin: var(--section-margin);
+  padding: 0 10px;
+}
+
+.press-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.press-card {
+  background: rgba(45, 45, 48, 0.7);
+  border-radius: 14px;
+  padding: 28px 32px;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+.press-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 215, 0, 0.35);
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.12);
+}
+
+.press-logo {
+  height: 36px;
+  max-height: 36px;
+  min-width: 80px;
+  width: auto;
+  max-width: 200px;
+  margin-bottom: 18px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 4px 12px;
+}
+
+.press-logo-cb {
+  background: white;
+}
+
+.press-logo-chip {
+  background: #dd0000;
+  padding: 6px 14px;
+}
+
+.press-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.press-link {
+  display: inline-block;
+  margin-top: 14px;
+  text-align: left;
 }
