@@ -18,6 +18,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
+<script>
+  (function(){
+    var stored=localStorage.getItem('theme');
+    if(stored){document.documentElement.setAttribute('data-theme',stored);}
+    else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches){
+      document.documentElement.setAttribute('data-theme','light');
+    }
+  })();
+</script>
+
 <style>
 :root, [data-theme="dark"] {
   --color-bg:             #0e0f11;
@@ -326,7 +336,23 @@ footer {
 /* ── MOBILE ── */
 @media (max-width: 768px) {
   nav { padding: var(--space-4); }
-  .nav-links { gap: var(--space-3); }
+  #menuToggle { display: block !important; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    padding: var(--space-4);
+    gap: var(--space-3);
+    z-index: 40;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: var(--space-2) 0; }
+  nav { position: relative; }
   .hero { padding: var(--space-12) var(--space-5); }
   .section { padding: var(--space-12) var(--space-4); }
 }
@@ -344,10 +370,17 @@ footer {
     <img src="logo-3.png" alt="Aicono" width="28" height="28" style="border-radius:4px;vertical-align:middle;">
     Aicono
   </a>
-  <div class="nav-links">
+  <div class="nav-links" id="navLinks">
     <a href="index.html">Home</a>
-    <a href="https://github.com/Tetramatrix/Aicono/raw/refs/heads/main/docs/Aicono.exe" class="btn-primary">Download Free</a>
+    <a href="index.html#features">Features</a>
+    <a href="index.html#overview">Overview</a>
+    <a href="index.html#setup">Setup</a>
+    <a href="support.html">Support</a>
+    <a href="index.html#discover">Discover</a>
+    <a href="https://github.com/Tetramatrix/Aicono/raw/refs/heads/main/docs/Aicono.exe" class="btn-primary">Download Aicono Free</a>
+    <button id="themeToggle" aria-label="Toggle light mode" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;font-size:var(--text-lg);padding:var(--space-2);">🌙</button>
   </div>
+  <button id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks" style="display:none;background:none;border:none;color:var(--color-text);cursor:pointer;font-size:var(--text-xl);padding:var(--space-2);">☰</button>
 </nav>
 
 <!-- HERO -->
@@ -444,6 +477,37 @@ footer {
 <footer>
   <span>© 2026 Aicono. Built for productivity.</span>
 </footer>
+
+<script>
+(function() {
+  'use strict';
+  var toggle = document.getElementById('menuToggle');
+  var links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', function() {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+      toggle.textContent = expanded ? '☰' : '✕';
+    });
+  }
+  var themeBtn = document.getElementById('themeToggle');
+  var stored = localStorage.getItem('theme');
+  var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  var theme = stored || (prefersLight ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-theme', theme);
+  if (themeBtn) {
+    themeBtn.textContent = theme === 'dark' ? '🌙' : '☀️';
+    themeBtn.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      themeBtn.textContent = next === 'dark' ? '🌙' : '☀️';
+    });
+  }
+})();
+</script>
 
 </body>
 </html>
