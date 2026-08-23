@@ -1447,6 +1447,66 @@ footer {
   .ci-adbar { flex-direction: column; align-items: flex-start; gap: 8px; min-height: 0; }
   .ci-adbtn { align-self: stretch; text-align: center; }
 }
+
+/* ── Freebuff sponsored leaderboard banner (2026-08-23) ────────────── */
+.fb-adbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 728px;
+  min-height: 90px;
+  margin: 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface-2);
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: border-color 160ms, box-shadow 160ms;
+}
+.fb-adbar:hover {
+  border-color: #ec4899;
+  box-shadow: 0 0 20px rgba(236,72,153,0.18);
+}
+.fb-adbody { flex: 1; min-width: 0; }
+.fb-adhead {
+  display: block;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--color-text);
+}
+.fb-adbar:hover .fb-adlink { color: #f472b6; }
+.fb-addesc {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: 3px;
+}
+.fb-adurl {
+  display: block;
+  font-size: 11px;
+  color: var(--color-text-faint, var(--color-text-muted));
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  margin-top: 4px;
+}
+.fb-adurl b { color: #4ade80; font-weight: 700; }
+.fb-adbtn {
+  flex-shrink: 0;
+  display: inline-block;
+  background: #ec4899;
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--text-sm);
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  transition: background 160ms;
+}
+.fb-adbar:hover .fb-adbtn { background: #f472b6; }
+@media (max-width: 760px) {
+  .fb-adbar { flex-direction: column; align-items: flex-start; gap: 8px; min-height: 0; }
+  .fb-adbtn { align-self: stretch; text-align: center; }
+}
+
 </style>
 </head>
 <body id="main">
@@ -1657,6 +1717,20 @@ footer {
     </div>
   </div>
 </section>
+
+
+<!-- SPONSORED: Freebuff (affiliate) -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <a class="fb-adbar" href="https://freebuff.com/get-started?ref=ref-79a3f30b-4b6a-4572-a271-29a2eb21761b&referrer=Viet-Chi+Hoang" target="_blank" rel="sponsored noopener noreferrer">
+    <span class="fb-adbody">
+      <span class="fb-adhead"><span class="fb-adlink">Free AI coding agent with GPT, DeepSeek, MiMo &amp; more. No subscription, no API key.</span></span>
+      <span class="fb-addesc">Freebuff runs in your terminal with GPT, Luna, MiMo 2.5, DeepSeek, GLM 5.2 and more. Zero setup, frontier models included.</span>
+      <span class="fb-adurl">https://<b>freebuff.com</b>/</span>
+    </span>
+    <span class="fb-adbtn">Try it free &rarr;</span>
+  </a>
+</div>
 
 <!-- CORE FEATURES -->
 <section class="section" id="features">
@@ -1873,8 +1947,8 @@ footer {
     </span>
     <span class="ci-adbtn">See the savings →</span>
   </a>
-</div>
-
+</div>
+
 <!-- PRICING -->
 <section class="section" id="pricing">
   <div class="section-header">
@@ -1903,6 +1977,19 @@ footer {
   </div>
 </section>
 
+<!-- SPONSORED: Freebuff (affiliate) -->
+<div class="ad-container">
+  <p class="ad-label">Sponsored</p>
+  <a class="fb-adbar" href="https://freebuff.com/get-started?ref=ref-79a3f30b-4b6a-4572-a271-29a2eb21761b&referrer=Viet-Chi+Hoang" target="_blank" rel="sponsored noopener noreferrer">
+    <span class="fb-adbody">
+      <span class="fb-adhead"><span class="fb-adlink">Free AI coding agent with GPT, DeepSeek, MiMo &amp; more. No subscription, no API key.</span></span>
+      <span class="fb-addesc">Freebuff runs in your terminal with GPT, Luna, MiMo 2.5, DeepSeek, GLM 5.2 and more. Zero setup, frontier models included.</span>
+      <span class="fb-adurl">https://<b>freebuff.com</b>/</span>
+    </span>
+    <span class="fb-adbtn">Try it free &rarr;</span>
+  </a>
+</div>
+
 <!-- AD SPOT G -->
 <div class="ad-container">
   <p class="ad-label">Sponsored</p>
